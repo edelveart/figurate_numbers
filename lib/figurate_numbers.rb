@@ -512,4 +512,5 @@ module FigurateNumbers
       end
     end
   end
+
 end
