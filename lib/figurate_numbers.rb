@@ -51,14 +51,6 @@ module FigurateNumbers
     end
   end
 
-  def FigurateNumbers.truncated_triangular_numbers
-    Enumerator.new do |y|
-      (1..Float::INFINITY).each do |delta|
-        y << (3 * delta**2) - (3 * delta) + 1
-      end
-    end
-  end
-
   def FigurateNumbers.truncated_square_numbers
     Enumerator.new do |y|
       (1..Float::INFINITY).each do |delta|
