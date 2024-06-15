@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
   s.name        = "figurate_numbers"
-  s.version     = "0.0.1"
+  s.version     = "1.0.0"
   s.summary     = "Generates sequences of figurative numbers based on the book Figurate Numbers(2012) by Elena Deza and Michel Deza"
   s.description = "Implementation of sequences of figurative numbers in the plane, space and multidimensional using the enumerator class. Intended for use in Sonic Pi."
   s.authors     = ["Edgar Armando Delgado Vega"]
