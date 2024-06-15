@@ -5,7 +5,7 @@
 `figurate_numbers` is a Ruby module that implements the formulas from the wonderful book
 > Figurate Numbers (2012) by Elena Deza and Michel Deza.
 
-This implementation uses the Enumerator class to deal with infinite sequences.
+This implementation uses the **Enumerator class** to deal with **infinite sequences**.
 
 Following the order of the book, the methods are divided into 3 types according to the spatial dimension:
 
@@ -13,15 +13,38 @@ Following the order of the book, the methods are divided into 3 types according 
 2. Figured numbers in space(`R^3`)
 3. Multidimensional figured numbers(`R^n`)
 
-## How to use
+## How to use in Ruby
 
 If the sequence is defined with `lazy`, to make the numbers explicit we must include the converter method `to_a` at the end.
 
 ```rb
+## Using take(integer)
 FigurateNumbers.pronic_numbers.take(10).to_a
+
+## Storing and Iterating
+f = FigurateNumbers.centered_octagonal_pyramid_numbers
+f.next
+f.next
+f.next
+```
+## How to use in Sonic Pi
+
+1. Locate or download the file in the path `lib/figurate_numbers.rb`
+2. Drag the file to a buffer in Sonic Pi (this generates the `<PATH>`)
+
+```rb
+run_file "<Path>"
+
+pol_num = FigurateNumbers.polygonal_numbers(8)
+80.times do
+  play pol_num.next % 12 * 7  # Some mathematical function or transformation
+  sleep 0.25
+end
 ```
 
-## 1. Plane Figurate Numbers
+## List of implemented sequences
+
+### 1. Plane Figurate Numbers
 
 - `polygonal_numbers(m)`
 - `centered_pol_numbers(k)`
@@ -35,7 +58,7 @@ FigurateNumbers.pronic_numbers.take(10).to_a
 - `truncated_pronic_numbers`
 - `truncated_center_pol_numbers(k)`
 
-## 2. Space Figurate Numbers
+### 2. Space Figurate Numbers
 
 - `r_pyramidal_numbers(r)`
 - `cubic_numbers`
@@ -66,7 +89,7 @@ FigurateNumbers.pronic_numbers.take(10).to_a
 - `generalized_dodecahedral_numbers(left_index = 0)`
 - `generalized_hexagonal_prism_numbers(left_index = 0)`
 
-## 3. Multidimensional figurate numbers
+### 3. Multidimensional figurate numbers
 
 - `pentatope_numbers`
 - `k_dimensional_hypertetrahedron_numbers(k)`
@@ -86,5 +109,3 @@ FigurateNumbers.pronic_numbers.take(10).to_a
 - `centered_hyperotahedral_numbers`
 - `nexus_numbers(k)`
 - `k_dimensional_centered_hyperoctahedron_numbers(k)`
-
-

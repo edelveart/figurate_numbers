@@ -1,4 +1,4 @@
-# Infinite sequences of plane, space, and multidimensional figurate numbers are implemented using the Enumerator class. Based on the book ‘Figurate Numbers’ (2012) by Elena Deza & Michel Deza, it is intended for use in Sonic Pi.
+# Generates infinite sequences of plane, space, and multidimensional figurate numbers based on the book ‘Figurate Numbers’ (2012) by Elena Deza and Michel Deza. The methods are implemented using the Enumerator class and are designed for use in Sonic Pi.
 
 module FigurateNumbers
 
