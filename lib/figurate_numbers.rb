@@ -1,8 +1,7 @@
-# A module based on the book Figurate Numbers(2012) by Elena Deza & Michel Deza
+# Implementation of sequences of plane, space and multidimensional figurate numbers using the Enumerator class. Intended for use in Sonic Pi. Based on the book Figurate Numbers(2012) by Elena Deza & Michel Deza.
 
 module FigurateNumbers
 
-  # Plane figurate numbers
   def FigurateNumbers.polygonal_numbers(m)
     Enumerator.new do |y|
       (1..Float::INFINITY).each do |delta|
@@ -75,7 +74,6 @@ module FigurateNumbers
     end
   end
 
-  ## Space figurate numbers
   def FigurateNumbers.r_pyramidal_numbers(r = 3)
     Enumerator.new do |y|
       (1..Float::INFINITY).each do |delta|
@@ -300,7 +298,6 @@ module FigurateNumbers
     end
   end
 
-  ## Multidimensional figurate numbers
   def FigurateNumbers.factorial_iter(num)
     t = 1
     (1..num).each do |i|

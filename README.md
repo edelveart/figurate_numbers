@@ -1,5 +1,7 @@
 # Figurate Numbers
 
+[![Gem Version](https://badge.fury.io/rb/figurate_numbers.svg)](https://badge.fury.io/rb/figurate_numbers)
+
 `figurate_numbers` is a Ruby module that implements the formulas from the wonderful book
 > Figurate Numbers (2012) by Elena Deza and Michel Deza.
 
@@ -19,7 +21,7 @@ If the sequence is defined with `lazy`, to make the numbers explicit we must inc
 FigurateNumbers.pronic_numbers.take(10).to_a
 ```
 
-## 1. Plane Figurate Numbers methods
+## 1. Plane Figurate Numbers
 
 - `polygonal_numbers(m)`
 - `centered_pol_numbers(k)`
