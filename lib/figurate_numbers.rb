@@ -1,4 +1,4 @@
-# Implementation of sequences of plane, space and multidimensional figurate numbers using the Enumerator class. Intended for use in Sonic Pi. Based on the book Figurate Numbers(2012) by Elena Deza & Michel Deza.
+# Infinite sequences of plane, space and multidimensional figurate numbers using the Enumerator class. Based on the book Figurate Numbers(2012) by Elena Deza & Michel Deza, it is intended for use in Sonic Pi.
 
 module FigurateNumbers
 
@@ -511,3 +511,5 @@ module FigurateNumbers
   end
 
 end
+
+print FigurateNumbers.tetrahedral_numbers.take(10)
