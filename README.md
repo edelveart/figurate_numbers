@@ -5,13 +5,13 @@
 `figurate_numbers` is a Ruby module that implements the formulas from the wonderful book
 > Figurate Numbers (2012) by Elena Deza and Michel Deza.
 
-This implementation uses the **Enumerator class** to deal with **infinite sequences**.
+This implementation uses the **Enumerator class** to deal with **INFINITE SEQUENCES**.
 
 Following the order of the book, the methods are divided into 3 types according to the spatial dimension:
 
-1. Figured numbers on the plane (`R^2`)
-2. Figured numbers in space(`R^3`)
-3. Multidimensional figured numbers(`R^n`)
+1. Figured numbers on the plane
+2. Figured numbers in space
+3. Multidimensional figured numbers
 
 ## How to use in Ruby
 
