@@ -2,7 +2,6 @@ require "minitest/autorun"
 require_relative "../lib/figurate_numbers.rb "
 
 class TestFigurateNumbers  < Minitest::Test
-
   def test_polygonal_numbers
     assert_equal([1, 8, 21, 40, 65, 96, 133, 176, 225, 280, 341, 408, 481, 560, 645, 736, 833, 936, 1045, 1160, 1281, 1408, 1541,
     1680, 1825, 1976, 2133, 2296, 2465, 2640, 2821, 3008, 3201, 3400, 3605], FigurateNumbers.polygonal_numbers(8).take(35))
