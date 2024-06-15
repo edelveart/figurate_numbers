@@ -19,8 +19,6 @@ If the sequence is defined with `lazy`, to make the numbers explicit we must inc
 FigurateNumbers.pronic_numbers.take(10).to_a
 ```
 
-
-
 ## 1. Plane Figurate Numbers methods
 
 - `polygonal_numbers(m)`
