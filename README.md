@@ -1,6 +1,6 @@
 # Figurate Numbers
 
-[![Gem Version](https://badge.fury.io/rb/figurate_numbers.svg)](https://badge.fury.io/rb/figurate_numbers)
+[![Gem Version](https://badge.fury.io/rb/figurate_numbers.svg?branch=main&service=github)](https://badge.fury.io/rb/figurate_numbers)
 
 `figurate_numbers` is a Ruby module that implements the formulas from the wonderful book
 > Figurate Numbers (2012) by Elena Deza and Michel Deza.
