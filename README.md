@@ -47,6 +47,16 @@ end
 ### 1. Plane Figurate Numbers
 
 - [x] `polygonal_numbers(m)`
+- [ ] `centered_triangular_numbers`
+- [ ] `centered_square_numbers`
+- [ ] `centered_pentagonal_numbers`
+- [ ] `centered_dodecagonal_numbers = star number`
+- [ ] `centered_icosipentagonal_numbers`
+- [ ] `centered_icosihexagonal_numbers`
+- [ ] `centered_icosiheptagonal_numbers`
+- [ ] `centered_icosioctagonal_numbers`
+- [ ] `centered_icosinonagonal_numbers`
+- [ ] `centered_triacontagonal_numbers`
 - [x] `centered_pol_numbers(k) or centered m-gonal number`
 - [x] `pronic_numbers`
 - [x] `cross_numbers`
@@ -81,16 +91,16 @@ end
 - [x] `centered_octagonal_pyramid_numbers`
 - [x] `centered_icosahedron_numbers`
 - [x] `centered_dodecahedron_numbers`
-- [x] `centered_truncated_tetrahedron_numbers`
-- [x] `centered_truncated_cube_numbers`
-- [x] `centered_truncated_octahedron_numbers`
+- [ ] `centered_truncated_tetrahedron_numbers`
+- [ ] `centered_truncated_cube_numbers`
+- [ ] `centered_truncated_octahedron_numbers`
 - [x] `centered_mgonal_pyramid_numbers(m)`
-- [x] `centered_triangular_pyramidal_numbers`
-- [x] `centered_square_pyramidal_numbers`
-- [x] `centered_pentagonal_pyramidal_numbers`
+- [ ] `centered_triangular_pyramidal_numbers`
+- [ ] `centered_square_pyramidal_numbers`
+- [ ] `centered_pentagonal_pyramidal_numbers`
 - [x] `centered_mgonal_pyramidal_numbers(m)`
 - [x] `hexagonal_prism_numbers`
-- [x] `mgonal_prism_numbers(m)`
+- [ ] `mgonal_prism_numbers(m)`
 - [x] `generalized_mgonal_pyramidal_numbers(m, left_index = 0)`
 - [x] `generalized_icosahedral_numbers(left_index = 0)`
 - [x] `generalized_dodecahedral_numbers(left_index = 0)`
@@ -119,9 +129,52 @@ end
 
 ## Errata
 
+- Chapter 1, formula in the table on page 51 says:
+
+  | Name                 | Formula               |                       |
+  | -------------------- | --------------------- | --------------------- |
+  | Cent. icosihexagonal | `1/3n^2 - 13 * n + 1` | `546, 728, 936, 1170` |
+
+
+  It should be:
+  | Name                 | Formula               |                       |
+  | -------------------- | --------------------- | --------------------- |
+  | Cent. icosihexagonal | `1/3n^2 - 13 * n + 1` | `547, 729, 937, 1171` |
+
+- Chapter 1, formula in the table on page 51 says:
+
+  | Name                  | Formula |       |
+  | --------------------- | ------- | ----- |
+  | Cent. icosiheptagonal |         | `972` |
+
+
+  It should be:
+  | Name                  | Formula |       |
+  | --------------------- | ------- | ----- |
+  | Cent. icosiheptagonal |         | `973` |
+
+- Chapter 1, formula in the table on page 51 says:
+
+  | Name                 | Formula |      |
+  | -------------------- | ------- | ---- |
+  | Cent. icosioctagonal |         | `84` |
+
+
+  It should be:
+  | Name                 | Formula |      |
+  | -------------------- | ------- | ---- |
+  | Cent. icosioctagonal |         | `85` |
+
+- Chapter 1, formula (truncated centered pentagonal numbers) of  page 72 says:
+  > `TCSS_5(n) = (35n^2 - 55n) / 2 + 3`
+
+  It should be:
+  > `TCSS_5(n) = (35n^2 - 55n) / 2 + 11`
+
 - Chapter 2, page 140 says:
   > centered square pyramidal numbers are 1, 6, 19, 44, 85, 111, 146, 231, ...
 
   This sequence must exclude the number 111:
 
   > centered square pyramidal numbers are 1, 6, 19, 44, 85, ~~111~~, 146, 231, ...
+
