@@ -186,6 +186,31 @@ module FigurateNumbers
     end
   end
 
+  def FigurateNumbers.generalized_mgonal_numbers(m, left_index = 0)
+    Enumerator.new do |y|
+      ((-1 * left_index)..Float::INFINITY).each do |delta|
+        y << (delta * ((m - 2) * delta - m + 4)) / 2
+      end
+    end
+  end
+
+  def FigurateNumbers.generalized_centered_pol_numbers(m, left_index = 0)
+    Enumerator.new do |y|
+      ((-1 * left_index)..Float::INFINITY).each do |delta|
+        y << (m * delta**2 - m * delta + 2) / 2
+      end
+    end
+  end
+
+  def FigurateNumbers.generalized_pronic_numbers(left_index = 0)
+    Enumerator.new do |y|
+      ((-1 * left_index)..Float::INFINITY).each do |delta|
+        y << delta * (delta + 1)
+      end
+    end
+  end
+
+
   def FigurateNumbers.r_pyramidal_numbers(r = 3)
     Enumerator.new do |y|
       (1..Float::INFINITY).each do |delta|
@@ -377,7 +402,6 @@ module FigurateNumbers
       end
     end
   end
-
 
   def FigurateNumbers.centered_mgonal_pyramid_numbers(m)
     Enumerator.new do |y|
