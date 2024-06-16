@@ -316,7 +316,7 @@ module FigurateNumbers
 
   def FigurateNumbers.generalized_mgonal_numbers(m, left_index = 0)
     Enumerator.new do |y|
-      ((-1 * left_index)..Float::INFINITY).each do |delta|
+      ((-1 * left_index.abs)..Float::INFINITY).each do |delta|
         y << (delta * ((m - 2) * delta - m + 4)) / 2
       end
     end
@@ -332,7 +332,7 @@ module FigurateNumbers
 
   def FigurateNumbers.generalized_pronic_numbers(left_index = 0)
     Enumerator.new do |y|
-      ((-1 * left_index)..Float::INFINITY).each do |delta|
+      ((-1 * left_index.abs)..Float::INFINITY).each do |delta|
         y << delta * (delta + 1)
       end
     end
@@ -595,6 +595,22 @@ module FigurateNumbers
     end
   end
 
+  def FigurateNumbers.generalized_cubic_numbers(left_index = 0)
+    Enumerator.new do |y|
+      ((-1 * left_index.abs)..Float::INFINITY).each do |delta|
+        y << delta**3
+      end
+    end
+  end
+
+  def FigurateNumbers.generalized_octahedral_numbers(left_index = 0)
+    Enumerator.new do |y|
+      ((-1 * left_index.abs)..Float::INFINITY).each do |delta|
+        y << (2 * delta**2 + 1) * delta / 3
+      end
+    end
+  end
+
   def FigurateNumbers.generalized_icosahedral_numbers(left_index = 0)
     Enumerator.new do |y|
       ((-1 * left_index.abs)..Float::INFINITY).each do |delta|
@@ -607,6 +623,54 @@ module FigurateNumbers
     Enumerator.new do |y|
       ((-1 * left_index.abs)..Float::INFINITY).each do |delta|
         y << (9 * delta**2 - 9 * delta + 2) * delta /  2
+      end
+    end
+  end
+
+  def FigurateNumbers.generalized_centered_cube_numbers(left_index = 0)
+    Enumerator.new do |y|
+      ((-1 * left_index.abs)..Float::INFINITY).each do |delta|
+        y << (2 * delta - 1) * (delta**2 - delta + 1)
+      end
+    end
+  end
+
+  def FigurateNumbers.generalized_centered_tetrahedron_numbers(left_index = 0)
+    Enumerator.new do |y|
+      ((-1 * left_index.abs)..Float::INFINITY).each do |delta|
+        y <<  (2 * delta - 1) * (delta**2 - delta + 3) / 3
+      end
+    end
+  end
+
+  def FigurateNumbers.generalized_centered_tetrahedron_numbers(left_index = 0)
+    Enumerator.new do |y|
+      ((-1 * left_index.abs)..Float::INFINITY).each do |delta|
+        y <<  (2 * delta - 1) * (delta**2 - delta + 3) / 3
+      end
+    end
+  end
+
+  def FigurateNumbers.generalized_centered_square_pyramid_numbers(left_index = 0)
+    Enumerator.new do |y|
+      ((-1 * left_index.abs)..Float::INFINITY).each do |delta|
+        y <<  ((2 * delta - 1) * (delta**2 - delta + 2)) / 2
+      end
+    end
+  end
+
+  def FigurateNumbers.generalized_rhombic_dodecahedral_numbers(left_index = 0)
+    Enumerator.new do |y|
+      ((-1 * left_index.abs)..Float::INFINITY).each do |delta|
+        y <<  delta**4 - (delta - 1)**4
+      end
+    end
+  end
+
+  def FigurateNumbers.generalized_centered_mgonal_pyramidal_numbers(m, left_index = 0)
+    Enumerator.new do |y|
+      ((-1 * left_index.abs)..Float::INFINITY).each do |delta|
+        y <<  (m * delta**3 + delta * (6 - m)) / 6
       end
     end
   end
