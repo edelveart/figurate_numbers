@@ -61,12 +61,19 @@ end
 - [x] `pronic_numbers`
 - [x] `cross_numbers`
 - [x] `aztec_diamond_numbers`
-- [x] `polygram_numbers(m)`
+- [x] `polygram_numbers(m) = centered star polygonal numbers`
 - [x] `gnomic_numbers`
 - [x] `truncated_triangular_numbers`
 - [x] `truncated_square_numbers`
 - [x] `truncated_pronic_numbers`
 - [x] `truncated_center_pol_numbers(k)`
+- [ ] `truncated_centered_triangular_numbers`
+- [ ] `truncated_centered_square_numbers`
+- [ ] `truncated_centered_pentagonal_numbers`
+- [ ] `truncated_centered_hexagonal_numbers`
+- [ ] `generalized_mgonal_numbers(m, left_index = 0)`
+- [ ] `generalized_centered_pol_numbers(m, left_index = 0)`
+- [ ] `generalized_pronic_numbers(left_index = 0)`
 
 ### 2. Space Figurate Numbers
 
