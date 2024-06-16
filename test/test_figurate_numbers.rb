@@ -34,7 +34,7 @@ class TestFigurateNumbers  < Minitest::Test
     assert_equal([1, 3, 5, 7, 9, 11, 13, 15, 17, 19], FigurateNumbers.gnomic_numbers.take(10).to_a)
   end
 
-  def truncated_triangular_numbers
+  def test_truncated_triangular_numbers
     assert_equal([1, 7, 19, 37, 61, 91, 127, 169, 217, 271], FigurateNumbers.truncated_triangular_numbers.take(10))
   end
 
@@ -46,8 +46,8 @@ class TestFigurateNumbers  < Minitest::Test
     assert_equal([2, 16, 44, 86, 142, 212, 296, 394, 506, 632], FigurateNumbers.truncated_pronic_numbers.take(10))
   end
 
-  def test_truncated_center_pol_numbers
-    assert_equal([1, 36, 120, 253, 435, 666, 946, 1275, 1653, 2080], FigurateNumbers.truncated_center_pol_numbers(7).take(10))
+  def test_truncated_centered_pol_numbers
+    assert_equal([1, 36, 120, 253, 435, 666, 946, 1275, 1653, 2080], FigurateNumbers.truncated_centered_pol_numbers(7).take(10))
   end
 
   def test_r_pyramidal_numbers
