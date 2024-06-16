@@ -47,6 +47,22 @@ end
 ### 1. Plane Figurate Numbers
 
 - [x] `polygonal_numbers(m)`
+- [ ] `triangular_numbers`
+- [ ] `square_numbers`
+- [ ] `pentagonal_numbers`
+- [ ] `hexagonal_numbers`
+- [ ] `heptagonal_numbers`
+- [ ] `octagonal_numbers`
+- [ ] `nonagonal_numbers`
+- [ ] `decagonal_numbers`
+- [ ] `hendecagonal_numbers`
+- [ ] `dodecagonal_numbers`
+- [ ] `icosipentagonal_numbers`
+- [ ] `icosihexagonal_numbers`
+- [ ] `icosiheptagonal_numbers`
+- [ ] `icosioctagonal_numbers`
+- [ ] `icosinonagonal_numbers`
+- [ ] `triacontagonal_numbers`
 - [ ] `centered_triangular_numbers`
 - [ ] `centered_square_numbers`
 - [ ] `centered_pentagonal_numbers`
@@ -135,6 +151,18 @@ end
 - [x] `k_dimensional_centered_hyperoctahedron_numbers(k)`
 
 ## Errata
+
+- Chapter 1, formula in the table on page 6 says:
+
+  | Name   | Formula             |     |
+  | ------ | ------------------- | --- |
+  | Square | `1/2 (n^2 - 0 * n)` |     |
+
+
+  It should be:
+  | Name   | Formula              |     |
+  | ------ | -------------------- | --- |
+  | Square | `1/2 (2n^2 - 0 * n)` |     |
 
 - Chapter 1, formula in the table on page 51 says:
 
