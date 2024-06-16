@@ -125,8 +125,15 @@ end
 - [x] `hexagonal_prism_numbers`
 - [ ] `mgonal_prism_numbers(m)`
 - [x] `generalized_mgonal_pyramidal_numbers(m, left_index = 0)`
+- [ ] `generalized_cubic_numbers(left_index = 0)`
+- [ ] `generalized_octahedral_numbers(left_index = 0)`
 - [x] `generalized_icosahedral_numbers(left_index = 0)`
 - [x] `generalized_dodecahedral_numbers(left_index = 0)`
+- [ ] `generalized_centered_cube_numbers(left_index = 0)`
+- [ ] `generalized_centered_tetrahedron_numbers(left_index = 0)`
+- [ ] `generalized_centered_square_pyramid_numbers(left_index = 0)`
+- [ ] `generalized_rhombic_dodecahedral_numbers(left_index = 0)`
+- [ ] `generalized_centered_mgonal_pyramidal_numbers(m, left_index = 0)`
 - [x] `generalized_hexagonal_prism_numbers(left_index = 0)`
 
 ### 3. Multidimensional figurate numbers
@@ -212,4 +219,18 @@ end
   This sequence must exclude the number 111:
 
   > centered square pyramidal numbers are 1, 6, 19, 44, 85, ~~111~~, 146, 231, ...
+
+- Chapter 2, page 155 (generalized centered tetrahedron numbers) says:
+  > `S_3^3(n) = ((2n - 1)(n^2 + n + 3)) / 3`
+
+  Formula must have a negative sign:
+
+  > `S_3^3(n) = ((2n - 1)(n^2 - n + 3)) / 3`
+
+- Chapter 2, page 156 (generalized centered square pyramid numbers) says:
+  > `S_4^3(n) = ((2n - 1) * (n^2 - n + 2)^2) / 3`
+
+  Formula must write:
+
+  > `S_4^3(n) = ((2n - 1) * (n^2 - n + 2)) / 2`
 
