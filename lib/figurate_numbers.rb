@@ -242,10 +242,59 @@ module FigurateNumbers
     end
   end
 
+  def FigurateNumbers.centered_truncated_tetrahedron_numbers
+    Enumerator.new do |y|
+      (1..Float::INFINITY).each do |delta|
+        y << (2 * delta - 1) * (7 * delta**2 - 7 * delta + 3) / 3
+      end
+    end
+  end
+
+  def FigurateNumbers.centered_truncated_cube_numbers
+    Enumerator.new do |y|
+      (1..Float::INFINITY).each do |delta|
+        y << (2 * delta - 1) * (23 * delta**2 - 23 * delta + 3) / 3
+      end
+    end
+  end
+
+  def FigurateNumbers.centered_truncated_octahedron_numbers
+    Enumerator.new do |y|
+      (1..Float::INFINITY).each do |delta|
+        y << (2 * delta - 1) * (5 * delta**2 - 5 * delta + 1)
+      end
+    end
+  end
+
+
   def FigurateNumbers.centered_mgonal_pyramid_numbers(m)
     Enumerator.new do |y|
       (1..Float::INFINITY).each do |delta|
         y << (m - 1) * ((delta - 1) * delta * (2 * delta - 1)) / 6 + (2 * delta - 1)
+      end
+    end
+  end
+
+  def FigurateNumbers.centered_triangular_pyramidal_numbers
+    Enumerator.new do |y|
+      (1..Float::INFINITY).each do |delta|
+        y << delta * (delta**2 + 1) / 2
+      end
+    end
+  end
+
+  def FigurateNumbers.centered_square_pyramidal_numbers
+    Enumerator.new do |y|
+      (1..Float::INFINITY).each do |delta|
+        y << (2 * delta**3 + delta) / 3
+      end
+    end
+  end
+
+  def FigurateNumbers.centered_pentagonal_pyramidal_numbers
+    Enumerator.new do |y|
+      (1..Float::INFINITY).each do |delta|
+        y << (5 * delta**3 + delta) / 6
       end
     end
   end
@@ -261,7 +310,15 @@ module FigurateNumbers
   def FigurateNumbers.hexagonal_prism_numbers
     Enumerator.new do |y|
       (1..Float::INFINITY).each do |delta|
-        y <<  delta * ( 3 * delta**2 - 3 * delta + 1)
+        y << delta * ( 3 * delta**2 - 3 * delta + 1)
+      end
+    end
+  end
+
+  def FigurateNumbers.mgonal_prism_numbers(m)
+    Enumerator.new do |y|
+      (1..Float::INFINITY).each do |delta|
+        y << delta * (m * delta**2 - m * delta + 2) / 2
       end
     end
   end
