@@ -10,6 +10,86 @@ module FigurateNumbers
     end
   end
 
+  def FigurateNumbers.centered_triangular_numbers
+    Enumerator.new do |y|
+      (1..Float::INFINITY).each do |delta|
+        y << (3 * delta**2 - 3 * delta + 2) / 2
+      end
+    end
+  end
+
+  def FigurateNumbers.centered_square_numbers
+    Enumerator.new do |y|
+      (1..Float::INFINITY).each do |delta|
+        y << 2 * delta**2 - 2 * delta + 1
+      end
+    end
+  end
+
+  def FigurateNumbers.centered_pentagonal_numbers
+    Enumerator.new do |y|
+      (1..Float::INFINITY).each do |delta|
+        y << (5 * delta**2 - 5 * delta + 2) / 2
+      end
+    end
+  end
+
+  def FigurateNumbers.centered_dodecagonal_numbers
+    Enumerator.new do |y|
+      (1..Float::INFINITY).each do |delta|
+        y << 6 * delta**2 - 6 * delta + 1
+      end
+    end
+  end
+
+  def FigurateNumbers.centered_icosipentagonal_numbers
+    Enumerator.new do |y|
+      (1..Float::INFINITY).each do |delta|
+        y << (25 * delta**2 - 25 * delta + 2) / 2
+      end
+    end
+  end
+
+  def FigurateNumbers.centered_icosihexagonal_numbers
+    Enumerator.new do |y|
+      (1..Float::INFINITY).each do |delta|
+        y << (13 * delta**2 - 13 * delta + 1)
+      end
+    end
+  end
+
+  def FigurateNumbers.centered_icosiheptagonal_numbers
+    Enumerator.new do |y|
+      (1..Float::INFINITY).each do |delta|
+        y << (27 * delta**2 - 27 * delta + 2) / 2
+      end
+    end
+  end
+
+  def FigurateNumbers.centered_icosioctagonal_numbers
+    Enumerator.new do |y|
+      (1..Float::INFINITY).each do |delta|
+        y << (14 * delta**2 - 14 * delta + 1)
+      end
+    end
+  end
+
+  def FigurateNumbers.centered_icosinonagonal_numbers
+    Enumerator.new do |y|
+      (1..Float::INFINITY).each do |delta|
+        y << (29 * delta**2 - 29 * delta + 2) / 2
+      end
+    end
+  end
+
+  def FigurateNumbers.centered_triacontagonal_numbers
+    Enumerator.new do |y|
+      (1..Float::INFINITY).each do |delta|
+        y << (15 * delta**2 - 15 * delta + 1)
+      end
+    end
+  end
+
   def FigurateNumbers.centered_pol_numbers(k)
     Enumerator.new do |y|
       (1..Float::INFINITY).each do |delta|
@@ -66,10 +146,42 @@ module FigurateNumbers
     end
   end
 
-  def FigurateNumbers.truncated_center_pol_numbers(k)
+  def FigurateNumbers.truncated_centered_pol_numbers(k)
     Enumerator.new do |y|
       (1..Float::INFINITY).each do |delta|
         y << 1 + (k * (7 * delta**2 - 11 * delta + 4)) / 2
+      end
+    end
+  end
+
+  def FigurateNumbers.truncated_centered_triangular_numbers
+    Enumerator.new do |y|
+      (1..Float::INFINITY).each do |delta|
+        y << (21 * delta**2 - 33 * delta) / 2 + 7
+      end
+    end
+  end
+
+  def FigurateNumbers.truncated_centered_square_numbers
+    Enumerator.new do |y|
+      (1..Float::INFINITY).each do |delta|
+        y << 14 * delta**2 - 22 * delta + 9
+      end
+    end
+  end
+
+  def FigurateNumbers.truncated_centered_pentagonal_numbers
+    Enumerator.new do |y|
+      (1..Float::INFINITY).each do |delta|
+        y << (35 * delta**2 - 55 * delta) / 2 + 11
+      end
+    end
+  end
+
+  def FigurateNumbers.truncated_centered_hexagonal_numbers
+    Enumerator.new do |y|
+      (1..Float::INFINITY).each do |delta|
+        y << 21 * delta**2 - 33 * delta + 13
       end
     end
   end
