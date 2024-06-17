@@ -114,26 +114,26 @@ end
 - [x] `centered_octagonal_pyramid_numbers`
 - [x] `centered_icosahedron_numbers`
 - [x] `centered_dodecahedron_numbers`
-- [ ] `centered_truncated_tetrahedron_numbers`
-- [ ] `centered_truncated_cube_numbers`
-- [ ] `centered_truncated_octahedron_numbers`
+- [x] `centered_truncated_tetrahedron_numbers`
+- [x] `centered_truncated_cube_numbers`
+- [x] `centered_truncated_octahedron_numbers`
 - [x] `centered_mgonal_pyramid_numbers(m)`
-- [ ] `centered_triangular_pyramidal_numbers`
-- [ ] `centered_square_pyramidal_numbers`
-- [ ] `centered_pentagonal_pyramidal_numbers`
+- [x] `centered_triangular_pyramidal_numbers`
+- [x] `centered_square_pyramidal_numbers`
+- [x] `centered_pentagonal_pyramidal_numbers`
 - [x] `centered_mgonal_pyramidal_numbers(m)`
 - [x] `hexagonal_prism_numbers`
-- [ ] `mgonal_prism_numbers(m)`
+- [x] `mgonal_prism_numbers(m)`
 - [x] `generalized_mgonal_pyramidal_numbers(m, left_index = 0)`
-- [ ] `generalized_cubic_numbers(left_index = 0)`
-- [ ] `generalized_octahedral_numbers(left_index = 0)`
+- [x] `generalized_cubic_numbers(left_index = 0)`
+- [x] `generalized_octahedral_numbers(left_index = 0)`
 - [x] `generalized_icosahedral_numbers(left_index = 0)`
 - [x] `generalized_dodecahedral_numbers(left_index = 0)`
-- [ ] `generalized_centered_cube_numbers(left_index = 0)`
-- [ ] `generalized_centered_tetrahedron_numbers(left_index = 0)`
-- [ ] `generalized_centered_square_pyramid_numbers(left_index = 0)`
-- [ ] `generalized_rhombic_dodecahedral_numbers(left_index = 0)`
-- [ ] `generalized_centered_mgonal_pyramidal_numbers(m, left_index = 0)`
+- [x] `generalized_centered_cube_numbers(left_index = 0)`
+- [x] `generalized_centered_tetrahedron_numbers(left_index = 0)`
+- [x] `generalized_centered_square_pyramid_numbers(left_index = 0)`
+- [x] `generalized_rhombic_dodecahedral_numbers(left_index = 0)`
+- [x] `generalized_centered_mgonal_pyramidal_numbers(m, left_index = 0)`
 - [x] `generalized_hexagonal_prism_numbers(left_index = 0)`
 
 ### 3. Multidimensional figurate numbers
