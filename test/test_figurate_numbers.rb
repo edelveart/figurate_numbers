@@ -269,8 +269,32 @@ class TestFigurateNumbers  < Minitest::Test
     assert_equal([1, 21, 95, 259, 549, 1001, 1651, 2535, 3689, 5149], FigurateNumbers.centered_dodecahedron_numbers.take(10))
   end
 
+  def test_centered_truncated_tetrahedron_numbers
+    assert_equal([1, 17, 75, 203, 429, 781, 1287, 1975, 2873, 4009, 5411, 7107, 9125, 11493, 14239, 17391, 20977, 25025, 29563, 34619], FigurateNumbers.centered_truncated_tetrahedron_numbers.take(20))
+  end
+
+  def test_centered_truncated_cube_numbers
+    assert_equal([1, 49, 235, 651, 1389, 2541, 4199, 6455, 9401, 13129, 17731, 23299, 29925, 37701, 46719, 57071, 68849, 82145, 97051, 113659], FigurateNumbers.centered_truncated_cube_numbers.take(20))
+  end
+
+  def test_centered_truncated_octahedron_numbers
+    assert_equal([1, 33, 155, 427, 909, 1661, 2743, 4215, 6137, 8569, 11571, 15203, 19525, 24597, 30479, 37231, 44913, 53585, 63307, 74139], FigurateNumbers.centered_truncated_octahedron_numbers.take(20))
+  end
+
   def test_centered_mgonal_pyramid_numbers
     assert_equal([1, 11, 45, 119, 249, 451, 741, 1135, 1649, 2299], FigurateNumbers.centered_mgonal_pyramid_numbers(9).take(10))
+  end
+
+  def test_centered_triangular_pyramidal_numbers
+    assert_equal([1, 5, 15, 34, 65, 111, 175, 260, 369, 505, 671, 870, 1105, 1379, 1695, 2056, 2465, 2925, 3439, 4010, 4641, 5335, 6095, 6924, 7825], FigurateNumbers.centered_triangular_pyramidal_numbers.take(25))
+  end
+
+  def test_centered_square_pyramidal_numbers
+    assert_equal([1, 6, 19, 44, 85, 146, 231, 344, 489, 670, 891, 1156, 1469, 1834, 2255, 2736, 3281, 3894, 4579, 5340, 6181, 7106, 8119, 9224, 10425], FigurateNumbers.centered_square_pyramidal_numbers.take(25))
+  end
+
+  def test_centered_pentagonal_pyramidal_numbers
+    assert_equal([1, 7, 23, 54, 105, 181, 287, 428, 609, 835, 1111, 1442, 1833, 2289, 2815, 3416, 4097, 4863, 5719, 6670, 7721, 8877, 10143, 11524, 13025], FigurateNumbers.centered_pentagonal_pyramidal_numbers.take(25))
   end
 
   def test_centered_mgonal_pyramidal_numbers
@@ -281,8 +305,20 @@ class TestFigurateNumbers  < Minitest::Test
     assert_equal([1, 14, 57, 148, 305, 546, 889, 1352, 1953, 2710], FigurateNumbers.hexagonal_prism_numbers.take(10))
   end
 
+  def test_mgonal_prism_numbers
+    assert_equal([1, 30, 129, 340, 705, 1266, 2065, 3144, 4545, 6310, 8481, 11100, 14209, 17850, 22065, 26896, 32385, 38574, 45505, 53220], FigurateNumbers.mgonal_prism_numbers(14).take(20))
+  end
+
   def test_generalized_mgonal_pyramidal_numbers
-    assert_equal([0, 1, 7, 22, 50, 95, 161, 252, 372, 525], FigurateNumbers.generalized_mgonal_pyramidal_numbers(6).take(10))
+    assert_equal([-8924, -7843, -6853, -5950, -5130, -4389, -3723, -3128, -2600, -2135, -1729, -1378, -1078, -825, -615, -444, -308, -203, -125, -70, -34, -13, -3, 0, 0, 1, 7, 22, 50, 95, 161, 252, 372, 525, 715, 946, 1222, 1547, 1925, 2360, 2856, 3417, 4047, 4750, 5530, 6391, 7337, 8372, 9500], FigurateNumbers.generalized_mgonal_pyramidal_numbers(6, 24).take(49))
+  end
+
+  def test_generalized_cubic_numbers
+    assert_equal([-1000, -729, -512, -343, -216, -125, -64, -27, -8, -1, 0, 1, 8, 27, 64, 125, 216, 343, 512, 729], FigurateNumbers.generalized_cubic_numbers(10).take(20))
+  end
+
+  def test_generalized_octahedral_numbers
+    assert_equal([-670, -489, -344, -231, -146, -85, -44, -19, -6, -1, 0, 1, 6, 19, 44, 85, 146, 231, 344, 489], FigurateNumbers.generalized_octahedral_numbers(10).take(20))
   end
 
   def test_generalized_icosahedral_numbers
@@ -291,6 +327,26 @@ class TestFigurateNumbers  < Minitest::Test
 
   def test_generalized_dodecahedral_numbers
     assert_equal([-4960, -3654, -2600, -1771, -1140, -680, -364, -165, -56, -10, 0, 1, 20, 84, 220, 455, 816, 1330, 2024, 2925], FigurateNumbers.generalized_dodecahedral_numbers(10).take(20))
+  end
+
+  def test_generalized_centered_cube_numbers
+    assert_equal([-17261, -14859, -12691, -10745, -9009, -7471, -6119, -4941, -3925, -3059, -2331, -1729, -1241, -855, -559, -341, -189, -91, -35, -9, -1, 1, 9, 35, 91, 189, 341, 559, 855, 1241, 1729, 2331, 3059, 3925, 4941, 6119, 7471, 9009, 10745, 12691], FigurateNumbers.generalized_centered_cube_numbers(20).take(40))
+  end
+
+  def test_generalized_centered_tetrahedron_numbers
+    assert_equal([-2059, -1665, -1325, -1035, -791, -589, -425, -295, -195, -121, -69, -35, -15, -5, -1, 1, 5, 15, 35, 69, 121, 195, 295, 425, 589, 791, 1035], FigurateNumbers.generalized_centered_tetrahedron_numbers(14).take(27))
+  end
+
+  def test_generalized_centered_square_pyramid_numbers
+    assert_equal([-3074, -2484, -1975, -1541, -1176, -874, -629, -435, -286, -176, -99, -49, -20, -6, -1, 1, 6, 20, 49, 99, 176, 286, 435, 629, 874, 1176, 1541], FigurateNumbers.generalized_centered_square_pyramid_numbers(14).take(27))
+  end
+
+  def test_generalized_rhombic_dodecahedral_numbers
+    assert_equal([-7825, -6095, -4641, -3439, -2465, -1695, -1105, -671, -369, -175, -65, -15, -1, 1, 15, 65, 175, 369, 671, 1105, 1695, 2465, 3439, 4641, 6095, 7825], FigurateNumbers.generalized_rhombic_dodecahedral_numbers(12).take(26))
+  end
+
+  def test_generalized_centered_mgonal_pyramidal_numbers
+    assert_equal([-8176, -6735, -5474, -4381, -3444, -2651, -1990, -1449, -1016, -679, -426, -245, -124, -51, -14, -1, 0, 1, 14, 51, 124, 245, 426, 679, 1016, 1449, 1990, 2651, 3444, 4381, 5474, 6735, 8176, 9809], FigurateNumbers.generalized_centered_mgonal_pyramidal_numbers(12, 16).take(34))
   end
 
   def test_generalized_hexagonal_prism_numbers
