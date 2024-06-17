@@ -218,10 +218,10 @@ module FigurateNumbers
     end
   end
 
-  def FigurateNumbers.centered_pol_numbers(k)
+  def FigurateNumbers.centered_mgonal_numbers(m)
     Enumerator.new do |y|
       (1..Float::INFINITY).each do |delta|
-        y << (k * delta**2 - k * delta + 2) / 2
+        y << (m * delta**2 - m * delta + 2) / 2
       end
     end
   end
@@ -706,7 +706,23 @@ module FigurateNumbers
     end
   end
 
+  def FigurateNumbers.rising_factorial(n, k)
+    t = 1
+    (n..(n + k - 1)).each do |i|
+      t *= i
+    end
+    t
+  end
+
   def FigurateNumbers.k_dimensional_hypertetrahedron_numbers(k)
+    Enumerator.new do |y|
+      (1..Float::INFINITY).each do |delta|
+        y << rising_factorial(delta, k) / factorial_iter(k)
+      end
+    end
+  end
+
+  def FigurateNumbers.binomial_coefficient_k_dimensional_hypertetrahedron_numbers(k)
     Enumerator.new do |y|
       (1..Float::INFINITY).each do |delta|
         y << binomial_coefficient(delta + (k - 1), k)
@@ -762,7 +778,43 @@ module FigurateNumbers
     end
   end
 
-  def FigurateNumbers.four_dimensional_pyramidal_numbers(m)
+  def FigurateNumbers.four_dimensional_hyperoctahedron_numbers
+    Enumerator.new do |y|
+      (1..Float::INFINITY).each do |delta|
+        y << delta**2 * (delta**2 + 2) / 3
+      end
+    end
+  end
+
+  def FigurateNumbers.five_dimensional_hyperoctahedron_numbers
+    Enumerator.new do |y|
+      (1..Float::INFINITY).each do |delta|
+        y << delta * (2 * delta**4 + 10 * delta**2 + 3) / 15
+      end
+    end
+  end
+
+  def FigurateNumbers.six_dimensional_hyperoctahedron_numbers
+    Enumerator.new do |y|
+      (1..Float::INFINITY).each do |delta|
+        y << delta**2 * (2 * delta**4 + 20 * delta**2 + 23) / 45
+      end
+    end
+  end
+
+  def FigurateNumbers.k_dimensional_hyperoctahedron_numbers(k)
+    Enumerator.new do |y|
+      (1..Float::INFINITY).each do |delta|
+        a = 0
+        (0..(k - 1)).each do |i|
+          a += binomial_coefficient(k - 1, i) * (rising_factorial(delta - i, k) / factorial_iter(k))
+        end
+        y << a
+      end
+    end
+  end
+
+  def FigurateNumbers.four_dimensional_mgonal_pyramidal_numbers(m)
     Enumerator.new do |y|
       (1..Float::INFINITY).each do |delta|
         y << (delta * (delta + 1) * (delta + 2) *  ((m - 2) * delta - m + 6)) / 24
@@ -770,7 +822,7 @@ module FigurateNumbers
     end
   end
 
-  def FigurateNumbers.five_dimensional_pyramidal_numbers(m)
+  def FigurateNumbers.five_dimensional_mgonal_pyramidal_numbers(m)
     Enumerator.new do |y|
       (1..Float::INFINITY).each do |delta|
         y << (delta * (delta + 1) * (delta + 2) * (delta + 3) *  ((m - 2) * delta - m + 7)) / 120
@@ -778,7 +830,7 @@ module FigurateNumbers
     end
   end
 
-  def FigurateNumbers.six_dimensional_pyramidal_numbers(m)
+  def FigurateNumbers.six_dimensional_mgonal_pyramidal_numbers(m)
     Enumerator.new do |y|
       (1..Float::INFINITY).each do |delta|
         y << (delta * (delta + 1) * (delta + 2) * (delta + 3) * (delta + 4) * ((m - 2) * delta - m + 8)) / 720
@@ -801,7 +853,7 @@ module FigurateNumbers
   private_class_method :pseudo_rising_factorial
   private_class_method :pseudo_pochhammer_function
 
-  def FigurateNumbers.k_dimensional_pyramidal_numbers(k, m)
+  def FigurateNumbers.k_dimensional_mgonal_pyramidal_numbers(k, m)
     Enumerator.new do |y|
       (1..Float::INFINITY).each do |n|
         y << (pseudo_pochhammer_function(n, k) * ((m - 2) * n - m + k + 2)) /
@@ -810,10 +862,36 @@ module FigurateNumbers
     end
   end
 
+  def FigurateNumbers.centered_biquadratic_numbers
+    Enumerator.new do |y|
+      a = 0
+      (1..Float::INFINITY).each do |delta|
+        a += delta**4 - (delta - 2)**4
+        y << a + 1
+      end
+    end
+  end
+
   def FigurateNumbers.k_dimensional_centered_hypercube_numbers(k)
     Enumerator.new do |y|
       (1..Float::INFINITY).each do |delta|
         y << delta**k + (delta - 1)**k
+      end
+    end
+  end
+
+  def FigurateNumbers.five_dimensional_centered_hypercube_numbers
+    Enumerator.new do |y|
+      (1..Float::INFINITY).each do |delta|
+        y << delta**5 + (delta - 1)**5
+      end
+    end
+  end
+
+  def FigurateNumbers.six_dimensional_centered_hypercube_numbers
+    Enumerator.new do |y|
+      (1..Float::INFINITY).each do |delta|
+        y << delta**6 + (delta - 1)**6
       end
     end
   end
@@ -866,8 +944,8 @@ module FigurateNumbers
 
   def FigurateNumbers.nexus_numbers(k)
     Enumerator.new do |y|
-      (0..Float::INFINITY).each do |n|
-        y << (n + 1)**(k + 1) - (n**(k + 1))
+      (0..Float::INFINITY).each do |delta|
+        y << (delta + 1)**(k + 1) - delta**(k + 1)
       end
     end
   end
@@ -894,4 +972,49 @@ module FigurateNumbers
       end
     end
   end
+
+  def FigurateNumbers.generalized_pentatope_numbers(left_index = 0)
+    Enumerator.new do |y|
+      ((-1 * left_index.abs)..Float::INFINITY).each do |delta|
+        y << delta * (delta + 1) * (delta + 2) * (delta + 3) / 24
+      end
+    end
+  end
+
+  def FigurateNumbers.generalized_k_dimensional_hypertetrahedron_numbers(k, left_index = 0)
+    Enumerator.new do |y|
+      ((-1 * left_index.abs)..Float::INFINITY).each do |delta|
+        y << rising_factorial(delta, k) / factorial_iter(k)
+      end
+    end
+  end
+
+  def FigurateNumbers.generalized_k_dimensional_hypercube_numbers(k = 5, left_index = 0)
+    Enumerator.new do |y|
+      ((-1 * left_index.abs)..Float::INFINITY).each do |delta|
+        y << delta**k
+      end
+    end
+  end
+
+  def FigurateNumbers.generalized_k_dimensional_hyperoctahedron_numbers(k, left_index = 0) #p.239
+    Enumerator.new do |y|
+      ((-1 * left_index.abs)..Float::INFINITY).each do |delta|
+        a = 0
+        (0..(k - 1)).each do |i|
+          a += binomial_coefficient(k - 1, i) * (rising_factorial(delta - i, k) / factorial_iter(k))
+        end
+        y << a
+      end
+    end
+  end
+
+  def FigurateNumbers.generalized_nexus_numbers(k, left_index = 0) #p.239
+    Enumerator.new do |y|
+      ((-1 * left_index.abs)..Float::INFINITY).each do |delta|
+        y << (delta + 1)**(k + 1) - delta**(k + 1)
+      end
+    end
+  end
+
 end
