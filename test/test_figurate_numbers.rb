@@ -7,6 +7,111 @@ class TestFigurateNumbers  < Minitest::Test
     1680, 1825, 1976, 2133, 2296, 2465, 2640, 2821, 3008, 3201, 3400, 3605], FigurateNumbers.polygonal_numbers(8).take(35))
   end
 
+  def test_triangular_numbers
+    assert_equal([1, 3, 6, 10, 15, 21, 28, 36, 45, 55, 66, 78, 91, 105, 120, 136, 153, 171, 190, 210], FigurateNumbers.triangular_numbers.take(20))
+  end
+
+  def test_square_numbers
+    assert_equal([1, 4, 9, 16, 25, 36, 49, 64, 81, 100, 121, 144, 169, 196, 225, 256, 289, 324, 361, 400], FigurateNumbers.square_numbers.take(20))
+  end
+
+  def test_pentagonal_numbers
+    assert_equal([1, 5, 12, 22, 35, 51, 70, 92, 117, 145, 176, 210, 247, 287, 330, 376, 425, 477, 532, 590], FigurateNumbers.pentagonal_numbers.take(20))
+  end
+
+  def test_hexagonal_numbers
+    assert_equal([1, 6, 15, 28, 45, 66, 91, 120, 153, 190, 231, 276, 325, 378, 435, 496, 561, 630, 703, 780, 861, 946, 1035, 1128, 1225, 1326, 1431, 1540, 1653, 1770, 1891, 2016, 2145, 2278, 2415], FigurateNumbers.hexagonal_numbers.take(35))
+  end
+
+  def test_heptagonal_numbers
+    assert_equal([1, 7, 18, 34, 55, 81, 112, 148, 189, 235, 286, 342, 403, 469, 540, 616, 697, 783, 874, 970, 1071, 1177, 1288, 1404, 1525, 1651, 1782, 1918, 2059, 2205, 2356, 2512, 2673, 2839, 3010], FigurateNumbers.heptagonal_numbers.take(35))
+  end
+
+  def test_octagonal_numbers
+    assert_equal([1, 8, 21, 40, 65, 96, 133, 176, 225, 280, 341, 408, 481, 560, 645, 736, 833, 936, 1045, 1160], FigurateNumbers.octagonal_numbers.take(20))
+  end
+
+  def test_nonagonal_numbers
+    assert_equal([1, 9, 24, 46, 75, 111, 154, 204, 261, 325, 396, 474, 559, 651, 750, 856, 969, 1089, 1216, 1350], FigurateNumbers.nonagonal_numbers.take(20))
+  end
+
+  def test_decagonal_numbers
+    assert_equal([1, 10, 27, 52, 85, 126, 175, 232, 297, 370, 451, 540, 637, 742, 855, 976, 1105, 1242, 1387, 1540, 1701, 1870, 2047, 2232, 2425, 2626, 2835, 3052, 3277, 3510, 3751, 4000, 4257, 4522, 4795, 5076, 5365, 5662, 5967, 6280, 6601, 6930, 7267, 7612, 7965], FigurateNumbers.decagonal_numbers.take(45))
+  end
+
+  def test_hendecagonal_numbers
+    assert_equal([1, 11, 30, 58, 95, 141, 196, 260, 333, 415, 506, 606, 715, 833, 960, 1096, 1241, 1395, 1558, 1730], FigurateNumbers.hendecagonal_numbers.take(20))
+  end
+
+  def test_dodecagonal_numbers
+    assert_equal([1, 12, 33, 64, 105, 156, 217, 288, 369, 460, 561, 672, 793, 924, 1065, 1216, 1377, 1548, 1729, 1920], FigurateNumbers.dodecagonal_numbers.take(20))
+  end
+
+  def test_icosipentagonal_numbers
+    assert_equal([1, 25, 72, 142, 235, 351, 490, 652, 837, 1045, 1276, 1530, 1807, 2107, 2430, 2776, 3145, 3537, 3952, 4390, 4851, 5335, 5842, 6372, 6925, 7501, 8100, 8722, 9367, 10035, 10726, 11440, 12177, 12937, 13720, 14526, 15355, 16207, 17082, 17980], FigurateNumbers.icosipentagonal_numbers.take(40))
+  end
+
+  def test_icosihexagonal_numbers
+    assert_equal([1, 26, 75, 148, 245, 366, 511, 680, 873, 1090, 1331, 1596, 1885, 2198, 2535, 2896, 3281, 3690, 4123, 4580, 5061, 5566, 6095, 6648, 7225], FigurateNumbers.icosihexagonal_numbers.take(25))
+  end
+
+  def test_icosiheptagonal_numbers
+    assert_equal([1, 27, 78, 154, 255, 381, 532, 708, 909, 1135, 1386, 1662, 1963, 2289, 2640, 3016, 3417, 3843, 4294, 4770, 5271, 5797, 6348, 6924, 7525], FigurateNumbers.icosiheptagonal_numbers.take(25))
+  end
+
+  def test_icosioctagonal_numbers
+    assert_equal([1, 28, 81, 160, 265, 396, 553, 736, 945, 1180, 1441, 1728, 2041, 2380, 2745, 3136, 3553, 3996, 4465, 4960, 5481, 6028, 6601, 7200, 7825], FigurateNumbers.icosioctagonal_numbers.take(25))
+  end
+
+  def test_icosinonagonal_numbers
+    assert_equal([1, 29, 84, 166, 275, 411, 574, 764, 981, 1225, 1496, 1794, 2119, 2471, 2850, 3256, 3689, 4149, 4636, 5150], FigurateNumbers.icosinonagonal_numbers.take(20))
+  end
+
+  def test_triacontagonal_numbers
+    assert_equal([1, 30, 87, 172, 285, 426, 595, 792, 1017, 1270, 1551, 1860, 2197, 2562, 2955, 3376, 3825, 4302, 4807, 5340, 5901, 6490, 7107, 7752, 8425, 9126, 9855, 10612, 11397, 12210, 13051, 13920, 14817,
+    15742, 16695], FigurateNumbers.triacontagonal_numbers.take(35))
+  end
+
+  def test_centered_triangular_numbers
+    assert_equal([1, 4, 10, 19, 31, 46, 64, 85, 109, 136, 166, 199, 235, 274, 316, 361, 409, 460, 514, 571], FigurateNumbers.centered_triangular_numbers.take(20))
+  end
+
+  def test_centered_square_numbers
+    assert_equal([1, 5, 13, 25, 41, 61, 85, 113, 145, 181, 221, 265, 313, 365, 421, 481, 545, 613, 685, 761], FigurateNumbers.centered_square_numbers.take(20))
+  end
+
+  def test_centered_pentagonal_numbers
+    assert_equal([1, 6, 16, 31, 51, 76, 106, 141, 181, 226, 276, 331, 391, 456, 526, 601, 681, 766, 856, 951], FigurateNumbers.centered_pentagonal_numbers.take(20))
+  end
+
+  def test_centered_dodecagonal_numbers
+    assert_equal([1, 13, 37, 73, 121, 181, 253, 337, 433, 541, 661, 793, 937, 1093, 1261, 1441, 1633, 1837, 2053, 2281, 2521, 2773, 3037, 3313, 3601, 3901, 4213, 4537, 4873, 5221], FigurateNumbers.centered_dodecagonal_numbers.take(30))
+  end
+
+  def test_centered_icosipentagonal_numbers
+    assert_equal([1, 26, 76, 151, 251, 376, 526, 701, 901, 1126, 1376, 1651, 1951, 2276, 2626, 3001, 3401, 3826, 4276, 4751, 5251, 5776, 6326, 6901, 7501, 8126, 8776, 9451, 10151, 10876], FigurateNumbers.centered_icosipentagonal_numbers.take(30))
+  end
+
+  def test_centered_icosihexagonal_numbers
+    assert_equal([1, 27, 79, 157, 261, 391, 547, 729, 937, 1171, 1431, 1717, 2029, 2367, 2731, 3121, 3537, 3979, 4447, 4941], FigurateNumbers.centered_icosihexagonal_numbers.take(20))
+  end
+
+  def test_centered_icosiheptagonal_numbers
+    assert_equal([1, 28, 82, 163, 271, 406, 568, 757, 973, 1216, 1486, 1783, 2107, 2458, 2836, 3241, 3673, 4132, 4618, 5131], FigurateNumbers.centered_icosiheptagonal_numbers.take(20))
+  end
+
+  def test_centered_icosioctagonal_numbers
+    assert_equal([1, 29, 85, 169, 281, 421, 589, 785, 1009, 1261, 1541, 1849, 2185, 2549, 2941, 3361, 3809, 4285, 4789, 5321], FigurateNumbers.centered_icosioctagonal_numbers.take(20))
+  end
+
+  def test_centered_icosinonagonal_numbers
+    assert_equal([1, 30, 88, 175, 291, 436, 610, 813, 1045, 1306, 1596, 1915, 2263, 2640, 3046, 3481, 3945, 4438, 4960, 5511], FigurateNumbers.centered_icosinonagonal_numbers.take(20))
+  end
+
+  def test_centered_triacontagonal_numbers
+    assert_equal([1, 30, 88, 175, 291, 436, 610, 813, 1045, 1306, 1596, 1915, 2263, 2640, 3046, 3481, 3945, 4438, 4960, 5511], FigurateNumbers.centered_icosinonagonal_numbers.take(20))
+  end
+
   def test_centered_mgonal_numbers
     assert_equal([1, 4, 10, 19, 31, 46, 64, 85, 109, 136, 166, 199, 235, 274, 316, 361, 409, 460, 514, 571, 631, 694, 760, 829, 901, 976, 1054, 1135, 1219, 1306, 1396, 1489, 1585, 1684, 1786, 1891, 1999, 2110, 2224, 2341, 2461, 2584, 2710, 2839, 2971, 3106, 3244, 3385, 3529, 3676, 3826, 3979, 4135, 4294, 4456, 4621, 4789, 4960, 5134, 5311], FigurateNumbers.centered_mgonal_numbers(3).take(60))
   end
@@ -47,7 +152,36 @@ class TestFigurateNumbers  < Minitest::Test
   end
 
   def test_truncated_centered_pol_numbers
-    assert_equal([1, 36, 120, 253, 435, 666, 946, 1275, 1653, 2080], FigurateNumbers.truncated_centered_pol_numbers(7).take(10))
+    assert_equal([1, 36, 120, 253, 435, 666, 946, 1275, 1653, 2080, 2556, 3081, 3655, 4278, 4950, 5671, 6441, 7260, 8128, 9045, 10011, 11026, 12090, 13203, 14365], FigurateNumbers.truncated_centered_pol_numbers(7).take(25))
+  end
+
+  def test_truncated_centered_triangular_numbers
+    assert_equal([1, 16, 52, 109, 187, 286, 406, 547, 709, 892, 1096, 1321, 1567, 1834, 2122, 2431, 2761, 3112, 3484, 3877], FigurateNumbers.truncated_centered_triangular_numbers.take(20))
+  end
+
+  def test_truncated_centered_square_numbers
+    assert_equal([1, 21, 69, 145, 249, 381, 541, 729, 945, 1189, 1461, 1761, 2089, 2445, 2829, 3241, 3681, 4149, 4645, 5169], FigurateNumbers.truncated_centered_square_numbers.take(20))
+  end
+
+  def test_truncated_centered_pentagonal_numbers
+    assert_equal([1, 26, 86, 181, 311, 476, 676, 911, 1181, 1486, 1826, 2201, 2611, 3056, 3536, 4051, 4601, 5186, 5806, 6461], FigurateNumbers.truncated_centered_pentagonal_numbers.take(20))
+  end
+
+  def test_truncated_centered_hexagonal_numbers
+    assert_equal([1, 31, 103, 217, 373, 571, 811, 1093, 1417, 1783, 2191, 2641, 3133, 3667, 4243, 4861, 5521, 6223, 6967, 7753], FigurateNumbers.truncated_centered_hexagonal_numbers.take(20))
+  end
+
+  def test_generalized_mgonal_numbers
+    assert_equal([1030, 931, 837, 748, 664, 585, 511, 442, 378, 319, 265, 216, 172, 133, 99, 70, 46, 27, 13, 4, 0, 1, 7, 18, 34, 55, 81, 112, 148, 189, 235, 286, 342, 403, 469, 540, 616, 697, 783, 874, 970, 1071, 1177, 1288, 1404, 1525, 1651, 1782, 1918, 2059, 2205, 2356, 2512, 2673, 2839, 3010, 3186, 3367, 3553, 3744, 3940, 4141, 4347, 4558, 4774], FigurateNumbers.generalized_mgonal_numbers(7, 20).take(65))
+  end
+
+  def test_generalized_centered_pol_numbers
+    assert_equal([1441, 1261, 1093, 937, 793, 661, 541, 433, 337, 253, 181, 121, 73, 37, 13, 1, 1, 13, 37, 73, 121, 181, 253, 337, 433, 541, 661, 793, 937, 1093, 1261, 1441, 1633, 1837, 2053, 2281, 2521, 2773,
+    3037, 3313, 3601, 3901], FigurateNumbers.generalized_centered_pol_numbers(12, 15).take(42))
+  end
+
+  def test_generalized_pronic_numbers
+    assert_equal([462, 420, 380, 342, 306, 272, 240, 210, 182, 156, 132, 110, 90, 72, 56, 42, 30, 20, 12, 6, 2, 0, 0, 2, 6, 12, 20, 30, 42, 56, 72, 90, 110, 132, 156, 182, 210, 240, 272, 306, 342, 380, 420, 462, 506, 552], FigurateNumbers.generalized_pronic_numbers(22).take(46))
   end
 
   def test_r_pyramidal_numbers
