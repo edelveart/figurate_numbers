@@ -997,7 +997,7 @@ module FigurateNumbers
     end
   end
 
-  def FigurateNumbers.generalized_k_dimensional_hyperoctahedron_numbers(k, left_index = 0) #p.239
+  def FigurateNumbers.generalized_k_dimensional_hyperoctahedron_numbers(k = 5, left_index = 0)
     Enumerator.new do |y|
       ((-1 * left_index.abs)..Float::INFINITY).each do |delta|
         a = 0
@@ -1009,7 +1009,7 @@ module FigurateNumbers
     end
   end
 
-  def FigurateNumbers.generalized_nexus_numbers(k, left_index = 0) #p.239
+  def FigurateNumbers.generalized_nexus_numbers(k, left_index = 0)
     Enumerator.new do |y|
       ((-1 * left_index.abs)..Float::INFINITY).each do |delta|
         y << (delta + 1)**(k + 1) - delta**(k + 1)
