@@ -47,32 +47,32 @@ end
 ### 1. Plane Figurate Numbers
 
 - [x] `polygonal_numbers(m)`
-- [ ] `triangular_numbers`
-- [ ] `square_numbers`
-- [ ] `pentagonal_numbers`
-- [ ] `hexagonal_numbers`
-- [ ] `heptagonal_numbers`
-- [ ] `octagonal_numbers`
-- [ ] `nonagonal_numbers`
-- [ ] `decagonal_numbers`
-- [ ] `hendecagonal_numbers`
-- [ ] `dodecagonal_numbers`
-- [ ] `icosipentagonal_numbers`
-- [ ] `icosihexagonal_numbers`
-- [ ] `icosiheptagonal_numbers`
-- [ ] `icosioctagonal_numbers`
-- [ ] `icosinonagonal_numbers`
-- [ ] `triacontagonal_numbers`
-- [ ] `centered_triangular_numbers`
-- [ ] `centered_square_numbers`
-- [ ] `centered_pentagonal_numbers`
-- [ ] `centered_dodecagonal_numbers = star number`
-- [ ] `centered_icosipentagonal_numbers`
-- [ ] `centered_icosihexagonal_numbers`
-- [ ] `centered_icosiheptagonal_numbers`
-- [ ] `centered_icosioctagonal_numbers`
-- [ ] `centered_icosinonagonal_numbers`
-- [ ] `centered_triacontagonal_numbers`
+- [x] `triangular_numbers`
+- [x] `square_numbers`
+- [x] `pentagonal_numbers`
+- [x] `hexagonal_numbers`
+- [x] `heptagonal_numbers`
+- [x] `octagonal_numbers`
+- [x] `nonagonal_numbers`
+- [x] `decagonal_numbers`
+- [x] `hendecagonal_numbers`
+- [x] `dodecagonal_numbers`
+- [x] `icosipentagonal_numbers`
+- [x] `icosihexagonal_numbers`
+- [x] `icosiheptagonal_numbers`
+- [x] `icosioctagonal_numbers`
+- [x] `icosinonagonal_numbers`
+- [x] `triacontagonal_numbers`
+- [x] `centered_triangular_numbers`
+- [x] `centered_square_numbers`
+- [x] `centered_pentagonal_numbers`
+- [x] `centered_dodecagonal_numbers = star number`
+- [x] `centered_icosipentagonal_numbers`
+- [x] `centered_icosihexagonal_numbers`
+- [x] `centered_icosiheptagonal_numbers`
+- [x] `centered_icosioctagonal_numbers`
+- [x] `centered_icosinonagonal_numbers`
+- [x] `centered_triacontagonal_numbers`
 - [x] `centered_mgonal_numbers(m)`
 - [x] `pronic_numbers`
 - [x] `cross_numbers`
@@ -83,13 +83,13 @@ end
 - [x] `truncated_square_numbers`
 - [x] `truncated_pronic_numbers`
 - [x] `truncated_center_pol_numbers(k)`
-- [ ] `truncated_centered_triangular_numbers`
-- [ ] `truncated_centered_square_numbers`
-- [ ] `truncated_centered_pentagonal_numbers`
-- [ ] `truncated_centered_hexagonal_numbers`
-- [ ] `generalized_mgonal_numbers(m, left_index = 0)`
-- [ ] `generalized_centered_pol_numbers(m, left_index = 0)`
-- [ ] `generalized_pronic_numbers(left_index = 0)`
+- [x] `truncated_centered_triangular_numbers`
+- [x] `truncated_centered_square_numbers`
+- [x] `truncated_centered_pentagonal_numbers`
+- [x] `truncated_centered_hexagonal_numbers`
+- [x] `generalized_mgonal_numbers(m, left_index = 0)`
+- [x] `generalized_centered_pol_numbers(m, left_index = 0)`
+- [x] `generalized_pronic_numbers(left_index = 0)`
 
 ### 2. Space Figurate Numbers
 
