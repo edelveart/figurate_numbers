@@ -73,7 +73,7 @@ end
 - [ ] `centered_icosioctagonal_numbers`
 - [ ] `centered_icosinonagonal_numbers`
 - [ ] `centered_triacontagonal_numbers`
-- [x] `centered_pol_numbers(k) or centered m-gonal number`
+- [x] `centered_mgonal_numbers(m)`
 - [x] `pronic_numbers`
 - [x] `cross_numbers`
 - [x] `aztec_diamond_numbers`
@@ -139,23 +139,34 @@ end
 ### 3. Multidimensional figurate numbers
 
 - [x] `pentatope_numbers`
-- [x] `k_dimensional_hypertetrahedron_numbers(k)`
+- [x] `k_dimensional_hypertetrahedron_numbers(k) = regular k-polytopic number, k-simplex numbers`
 - [x] `biquadratic_numbers`
 - [x] `k_dimensional_hypercube_numbers(k)`
-- [x] `hyperoctahedral_numbers`
+- [x] `hyperoctahedral_numbers = 4D hyperoctahedron numbers`
 - [x] `hypericosahedral_numbers`
 - [x] `hyperdodecahedral_numbers`
 - [x] `polyoctahedral_numbers`
-- [x] `four_dimensional_pyramidal_numbers(m)`
-- [x] `five_dimensional_pyramidal_numbers(m)`
-- [x] `six_dimensional_pyramidal_numbers(m)`
-- [x] `k_dimensional_pyramidal_numbers(k, m)`
+- [ ] `four_dimensional_hyperoctahedron_numbers`
+- [ ] `five_dimensional_hyperoctahedron_numbers`
+- [ ] `k_dimensional_hyperoctahedron_numbers(k)`
+- [x] `four_dimensional_mgonal_pyramidal_numbers(m) = mgonal pyramidal number of the second order`
+- [x] `five_dimensional_mgonal_pyramidal_numbers(m)`
+- [x] `six_dimensional_mgonal_pyramidal_numbers(m)`
+- [x] `k_dimensional_mgonal_pyramidal_numbers(k, m) = mgonal pyramidal of the (k-2)-th order`
+- [ ] `centered_biquadratic_numbers`
 - [x] `k_dimensional_centered_hypercube_numbers(k)`
+- [ ] `five_dimensional_centered_hypercube_numbers`
+- [ ] `six_dimensional_centered_hypercube_numbers`
 - [x] `centered_polytope_numbers`
 - [x] `k_dimensional_centered_hypertetrahedron_numbers(k)`
-- [x] `centered_hyperotahedral_numbers`
+- [x] `centered_hyperotahedral_numbers = ortoplex numbers`
 - [x] `nexus_numbers(k)`
 - [x] `k_dimensional_centered_hyperoctahedron_numbers(k)`
+- [ ] `generalized_pentatope_numbers`
+- [ ] `generalized_k_dimensional_hypertetrahedron_numbers`
+- [ ] `generalized_k_dimensional_hyperoctahedron_numbers = even or odd dimension only changes sign`
+- [ ] `generalized_nexus_numbers(k) = even or odd dimension only changes sign`
+
 
 ## Errata
 
