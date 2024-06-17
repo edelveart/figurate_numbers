@@ -146,26 +146,27 @@ end
 - [x] `hypericosahedral_numbers`
 - [x] `hyperdodecahedral_numbers`
 - [x] `polyoctahedral_numbers`
-- [ ] `four_dimensional_hyperoctahedron_numbers`
-- [ ] `five_dimensional_hyperoctahedron_numbers`
-- [ ] `k_dimensional_hyperoctahedron_numbers(k)`
+- [x] `four_dimensional_hyperoctahedron_numbers`
+- [x] `five_dimensional_hyperoctahedron_numbers`
+- [x] `k_dimensional_hyperoctahedron_numbers(k)`
 - [x] `four_dimensional_mgonal_pyramidal_numbers(m) = mgonal pyramidal number of the second order`
 - [x] `five_dimensional_mgonal_pyramidal_numbers(m)`
 - [x] `six_dimensional_mgonal_pyramidal_numbers(m)`
 - [x] `k_dimensional_mgonal_pyramidal_numbers(k, m) = mgonal pyramidal of the (k-2)-th order`
-- [ ] `centered_biquadratic_numbers`
+- [x] `centered_biquadratic_numbers`
 - [x] `k_dimensional_centered_hypercube_numbers(k)`
-- [ ] `five_dimensional_centered_hypercube_numbers`
-- [ ] `six_dimensional_centered_hypercube_numbers`
+- [x] `five_dimensional_centered_hypercube_numbers`
+- [x] `six_dimensional_centered_hypercube_numbers`
 - [x] `centered_polytope_numbers`
 - [x] `k_dimensional_centered_hypertetrahedron_numbers(k)`
 - [x] `centered_hyperotahedral_numbers = ortoplex numbers`
 - [x] `nexus_numbers(k)`
 - [x] `k_dimensional_centered_hyperoctahedron_numbers(k)`
-- [ ] `generalized_pentatope_numbers`
-- [ ] `generalized_k_dimensional_hypertetrahedron_numbers`
-- [ ] `generalized_k_dimensional_hyperoctahedron_numbers = even or odd dimension only changes sign`
-- [ ] `generalized_nexus_numbers(k) = even or odd dimension only changes sign`
+- [x] `generalized_pentatope_numbers(left_index = 0)`
+- [x] `generalized_k_dimensional_hypertetrahedron_numbers(k = 5, left_index = 0)`
+- [x] `generalized_k_dimensional_hypercube_numbers(k = 5, left_index = 0)`
+- [x] `generalized_k_dimensional_hyperoctahedron_numbers(k = 5, left_index = 0) = even or odd dimension only changes sign`
+- [x] `generalized_nexus_numbers(k, left_index = 0) = even or odd dimension only changes sign`
 
 
 ## Errata
