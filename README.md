@@ -48,8 +48,8 @@ end
 
 ### 1. Plane Figurate Numbers
 <ol>
-  <li><code>olygonal_numbers(m)</code></li>
-  <li><code>riangular_numbers</code></li>
+  <li><code>polygonal_numbers(m)</code></li>
+  <li><code>triangular_numbers</code></li>
   <li><code>square_numbers</code></li>
   <li><code>pentagonal_numbers</code></li>
   <li><code>hexagonal_numbers</code></li>
