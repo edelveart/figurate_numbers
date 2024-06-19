@@ -15,21 +15,30 @@ Following the order of the book, the methods are divided into 3 types according 
 
 - [x] **TOTAL** = `115` infinite sequences of figurate numbers implemented
 
-## How to use in Ruby
+
+## Installation and use
+
+Installation similar to any other gem hosted in the Ruby gem repository [https://rubygems.org/gems/figurate_numbers](https://rubygems.org/gems/figurate_numbers).
+
+- > `gem install figurate_numbers`
+
+###  How to use in Ruby
 
 If the sequence is defined with `lazy`, to make the numbers explicit we must include the converter method `to_a` at the end.
 
 ```rb
+require 'figurate_numbers'
+
 ## Using take(integer)
 FigurateNumbers.pronic_numbers.take(10).to_a
 
-## Storing and Iterating
+## Storing and iterating
 f = FigurateNumbers.centered_octagonal_pyramid_numbers
 f.next
 f.next
 f.next
 ```
-## How to use in Sonic Pi
+### How to use in Sonic Pi
 
 1. Locate or download the file in the path `lib/figurate_numbers.rb`
 2. Drag the file to a buffer in Sonic Pi (this generates the `<PATH>`)
