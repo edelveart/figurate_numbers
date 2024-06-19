@@ -18,7 +18,7 @@ Following the order of the book, the methods are divided into 3 types according 
 
 ## Installation and use
 
-- > `gem install figurate_numbers`
+* `gem install figurate_numbers`
 
 ###  How to use in Ruby
 
