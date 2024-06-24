@@ -42,7 +42,7 @@ f.next
 2. Drag the file to a buffer in Sonic Pi (this generates the `<PATH>`)
 
 ```rb
-run_file "<Path>"
+run_file "<PATH>"
 
 pol_num = FigurateNumbers.polygonal_numbers(8)
 80.times do
