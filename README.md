@@ -13,7 +13,11 @@ Following the order of the book, the methods are divided into 3 types according 
 2. **Space** figurate numbers = `42`
 3. **Multidimensional** figurate numbers = `29`
 
-- [x] **TOTAL** = `115` infinite sequences of figurate numbers implemented
+Additionally we implemented the sequences mentioned in chapter 6:
+
+4. **Zoo of figurate-related numbers** = `3`
+
+- [x] **TOTAL** = `118` infinite sequences of figurate numbers implemented
 
 
 ## Installation and use
