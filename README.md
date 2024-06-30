@@ -180,6 +180,11 @@ end
   <li><code>generalized_nexus_numbers(k, left_index = 0) = even or odd dimension only changes sign</code></li>
 </ol>
 
+### 6. Zoo of figurate-related numbers
+<ol>
+  <li><code>cuban_numbers</code></li>
+</ol>
+
 ## Errata
 
 - Chapter 1, formula in the table on page 6 says:
