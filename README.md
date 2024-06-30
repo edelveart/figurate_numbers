@@ -184,6 +184,7 @@ end
 <ol>
   <li><code>cuban_numbers = cuban prime numbers</code></li>
   <li><code>pell_numbers</code></li>
+  <li><code>carmichael_numbers</code></li>
 </ol>
 
 ## Errata
