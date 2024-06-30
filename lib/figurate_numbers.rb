@@ -355,6 +355,14 @@ module FigurateNumbers
     end
   end
 
+  def FigurateNumbers.cuban_numbers
+    Enumerator.new do |y|
+      (1..Float::INFINITY).each do |delta|
+        y << (delta + 1)**3 - delta**3
+      end
+    end
+  end
+
   def FigurateNumbers.tetrahedral_numbers
     Enumerator.new do |y|
       (1..Float::INFINITY).each do |delta|
@@ -1018,3 +1026,5 @@ module FigurateNumbers
   end
 
 end
+
+# print FigurateNumbers.cuban_numbers.take(50)
