@@ -192,6 +192,10 @@ class TestFigurateNumbers  < Minitest::Test
     assert_equal([1, 8, 27, 64, 125, 216, 343, 512, 729, 1000], FigurateNumbers.cubic_numbers.take(10))
   end
 
+  def test_cuban_numbers
+    assert_equal([7, 19, 37, 61, 91, 127, 169, 217, 271, 331, 397, 469, 547, 631, 721, 817, 919, 1027, 1141, 1261, 1387, 1519, 1657, 1801, 1951, 2107, 2269, 2437, 2611, 2791, 2977, 3169, 3367, 3571, 3781, 3997, 4219, 4447, 4681, 4921, 5167, 5419, 5677, 5941, 6211, 6487, 6769, 7057, 7351, 7651], FigurateNumbers.cuban_numbers.take(50))
+  end
+
   def test_tetrahedral_numbers
     assert_equal([1, 4, 10, 20, 35, 56, 84, 120, 165, 220], FigurateNumbers.tetrahedral_numbers.take(10))
   end

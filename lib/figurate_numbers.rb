@@ -1026,5 +1026,3 @@ module FigurateNumbers
   end
 
 end
-
-# print FigurateNumbers.cuban_numbers.take(50)
