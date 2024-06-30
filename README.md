@@ -182,7 +182,8 @@ end
 
 ### 6. Zoo of figurate-related numbers
 <ol>
-  <li><code>cuban_numbers</code></li>
+  <li><code>cuban_numbers = cuban prime numbers</code></li>
+  <li><code>pell_numbers</code></li>
 </ol>
 
 ## Errata
