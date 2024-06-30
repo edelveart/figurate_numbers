@@ -227,15 +227,15 @@ module FigurateNumbers
   end
 
   def FigurateNumbers.pronic_numbers
-    (1..Float::INFINITY).lazy.collect { |delta| delta * (delta + 1)}
+    (1..Float::INFINITY).lazy.collect { |delta| delta * (delta + 1) }
   end
 
   def FigurateNumbers.cross_numbers
-    (1..Float::INFINITY).lazy.collect { |delta| 4 * delta - 3}
+    (1..Float::INFINITY).lazy.collect { |delta| 4 * delta - 3 }
   end
 
   def FigurateNumbers.aztec_diamond_numbers
-    (1..Float::INFINITY).lazy.collect { |delta| (2 * delta) * (delta + 1)}
+    (1..Float::INFINITY).lazy.collect { |delta| (2 * delta) * (delta + 1) }
   end
 
   def FigurateNumbers.polygram_numbers(m)
@@ -247,7 +247,7 @@ module FigurateNumbers
   end
 
   def FigurateNumbers.gnomic_numbers
-    (1..Float::INFINITY).lazy.collect { |delta| 2 * delta - 1}
+    (1..Float::INFINITY).lazy.collect { |delta| 2 * delta - 1 }
   end
 
   def FigurateNumbers.truncated_triangular_numbers
@@ -1030,12 +1030,58 @@ module FigurateNumbers
     Enumerator.new do |y|
       y << 0
       y << 1
-      (2..Float::INFINITY).each do |i|
-        y << pell_numbers[i] = 2 * pell_numbers[i - 1] + pell_numbers[i - 2]
+      (2..Float::INFINITY).each do |delta|
+        y << pell_numbers[delta] = 2 * pell_numbers[delta - 1] + pell_numbers[delta - 2]
+      end
+    end
+  end
+
+  def FigurateNumbers.is_prime_number(p)
+    (2..Math.sqrt(p)).none? do |delta|
+      p % delta == 0
+    end
+  end
+
+  def FigurateNumbers.helper_carmichael_number_math_def(n)
+    if !is_prime_number(n)
+      (2..(n - 1)).each do |a|
+        if n.gcd(a) == 1
+          if (a.pow(n - 1, n)) != 1
+            return nil
+          end
+        end
+      end
+      n
+    end
+  end
+
+  require 'prime'
+
+  def FigurateNumbers.helper_carmichael_number(n)
+    if !Prime.prime?(n)
+      (2..(Math.sqrt(n))).each do |a|
+        if (n).gcd(a) == 1
+          return if (a.pow(n - 1, n)) != 1
+        end
+      end
+      n
+    end
+  end
+
+  private_class_method :is_prime_number
+  private_class_method :helper_carmichael_number_math_def
+  private_class_method :helper_carmichael_number
+
+  def FigurateNumbers.carmichael_numbers
+    Enumerator.new do |y|
+      (561..Float::INFINITY).each do |delta|
+        num_seq = helper_carmichael_number(delta)
+        if num_seq != nil
+          y << num_seq
+        end
       end
     end
   end
 
 end
-
 
