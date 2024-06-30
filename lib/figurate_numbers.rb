@@ -1083,5 +1083,33 @@ module FigurateNumbers
     end
   end
 
-end
+  def FigurateNumbers.helper_stern_prime_numbers(delta)
+    prime_list = Prime.first(delta)
+    q = prime_list[-1]
+    b = 1
+    while (2 * b**2) < q
+      prime_list[0..-2].each do |p|
+        if q == p + (2 * b**2)
+          return nil
+        end
+      end
+      b += 1
+    end
+    q
+  end
 
+  private_class_method :helper_stern_prime_numbers
+
+  def FigurateNumbers.stern_prime_numbers(infty = false)
+    Enumerator.new do |y|
+    max_term = infty == false ? 238 : float::INFINITY
+      (1..max_term).each do |delta|
+        num_seq = helper_stern_prime_numbers(delta)
+        if num_seq != nil
+          y << num_seq
+        end
+      end
+    end
+  end
+
+end
