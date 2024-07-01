@@ -1112,4 +1112,25 @@ module FigurateNumbers
     end
   end
 
+  def FigurateNumbers.helper_apocalyptic_numbers(delta)
+    search_666 = (2**delta).to_s
+    len_666 = search_666.length - 1
+    (0..len_666).each do |index|
+      if search_666[index, 3] == '666' && search_666[index + 1] == '6' && search_666[index + 2] == '6'
+        return delta
+      end
+    end
+    nil
+  end
+
+  private_class_method :helper_apocalyptic_numbers
+
+  def FigurateNumbers.apocalyptic_numbers
+    Enumerator.new do |y|
+      (157..Float::INFINITY).each do |delta|
+        y << helper_apocalyptic_numbers(delta) if helper_apocalyptic_numbers(delta) != nil
+      end
+    end
+  end
+
 end
