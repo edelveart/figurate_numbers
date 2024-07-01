@@ -90,6 +90,102 @@ module FigurateNumbers
     end
   end
 
+  def FigurateNumbers.tridecagonal_numbers
+    Enumerator.new do |y|
+      (1..Float::INFINITY).each do |delta|
+        y << (11 * delta**2 - 9 * delta) / 2
+      end
+    end
+  end
+
+  def FigurateNumbers.tetradecagonal_numbers
+    Enumerator.new do |y|
+      (1..Float::INFINITY).each do |delta|
+        y << (12 * delta**2 - 10 * delta) / 2
+      end
+    end
+  end
+
+  def FigurateNumbers.pentadecagonal_numbers
+    Enumerator.new do |y|
+      (1..Float::INFINITY).each do |delta|
+        y << (13 * delta**2 - 11 * delta) / 2
+      end
+    end
+  end
+
+  def FigurateNumbers.hexadecagonal_numbers
+    Enumerator.new do |y|
+      (1..Float::INFINITY).each do |delta|
+        y << (14 * delta**2 - 12 * delta) / 2
+      end
+    end
+  end
+
+  def FigurateNumbers.heptadecagonal_numbers
+    Enumerator.new do |y|
+      (1..Float::INFINITY).each do |delta|
+        y << (15 * delta**2 - 13 * delta) / 2
+      end
+    end
+  end
+
+  def FigurateNumbers.octadecagonal_numbers
+    Enumerator.new do |y|
+      (1..Float::INFINITY).each do |delta|
+        y << (16 * delta**2 - 14 * delta) / 2
+      end
+    end
+  end
+
+  def FigurateNumbers.nonadecagonal_numbers
+    Enumerator.new do |y|
+      (1..Float::INFINITY).each do |delta|
+        y << (17 * delta**2 - 15 * delta) / 2
+      end
+    end
+  end
+
+  def FigurateNumbers.icosagonal_numbers
+    Enumerator.new do |y|
+      (1..Float::INFINITY).each do |delta|
+        y << (18 * delta**2 - 16 * delta) / 2
+      end
+    end
+  end
+
+  def FigurateNumbers.icosihenagonal_numbers
+    Enumerator.new do |y|
+      (1..Float::INFINITY).each do |delta|
+        y << (19 * delta**2 - 17 * delta) / 2
+      end
+    end
+  end
+
+  def FigurateNumbers.icosidigonal_numbers
+    Enumerator.new do |y|
+      (1..Float::INFINITY).each do |delta|
+        y << (20 * delta**2 - 18 * delta) / 2
+      end
+    end
+  end
+
+  def FigurateNumbers.icositrigonal_numbers
+    Enumerator.new do |y|
+      (1..Float::INFINITY).each do |delta|
+        y << (21 * delta**2 - 19 * delta) / 2
+      end
+    end
+  end
+
+  def FigurateNumbers.icositetragonal_numbers
+    Enumerator.new do |y|
+      (1..Float::INFINITY).each do |delta|
+        y << (22 * delta**2 - 20 * delta) / 2
+      end
+    end
+  end
+
   def FigurateNumbers.icosipentagonal_numbers
     Enumerator.new do |y|
       (1..Float::INFINITY).each do |delta|
