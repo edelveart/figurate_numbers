@@ -484,4 +484,9 @@ class TestFigurateNumbers  < Minitest::Test
   def test_stern_prime_numbers
     assert_equal([2, 3, 17, 137, 227, 977, 1187, 1493], FigurateNumbers.stern_prime_numbers.take(8))
   end
+
+  def test_apocalyptic_numbers
+    assert_equal([157, 192, 218, 220, 222, 224, 226, 243, 245, 247, 251, 278, 285, 286, 287, 312, 355, 361, 366, 382, 384, 390, 394, 411, 434, 443, 478, 497, 499, 506, 508, 528, 529, 539, 540, 541, 564, 578, 580, 582, 583, 610, 612, 614, 620, 624, 635, 646, 647, 648, 649, 650, 660, 662, 664, 666, 667, 669, 671, 684], FigurateNumbers.apocalyptic_numbers.take(60))
+  end
+
 end
