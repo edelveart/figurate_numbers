@@ -1017,10 +1017,33 @@ module FigurateNumbers
     end
   end
 
+  require 'prime'
+
   def FigurateNumbers.cuban_numbers
     Enumerator.new do |y|
       (1..Float::INFINITY).each do |delta|
         y << (delta + 1)**3 - delta**3
+      end
+    end
+  end
+
+  def FigurateNumbers.helper_quartan_numbers(delta)
+    seq = [2]
+    (1..delta).each do |x|
+      (x + 1..delta).each do |y|
+        q = x**4 + y**4
+        seq << q if Prime.prime?(q)
+      end
+    end
+    seq.sort
+  end
+
+  private_class_method :helper_quartan_numbers
+
+  def FigurateNumbers.quartan_numbers
+    Enumerator.new do |y|
+      (1..Float::INFINITY).each do |delta|
+        y << helper_quartan_numbers(delta)[delta - 1]
       end
     end
   end
@@ -1054,8 +1077,6 @@ module FigurateNumbers
       n
     end
   end
-
-  require 'prime'
 
   def FigurateNumbers.helper_carmichael_number(n)
     if !Prime.prime?(n)
