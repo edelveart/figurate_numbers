@@ -187,6 +187,7 @@ end
 ### 6. Zoo of figurate-related numbers
 <ol>
   <li><code>cuban_numbers = cuban prime numbers</code></li>
+  <li><code>quartan_numbers</code></li>
   <li><code>pell_numbers</code></li>
   <li><code>carmichael_numbers</code></li>
   <li><code>stern_prime_numbers(infty = false) = Quick calculations up to 8 terms.</code></li>
