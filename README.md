@@ -2,14 +2,14 @@
 
 [![Gem Version](https://badge.fury.io/rb/figurate_numbers.svg)](https://badge.fury.io/rb/figurate_numbers)
 
-`figurate_numbers` is a Ruby module that implements `133 infinite number sequences` based on the formulas from the wonderful book
+`figurate_numbers` is a Ruby module that implements `151 infinite number sequences` based on the formulas from the wonderful book
 > [Figurate Numbers (2012)](https://books.google.com.pe/books/about/Figurate_Numbers.html?id=ERS7CgAAQBAJ&redir_esc=y) by Elena Deza and Michel Deza.
 
 This implementation uses the **Enumerator class** to deal with **INFINITE SEQUENCES**.
 
 Following the order of the book, the methods are divided into 3 types according to the spatial dimension (see complete list below):
 
-1. **Plane** figurate numbers implemented = `56`
+1. **Plane** figurate numbers implemented = `74`
 2. **Space** figurate numbers implemented = `42`
 3. **Multidimensional** figurate numbers implemented = `29`
 
@@ -17,7 +17,7 @@ Additionally we have the sequences mentioned in chapter 6:
 
 4. **Zoo of figurate-related numbers** implemented = `6`
 
-- [x] **TOTAL** = `133` infinite sequences of figurate numbers implemented
+- [x] **TOTAL** = `151` infinite sequences of figurate numbers implemented
 
 
 ## Installation and use
@@ -91,7 +91,25 @@ end
   <li><code>centered_triangular_numbers</code></li>
   <li><code>centered_square_numbers</code></li>
   <li><code>centered_pentagonal_numbers</code></li>
+  <li><code>centered_hexagonal_numbers</code></li>
+  <li><code>centered_heptagonal_numbers</code></li>
+  <li><code>centered_octagonal_numbers</code></li>
+  <li><code>centered_nonagonal_numbers</code></li>
+  <li><code>centered_decagonal_numbers</code></li>
+  <li><code>centered_hendecagonal_numbers</code></li>
   <li><code>centered_dodecagonal_numbers = star number</code></li>
+  <li><code>centered_tridecagonal_numbers</code></li>
+  <li><code>centered_tetradecagonal_numbers</code></li>
+  <li><code>centered_pentadecagonal_numbers</code></li>
+  <li><code>centered_hexadecagonal_numbers</code></li>
+  <li><code>centered_heptadecagonal_numbers</code></li>
+  <li><code>centered_octadecagonal_numbers</code></li>
+  <li><code>centered_nonadecagonal_numbers</code></li>
+  <li><code>centered_icosagonal_numbers</code></li>
+  <li><code>centered_icosihenagonal_numbers</code></li>
+  <li><code>centered_icosidigonal_numbers</code></li>
+  <li><code>centered_icositrigonal_numbers</code></li>
+  <li><code>centered_icositetragonal_numbers</code></li>
   <li><code>centered_icosipentagonal_numbers</code></li>
   <li><code>centered_icosihexagonal_numbers</code></li>
   <li><code>centered_icosiheptagonal_numbers</code></li>
