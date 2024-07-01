@@ -2,14 +2,14 @@
 
 [![Gem Version](https://badge.fury.io/rb/figurate_numbers.svg)](https://badge.fury.io/rb/figurate_numbers)
 
-`figurate_numbers` is a Ruby module that implements `121 infinite number sequences` based on the formulas from the wonderful book
+`figurate_numbers` is a Ruby module that implements `133 infinite number sequences` based on the formulas from the wonderful book
 > [Figurate Numbers (2012)](https://books.google.com.pe/books/about/Figurate_Numbers.html?id=ERS7CgAAQBAJ&redir_esc=y) by Elena Deza and Michel Deza.
 
 This implementation uses the **Enumerator class** to deal with **INFINITE SEQUENCES**.
 
 Following the order of the book, the methods are divided into 3 types according to the spatial dimension (see complete list below):
 
-1. **Plane** figurate numbers implemented = `44`
+1. **Plane** figurate numbers implemented = `56`
 2. **Space** figurate numbers implemented = `42`
 3. **Multidimensional** figurate numbers implemented = `29`
 
@@ -17,7 +17,7 @@ Additionally we have the sequences mentioned in chapter 6:
 
 4. **Zoo of figurate-related numbers** implemented = `6`
 
-- [x] **TOTAL** = `121` infinite sequences of figurate numbers implemented
+- [x] **TOTAL** = `133` infinite sequences of figurate numbers implemented
 
 
 ## Installation and use
@@ -70,6 +70,18 @@ end
   <li><code>decagonal_numbers</code></li>
   <li><code>hendecagonal_numbers</code></li>
   <li><code>dodecagonal_numbers</code></li>
+  <li><code>tridecagonal_numbers</code></li>
+  <li><code>tetradecagonal_numbers</code></li>
+  <li><code>pentadecagonal_numbers</code></li>
+  <li><code>hexadecagonal_numbers</code></li>
+  <li><code>heptadecagonal_numbers</code></li>
+  <li><code>octadecagonal_numbers</code></li>
+  <li><code>nonadecagonal_numbers</code></li>
+  <li><code>icosagonal_numbers</code></li>
+  <li><code>icosihenagonal_numbers</code></li>
+  <li><code>icosidigonal_numbers</code></li>
+  <li><code>icositrigonal_numbers</code></li>
+  <li><code>icositetragonal_numbers</code></li>
   <li><code>icosipentagonal_numbers</code></li>
   <li><code>icosihexagonal_numbers</code></li>
   <li><code>icosiheptagonal_numbers</code></li>
