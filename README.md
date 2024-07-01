@@ -2,7 +2,7 @@
 
 [![Gem Version](https://badge.fury.io/rb/figurate_numbers.svg)](https://badge.fury.io/rb/figurate_numbers)
 
-`figurate_numbers` is a Ruby module that implements `120 infinite number sequences` based on the formulas from the wonderful book
+`figurate_numbers` is a Ruby module that implements `121 infinite number sequences` based on the formulas from the wonderful book
 > [Figurate Numbers (2012)](https://books.google.com.pe/books/about/Figurate_Numbers.html?id=ERS7CgAAQBAJ&redir_esc=y) by Elena Deza and Michel Deza.
 
 This implementation uses the **Enumerator class** to deal with **INFINITE SEQUENCES**.
@@ -15,9 +15,9 @@ Following the order of the book, the methods are divided into 3 types according 
 
 Additionally we have the sequences mentioned in chapter 6:
 
-4. **Zoo of figurate-related numbers** implemented = `5`
+4. **Zoo of figurate-related numbers** implemented = `6`
 
-- [x] **TOTAL** = `120` infinite sequences of figurate numbers implemented
+- [x] **TOTAL** = `121` infinite sequences of figurate numbers implemented
 
 
 ## Installation and use
@@ -187,9 +187,9 @@ end
 ### 6. Zoo of figurate-related numbers
 <ol>
   <li><code>cuban_numbers = cuban prime numbers</code></li>
-  <li><code>quartan_numbers</code></li>
+  <li><code>quartan_numbers = Needs to improve the algorithmic complexity for n > 70</code></li>
   <li><code>pell_numbers</code></li>
-  <li><code>carmichael_numbers</code></li>
+  <li><code>carmichael_numbers = Needs to improve the algorithmic complexity for n > 20</code></li>
   <li><code>stern_prime_numbers(infty = false) = Quick calculations up to 8 terms.</code></li>
   <li><code>apocalyptic_numbers</code></li>
 </ol>
