@@ -1630,6 +1630,33 @@ module FigurateNumbers
     end
   end
 
+
+
+
+  def generalized_hyperdodecahedral_numbers(left_index = 0)
+    Enumerator.new do |y|
+      ((-1 * left_index.abs)..Float::INFINITY).each do |delta|
+        y << (delta  * (261 * delta**3 - 504 * delta**2 + 283 * delta - 38)) / 2
+      end
+    end
+  end
+
+  def generalized_hypericosahedral_numbers(left_index = 0)
+    Enumerator.new do |y|
+      ((-1 * left_index.abs)..Float::INFINITY).each do |delta|
+        y << (delta  * (145 * delta ** 3 - 280 * delta**2 + 179 * delta - 38)) / 6
+      end
+    end
+  end
+
+  def generalized_polyoctahedral_numbers(left_index = 0)
+    Enumerator.new do |y|
+      ((-1 * left_index.abs)..Float::INFINITY).each do |delta|
+        y << delta**2 * (3 * delta**2 - 4 * delta + 2)
+      end
+    end
+  end
+
   def generalized_nexus_numbers(k, left_index = 0)
     Enumerator.new do |y|
       ((-1 * left_index.abs)..Float::INFINITY).each do |delta|
