@@ -509,6 +509,14 @@ class TestFigurateNumbers  < Minitest::Test
     assert_equal([1, 64, 729, 4096, 15625, 46656, 117649, 262144, 531441, 1000000, 1771561, 2985984, 4826809, 7529536, 11390625], FigurateNumbers.k_dimensional_hypercube_numbers(6).take(15))
   end
 
+  def test_five_dimensional_hypercube_numbers
+    assert_equal([1, 32, 243, 1024, 3125, 7776, 16807, 32768, 59049, 100000, 161051, 248832, 371293, 537824, 759375, 1048576, 1419857, 1889568, 2476099, 3200000, 4084101, 5153632, 6436343, 7962624, 9765625], FigurateNumbers.five_dimensional_hypercube_numbers.take(25))
+  end
+
+  def test_six_dimensional_hypercube_numbers
+    assert_equal([1, 64, 729, 4096, 15625, 46656, 117649, 262144, 531441, 1000000, 1771561, 2985984, 4826809, 7529536, 11390625, 16777216, 24137569, 34012224, 47045881, 64000000, 85766121, 113379904, 148035889, 191102976, 244140625], FigurateNumbers.six_dimensional_hypercube_numbers.take(25))
+  end
+
   def test_hyperoctahedral_numbers
     assert_equal([1, 8, 33, 96, 225, 456, 833, 1408, 2241, 3400, 4961, 7008, 9633, 12936, 17025, 22016, 28033, 35208, 43681, 53600, 65121, 78408, 93633, 110976, 130625, 152776, 177633, 205408, 236321, 270600], FigurateNumbers.hyperoctahedral_numbers.take(30))
   end
