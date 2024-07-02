@@ -141,6 +141,8 @@ end
   <li><code>truncated_centered_hexagonal_numbers = truncated hex numbers</code></li>
   <li><code>truncated_hex_numbers</code></li>
   <li><code>generalized_mgonal_numbers(m, left_index = 0)</code></li>
+  <li><code>generalized_pentagonal_numbers(left_index = 0)</code></li>
+  <li><code>generalized_hexagonal_numbers(left_index = 0)</code></li>
   <li><code>generalized_centered_pol_numbers(m, left_index = 0)</code></li>
   <li><code>generalized_pronic_numbers(left_index = 0)</code></li>
 </ol>
@@ -161,7 +163,8 @@ end
   <li><code>rhombic_dodecahedral_numbers</code></li>
   <li><code>hauy_rhombic_dodecahedral_numbers</code></li>
   <li><code>centered_tetrahedral_numbers</code></li>
-  <li><code>centered_square_pyramid_numbers</code></li>
+  <li><code>centered_square_pyramid_numbers = centered pyramid numbers</code></li>
+  <li><code>centered_pyramid_numbers</code></li>
   <li><code>centered_pentagonal_pyramid_numbers = centered octahedron numbers (equality only in quantity)</code></li>
   <li><code>centered_hexagonal_pyramid_numbers</code></li>
   <li><code>centered_heptagonal_pyramid_numbers</code></li>
@@ -205,12 +208,12 @@ end
   <li><code>k_hypertetrahedron_numbers(k)</code></li>
   <li><code>regular_k_polytopic_numbers(k)</code></li>
   <li><code>figurate_number_of_order_k(k)</code></li>
-  <!-- <li><code>k_simplex_numbers(k) = for k >= 5</code></li> -->
+  <li><code>k_simplex_numbers(k) = for k >= 5</code></li>
   <li><code>five_dimensional_hypertetrahedron_numbers</code></li>
   <li><code>six_dimensional_hypertetrahedron_numbers</code></li>
   <li><code>biquadratic_numbers</code></li>
   <li><code>k_dimensional_hypercube_numbers(k) = k-measure polytope numbers </code></li>
-  <!-- <li><code>k_measure_polytope_numbers(k) = for k >= 5</code></li> -->
+  <li><code>k_measure_polytope_numbers(k) = for k >= 5</code></li>
   <li><code>five_dimensional_hypercube_numbers</code></li>
   <li><code>six_dimensional_hypercube_numbers</code></li>
   <li><code>hyperoctahedral_numbers = 4D hyperoctahedron numbers = hexadecachoron_numbers = four_cross_polytope_numbers = four_orthoplex_numbers</code></li>
