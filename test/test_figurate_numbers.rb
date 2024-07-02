@@ -648,6 +648,26 @@ class TestFigurateNumbers  < Minitest::Test
     assert_equal([1, 20, 119, 448, 1302, 3192, 6930, 13728, 25311, 44044, 73073, 116480, 179452, 268464, 391476, 558144, 780045, 1070916, 1446907, 1926848, 2532530, 3289000, 4224870, 5372640, 6769035, 8455356, 10477845, 12888064, 15743288, 19106912, 23048872, 27646080, 32982873, 39151476, 46252479, 54395328, 63698830, 74291672, 86312954, 99912736, 115252599, 132506220, 151859961, 173513472, 197680308], FigurateNumbers.six_dimensional_mgonal_pyramidal_numbers(16).take(45))
   end
 
+  def test_six_dimensional_square_pyramidal_numbers
+    assert_equal([1, 8, 35, 112, 294, 672, 1386, 2640, 4719, 8008, 13013, 20384, 30940, 45696, 65892], FigurateNumbers.six_dimensional_square_pyramidal_numbers.take(15))
+  end
+
+  def test_six_dimensional_pentagonal_pyramidal_numbers
+    assert_equal([1, 9, 42, 140, 378, 882, 1848, 3564, 6435, 11011, 18018, 28392, 43316, 64260, 93024], FigurateNumbers.six_dimensional_pentagonal_pyramidal_numbers.take(15))
+  end
+
+  def test_six_dimensional_hexagonal_pyramidal_numbers
+    assert_equal([1, 10, 49, 168, 462, 1092, 2310, 4488, 8151, 14014, 23023, 36400, 55692, 82824, 120156], FigurateNumbers.six_dimensional_hexagonal_pyramidal_numbers.take(15))
+  end
+
+  def test_six_dimensional_heptagonal_pyramidal_numbers
+    assert_equal([1, 11, 56, 196, 546, 1302, 2772, 5412, 9867, 17017, 28028, 44408, 68068, 101388, 147288], FigurateNumbers.six_dimensional_heptagonal_pyramidal_numbers.take(15))
+  end
+
+  def test_six_dimensional_octagonal_pyramidal_numbers
+    assert_equal([1, 12, 63, 224, 630, 1512, 3234, 6336, 11583, 20020, 33033, 52416, 80444, 119952, 174420], FigurateNumbers.six_dimensional_octagonal_pyramidal_numbers.take(15))
+  end
+
   def test_centered_biquadratic_numbers
     assert_equal([1, 17, 97, 337, 881, 1921, 3697, 6497, 10657, 16561, 24641, 35377, 49297, 66977, 89041, 116161, 149057, 188497, 235297, 290321], FigurateNumbers.centered_biquadratic_numbers.take(20))
   end
