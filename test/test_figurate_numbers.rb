@@ -492,6 +492,10 @@ class TestFigurateNumbers  < Minitest::Test
     assert_equal([-8176, -6735, -5474, -4381, -3444, -2651, -1990, -1449, -1016, -679, -426, -245, -124, -51, -14, -1, 0, 1, 14, 51, 124, 245, 426, 679, 1016, 1449, 1990, 2651, 3444, 4381, 5474, 6735, 8176, 9809], FigurateNumbers.generalized_centered_mgonal_pyramidal_numbers(12, 16).take(34))
   end
 
+  def test_generalized_mgonal_prism_numbers
+    assert_equal([-4410, -3249, -2312, -1575, -1014, -605, -324, -147, -50, -9, 0, 1, 18, 75, 196, 405, 726, 1183, 1800, 2601], FigurateNumbers.generalized_mgonal_prism_numbers(8, 10).take(20))
+  end
+
   def test_generalized_hexagonal_prism_numbers
     assert_equal([-244, -111, -38, -7, 0, 1, 14, 57, 148, 305], FigurateNumbers.generalized_hexagonal_prism_numbers(4).take(10))
   end
@@ -754,6 +758,14 @@ class TestFigurateNumbers  < Minitest::Test
 
   def test_generalized_polyoctahedral_numbers
     assert_equal([512800, 419121, 338904, 270793, 213504, 165825, 126616, 94809, 69408, 49489, 34200, 22761, 14464, 8673, 4824, 2425, 1056, 369, 88, 9, 0, 1, 24, 153, 544, 1425, 3096, 5929, 10368, 16929, 26200, 38841, 55584, 77233, 104664, 138825, 180736, 231489, 292248, 364249], FigurateNumbers.generalized_polyoctahedral_numbers(20).take(40))
+  end
+
+  def test_generalized_k_dimensional_mgonal_pyramidal_numbers
+    assert_equal([-1770, -636, -188, -41, -5, 0, 0, 0, 0, 0, 0, 1, 13, 76, 300, 930, 2442, 5676, 12012, 23595], FigurateNumbers.generalized_k_dimensional_mgonal_pyramidal_numbers(7, 8, 10).take(20))
+  end
+
+  def test_generalized_k_dimensional_centered_hypercube_numbers
+    assert_equal([-29487171, -14782969, -6880121, -2920695, -1103479, -358061, -94509, -18571, -2315, -129, -1, 1, 129, 2315, 18571, 94509, 358061, 1103479, 2920695, 6880121], FigurateNumbers.generalized_k_dimensional_centered_hypercube_numbers(7, 10).take(20))
   end
 
   def test_generalized_nexus_numbers
