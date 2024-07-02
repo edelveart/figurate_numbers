@@ -971,6 +971,9 @@ module FigurateNumbers
     end
   end
 
+  alias_method :hypertetrahedral_number,  :pentatope_numbers
+  alias_method :triangulotriangular_number,  :pentatope_numbers
+
   def rising_factorial(n, k)
     t = 1
     (n..(n + k - 1)).each do |i|
@@ -983,6 +986,25 @@ module FigurateNumbers
     Enumerator.new do |y|
       (1..Float::INFINITY).each do |delta|
         y << rising_factorial(delta, k) / factorial_iter(k)
+      end
+    end
+  end
+
+  alias_method :regular_k_polytopic_numbers, :k_dimensional_hypertetrahedron_numbers
+  alias_method :figurate_number_of_order_k, :k_dimensional_hypertetrahedron_numbers
+
+  def five_dimensional_hypertetrahedron_numbers
+    Enumerator.new do |y|
+      (1..Float::INFINITY).each do |delta|
+        y << rising_factorial(delta, 5) / factorial_iter(5)
+      end
+    end
+  end
+
+  def six_dimensional_hypertetrahedron_numbers
+    Enumerator.new do |y|
+      (1..Float::INFINITY).each do |delta|
+        y << rising_factorial(delta, 6) / factorial_iter(6)
       end
     end
   end
@@ -1420,3 +1442,4 @@ module FigurateNumbers
   end
 
 end
+print FigurateNumbers.regular_k_polytopic_numbers(4).take(10)
