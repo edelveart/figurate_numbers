@@ -1183,9 +1183,6 @@ module FigurateNumbers
     end
   end
 
-
-
-
   def k_dimensional_hyperoctahedron_numbers(k)
     Enumerator.new do |y|
       (1..Float::INFINITY).each do |delta|
@@ -1282,22 +1279,6 @@ module FigurateNumbers
     end
   end
 
-  def five_dimensional_mgonal_pyramidal_numbers(m)
-    Enumerator.new do |y|
-      (1..Float::INFINITY).each do |delta|
-        y << (delta * (delta + 1) * (delta + 2) * (delta + 3) *  ((m - 2) * delta - m + 7)) / 120
-      end
-    end
-  end
-
-  def six_dimensional_mgonal_pyramidal_numbers(m)
-    Enumerator.new do |y|
-      (1..Float::INFINITY).each do |delta|
-        y << (delta * (delta + 1) * (delta + 2) * (delta + 3) * (delta + 4) * ((m - 2) * delta - m + 8)) / 720
-      end
-    end
-  end
-
   def pseudo_rising_factorial(n, k)
     t = 1
     (n..(n + k - 2)).each do |i|
@@ -1323,6 +1304,77 @@ module FigurateNumbers
   end
 
   alias_method :mgonal_pyramidal_number_of_the_k_2_th_order, :k_dimensional_mgonal_pyramidal_numbers
+
+  def five_dimensional_mgonal_pyramidal_numbers(m)
+    Enumerator.new do |y|
+      (1..Float::INFINITY).each do |delta|
+        y << (delta * (delta + 1) * (delta + 2) * (delta + 3) *  ((m - 2) * delta - m + 7)) / 120
+      end
+    end
+  end
+
+  def five_dimensional_square_pyramidal_numbers
+    Enumerator.new do |y|
+      k = 5
+      m = 4
+      (1..Float::INFINITY).each do |delta|
+        y << (pseudo_pochhammer_function(delta, k) * ((m - 2) * delta - m + k + 2)) /
+              factorial_iter(k)
+      end
+    end
+  end
+
+  def five_dimensional_pentagonal_pyramidal_numbers
+    Enumerator.new do |y|
+      k = 5
+      m = 5
+      (1..Float::INFINITY).each do |delta|
+        y << (pseudo_pochhammer_function(delta, k) * ((m - 2) * delta - m + k + 2)) /
+              factorial_iter(k)
+      end
+    end
+  end
+
+  def five_dimensional_hexagonal_pyramidal_numbers
+    Enumerator.new do |y|
+      k = 5
+      m = 6
+      (1..Float::INFINITY).each do |delta|
+        y << (pseudo_pochhammer_function(delta, k) * ((m - 2) * delta - m + k + 2)) /
+              factorial_iter(k)
+      end
+    end
+  end
+
+  def five_dimensional_heptagonal_pyramidal_numbers
+    Enumerator.new do |y|
+      k = 5
+      m = 7
+      (1..Float::INFINITY).each do |delta|
+        y << (pseudo_pochhammer_function(delta, k) * ((m - 2) * delta - m + k + 2)) /
+              factorial_iter(k)
+      end
+    end
+  end
+
+  def five_dimensional_octagonal_pyramidal_numbers
+    Enumerator.new do |y|
+      k = 5
+      m = 8
+      (1..Float::INFINITY).each do |delta|
+        y << (pseudo_pochhammer_function(delta, k) * ((m - 2) * delta - m + k + 2)) /
+              factorial_iter(k)
+      end
+    end
+  end
+
+  def six_dimensional_mgonal_pyramidal_numbers(m)
+    Enumerator.new do |y|
+      (1..Float::INFINITY).each do |delta|
+        y << (delta * (delta + 1) * (delta + 2) * (delta + 3) * (delta + 4) * ((m - 2) * delta - m + 8)) / 720
+      end
+    end
+  end
 
   def centered_biquadratic_numbers
     Enumerator.new do |y|
