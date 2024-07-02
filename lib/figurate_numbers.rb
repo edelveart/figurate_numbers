@@ -251,6 +251,8 @@ module FigurateNumbers
     end
   end
 
+  alias_method :diamond_numbers, :centered_square_numbers
+
   def centered_pentagonal_numbers
     Enumerator.new do |y|
       (1..Float::INFINITY).each do |delta|
@@ -473,6 +475,17 @@ module FigurateNumbers
     (1..Float::INFINITY).lazy.collect { |delta| delta * (delta + 1) }
   end
 
+  alias_method :heteromecic_numbers, :pronic_numbers
+  alias_method :oblong_numbers, :pronic_numbers
+
+  def polite_numbers
+    (1..Float::INFINITY).lazy.collect { |delta| delta + Math.log((delta + Math.log(delta, 2)), 2).floor }
+    end
+
+  def impolite_numbers
+    (0..Float::INFINITY).lazy.collect { |delta| 2**delta }
+  end
+
   def cross_numbers
     (1..Float::INFINITY).lazy.collect { |delta| 4 * delta - 3 }
   end
@@ -490,6 +503,14 @@ module FigurateNumbers
   end
 
   alias_method :centered_star_polygonal_numbers, :polygram_numbers
+
+  def pentagram_numbers
+    Enumerator.new do |y|
+      (1..Float::INFINITY).each do |delta|
+        y << 5 * delta**2 - 5 * delta + 1
+      end
+    end
+  end
 
   def gnomic_numbers
     (1..Float::INFINITY).lazy.collect { |delta| 2 * delta - 1 }
@@ -527,6 +548,8 @@ module FigurateNumbers
     end
   end
 
+  alias_method :truncated_centered_mgonal_numbers, :truncated_centered_pol_numbers
+
   def truncated_centered_triangular_numbers
     Enumerator.new do |y|
       (1..Float::INFINITY).each do |delta|
@@ -558,6 +581,8 @@ module FigurateNumbers
       end
     end
   end
+
+  alias_method :truncated_hex_numbers, :truncated_centered_hexagonal_numbers
 
   def generalized_mgonal_numbers(m, left_index = 0)
     Enumerator.new do |y|
