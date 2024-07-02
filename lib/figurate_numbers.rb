@@ -489,6 +489,8 @@ module FigurateNumbers
     end
   end
 
+  alias_method :centered_star_polygonal_numbers, :polygram_numbers
+
   def gnomic_numbers
     (1..Float::INFINITY).lazy.collect { |delta| 2 * delta - 1 }
   end
@@ -1398,3 +1400,4 @@ module FigurateNumbers
   end
 
 end
+
