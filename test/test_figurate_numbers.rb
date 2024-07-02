@@ -421,6 +421,10 @@ class TestFigurateNumbers  < Minitest::Test
     assert_equal([1, 7, 23, 54, 105, 181, 287, 428, 609, 835, 1111, 1442, 1833, 2289, 2815, 3416, 4097, 4863, 5719, 6670, 7721, 8877, 10143, 11524, 13025], FigurateNumbers.centered_pentagonal_pyramidal_numbers.take(25))
   end
 
+  def test_centered_hexagonal_pyramidal_numbers
+    assert_equal([1, 8, 27, 64, 125, 216, 343, 512, 729, 1000, 1331, 1728, 2197, 2744, 3375, 4096, 4913, 5832, 6859, 8000, 9261, 10648, 12167, 13824, 15625], FigurateNumbers.centered_hexagonal_pyramidal_numbers.take(25))
+  end
+
   def test_centered_mgonal_pyramidal_numbers
     assert_equal([1, 13, 47, 114, 225, 391, 623, 932, 1329, 1825, 2431, 3158, 4017, 5019, 6175, 7496, 8993, 10677, 12559, 14650, 16961, 19503, 22287, 25324, 28625, 32201, 36063, 40222, 44689, 49475, 54591, 60048, 65857, 72029, 78575, 85506, 92833, 100567, 108719, 117300, 126321, 135793, 145727, 156134, 167025, 178411, 190303, 202712, 215649, 229125, 243151, 257738, 272897, 288639, 304975, 321916, 339473, 357657, 376479, 395950], FigurateNumbers.centered_mgonal_pyramidal_numbers(11).take(60))
   end
