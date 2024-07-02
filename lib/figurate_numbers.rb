@@ -592,6 +592,24 @@ module FigurateNumbers
     end
   end
 
+  def generalized_pentagonal_numbers(left_index = 0)
+    m = 5
+    Enumerator.new do |y|
+      ((-1 * left_index.abs)..Float::INFINITY).each do |delta|
+        y << (delta * ((m - 2) * delta - m + 4)) / 2
+      end
+    end
+  end
+
+  def generalized_hexagonal_numbers(left_index = 0)
+    m = 6
+    Enumerator.new do |y|
+      ((-1 * left_index.abs)..Float::INFINITY).each do |delta|
+        y << (delta * ((m - 2) * delta - m + 4)) / 2
+      end
+    end
+  end
+
   def generalized_centered_pol_numbers(m, left_index = 0)
     Enumerator.new do |y|
       ((-1 * left_index)..Float::INFINITY).each do |delta|
@@ -728,6 +746,8 @@ module FigurateNumbers
       end
     end
   end
+
+  alias_method :centered_pyramid_numbers, :centered_square_pyramid_numbers
 
   def centered_pentagonal_pyramid_numbers
     Enumerator.new do |y|
