@@ -272,13 +272,12 @@ end
   <li><code>five_dimensional_centered_hypertetrahedron_numbers(k)</code></li>
   <li><code>six_dimensional_centered_hypertetrahedron_numbers(k)</code></li>
 
-
   <li><code>centered_hyperotahedral_numbers = orthoplex numbers</code></li>
   <li><code>orthoplex numbers</code></li>
   <li><code>nexus_numbers(k)</code></li>
   <li><code>k_dimensional_centered_hyperoctahedron_numbers(k)</code></li>
-  <li><code>five_dimensional_centered_hyperoctahedron_numbers(k)</code></li>
-  <li><code>six_dimensional_centered_hyperoctahedron_numbers(k)</code></li>
+  <li><code>five_dimensional_centered_hyperoctahedron_numbers</code></li>
+  <li><code>six_dimensional_centered_hyperoctahedron_numbers</code></li>
   <li><code>generalized_pentatope_numbers(left_index = 0)</code></li>
   <li><code>generalized_k_dimensional_hypertetrahedron_numbers(k = 5, left_index = 0)</code></li>
   <li><code>generalized_k_dimensional_hypercube_numbers(k = 5, left_index = 0)</code></li>
