@@ -244,6 +244,14 @@ class TestFigurateNumbers  < Minitest::Test
     assert_equal([2, 6, 12, 20, 30, 42, 56, 72, 90, 110, 132, 156, 182, 210, 240, 272, 306, 342, 380, 420, 462, 506, 552, 600, 650, 702, 756, 812, 870, 930, 992, 1056, 1122, 1190, 1260, 1332, 1406, 1482, 1560, 1640, 1722, 1806, 1892, 1980, 2070, 2162, 2256, 2352, 2450, 2550, 2652, 2756, 2862, 2970, 3080, 3192, 3306, 3422, 3540, 3660, 3782, 3906, 4032, 4160, 4290, 4422, 4556, 4692, 4830, 4970, 5112, 5256, 5402, 5550, 5700, 5852, 6006, 6162, 6320, 6480], FigurateNumbers.pronic_numbers.take(80).to_a)
   end
 
+  def test_polite_numbers
+    assert_equal([1, 3, 5, 6, 7, 9, 10, 11, 12, 13, 14, 15, 17, 18, 19], FigurateNumbers.polite_numbers.take(15).to_a)
+  end
+
+  def test_impolite_numbers
+    assert_equal([1, 2, 4, 8, 16, 32, 64, 128, 256, 512, 1024, 2048, 4096, 8192, 16384], FigurateNumbers.impolite_numbers.take(15).to_a)
+  end
+
   def test_cross_numbers
     assert_equal([1, 5, 9, 13, 17, 21, 25, 29, 33, 37, 41, 45, 49, 53, 57, 61, 65, 69, 73, 77, 81, 85, 89, 93, 97, 101, 105, 109,
     113, 117, 121, 125, 129, 133, 137, 141, 145, 149, 153, 157, 161, 165, 169, 173, 177, 181, 185, 189, 193, 197, 201, 205, 209, 213, 217, 221, 225, 229, 233, 237], FigurateNumbers.cross_numbers.take(60).to_a)
@@ -259,6 +267,9 @@ class TestFigurateNumbers  < Minitest::Test
     5419, 5677, 5941, 6211, 6487, 6769, 7057, 7351], FigurateNumbers.polygram_numbers(3).take(50))
   end
 
+  def test_pentagram_numbers
+    assert_equal([1, 11, 31, 61, 101, 151, 211, 281, 361, 451], FigurateNumbers.pentagram_numbers.take(10))
+  end
   def test_gnomic_numbers
     assert_equal([1, 3, 5, 7, 9, 11, 13, 15, 17, 19], FigurateNumbers.gnomic_numbers.take(10).to_a)
   end
