@@ -1376,6 +1376,61 @@ module FigurateNumbers
     end
   end
 
+  def six_dimensional_square_pyramidal_numbers
+    Enumerator.new do |y|
+      k = 6
+      m = 4
+      (1..Float::INFINITY).each do |delta|
+        y << (pseudo_pochhammer_function(delta, k) * ((m - 2) * delta - m + k + 2)) /
+              factorial_iter(k)
+      end
+    end
+  end
+
+  def six_dimensional_pentagonal_pyramidal_numbers
+    Enumerator.new do |y|
+      k = 6
+      m = 5
+      (1..Float::INFINITY).each do |delta|
+        y << (pseudo_pochhammer_function(delta, k) * ((m - 2) * delta - m + k + 2)) /
+              factorial_iter(k)
+      end
+    end
+  end
+
+  def six_dimensional_hexagonal_pyramidal_numbers
+    Enumerator.new do |y|
+      k = 6
+      m = 6
+      (1..Float::INFINITY).each do |delta|
+        y << (pseudo_pochhammer_function(delta, k) * ((m - 2) * delta - m + k + 2)) /
+              factorial_iter(k)
+      end
+    end
+  end
+
+  def six_dimensional_heptagonal_pyramidal_numbers
+    Enumerator.new do |y|
+      k = 6
+      m = 7
+      (1..Float::INFINITY).each do |delta|
+        y << (pseudo_pochhammer_function(delta, k) * ((m - 2) * delta - m + k + 2)) /
+              factorial_iter(k)
+      end
+    end
+  end
+
+  def six_dimensional_octagonal_pyramidal_numbers
+    Enumerator.new do |y|
+      k = 6
+      m = 8
+      (1..Float::INFINITY).each do |delta|
+        y << (pseudo_pochhammer_function(delta, k) * ((m - 2) * delta - m + k + 2)) /
+              factorial_iter(k)
+      end
+    end
+  end
+
   def centered_biquadratic_numbers
     Enumerator.new do |y|
       a = 0
