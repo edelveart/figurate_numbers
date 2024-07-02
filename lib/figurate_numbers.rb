@@ -990,6 +990,7 @@ module FigurateNumbers
     end
   end
 
+  alias_method :k_hypertetrahedron_numbers, :k_dimensional_hypertetrahedron_numbers
   alias_method :regular_k_polytopic_numbers, :k_dimensional_hypertetrahedron_numbers
   alias_method :figurate_number_of_order_k, :k_dimensional_hypertetrahedron_numbers
 
@@ -1033,6 +1034,24 @@ module FigurateNumbers
     end
   end
 
+  alias_method :k_hypercube_numbers, :k_dimensional_hypercube_numbers
+
+  def five_dimensional_hypercube_numbers
+    Enumerator.new do |y|
+      (1..Float::INFINITY).each do |delta|
+        y << delta**5
+      end
+    end
+  end
+
+  def six_dimensional_hypercube_numbers
+    Enumerator.new do |y|
+      (1..Float::INFINITY).each do |delta|
+        y << delta**6
+      end
+    end
+  end
+
   def hyperoctahedral_numbers
     Enumerator.new do |y|
       (1..Float::INFINITY).each do |delta|
@@ -1040,6 +1059,10 @@ module FigurateNumbers
       end
     end
   end
+
+  alias_method :hexadecachoron_numbers, :hyperoctahedral_numbers
+  alias_method :four_cross_polytope_numbers, :hyperoctahedral_numbers
+  alias_method :four_orthoplex_numbers, :hyperoctahedral_numbers
 
   def hypericosahedral_numbers
     Enumerator.new do |y|
@@ -1049,6 +1072,10 @@ module FigurateNumbers
     end
   end
 
+  alias_method :tetraplex_numbers, :hypericosahedral_numbers
+  alias_method :polytetrahedron_numbers, :hypericosahedral_numbers
+  alias_method :hexacosichoron_numbers, :hypericosahedral_numbers
+
   def hyperdodecahedral_numbers
     Enumerator.new do |y|
       (1..Float::INFINITY).each do |delta|
@@ -1056,6 +1083,10 @@ module FigurateNumbers
       end
     end
   end
+
+  alias_method :hecatonicosachoron_numbers, :hyperdodecahedral_numbers
+  alias_method :dodecaplex_numbers, :hyperdodecahedral_numbers
+  alias_method :polydodecahedron_numbers, :hyperdodecahedral_numbers
 
   def polyoctahedral_numbers
     Enumerator.new do |y|
@@ -1442,4 +1473,9 @@ module FigurateNumbers
   end
 
 end
-print FigurateNumbers.regular_k_polytopic_numbers(4).take(10)
+
+
+# print FigurateNumbers.hyperoctahedral_numbers.take(25)
+# puts
+# print FigurateNumbers.four_dimensional_hyperoctahedron_numbers.take(25)
+# print FigurateNumbers.six_dimensional_hypercube_numbers.take(25)
