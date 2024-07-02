@@ -97,7 +97,7 @@ end
   <li><code>centered_nonagonal_numbers</code></li>
   <li><code>centered_decagonal_numbers</code></li>
   <li><code>centered_hendecagonal_numbers</code></li>
-  <li><code>centered_dodecagonal_numbers = star number</code></li>
+  <li><code>centered_dodecagonal_numbers = star numbers (equality only by quantity)</code></li>
   <li><code>star_numbers</code></li>
   <li><code>centered_tridecagonal_numbers</code></li>
   <li><code>centered_tetradecagonal_numbers</code></li>
@@ -122,6 +122,7 @@ end
   <li><code>cross_numbers</code></li>
   <li><code>aztec_diamond_numbers</code></li>
   <li><code>polygram_numbers(m) = centered star polygonal numbers</code></li>
+  <li><code>centered_star_polygonal_numbers(m)</code></li>
   <li><code>gnomic_numbers</code></li>
   <li><code>truncated_triangular_numbers</code></li>
   <li><code>truncated_square_numbers</code></li>
@@ -139,7 +140,7 @@ end
 ### 2. Space Figurate Numbers
 <ol>
   <li><code>r_pyramidal_numbers(r)</code></li>
-  <li><code>cubic_numbers = hex pyramidal numbers = centered hexagonal pyramidal numbers</code></li>
+  <li><code>cubic_numbers = hex pyramidal numbers (equality only by quantity) </code></li>
   <li><code>tetrahedral_numbers</code></li>
   <li><code>octahedral_numbers</code></li>
   <li><code>dodecahedral_numbers</code></li>
@@ -166,6 +167,8 @@ end
   <li><code>centered_triangular_pyramidal_numbers</code></li>
   <li><code>centered_square_pyramidal_numbers</code></li>
   <li><code>centered_pentagonal_pyramidal_numbers</code></li>
+  <li><code>centered_hexagonal_pyramidal_numbers = hex_pyramidal_numbers</code></li>
+  <li><code>hex_pyramidal_numbers</code></li>
   <li><code>centered_mgonal_pyramidal_numbers(m)</code></li>
   <li><code>hexagonal_prism_numbers</code></li>
   <li><code>mgonal_prism_numbers(m)</code></li>
