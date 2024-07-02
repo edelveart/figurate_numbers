@@ -89,7 +89,8 @@ end
   <li><code>icosinonagonal_numbers</code></li>
   <li><code>triacontagonal_numbers</code></li>
   <li><code>centered_triangular_numbers</code></li>
-  <li><code>centered_square_numbers</code></li>
+  <li><code>centered_square_numbers = diamond numbers (equality only by quantity)</code></li>
+  <li><code>diamond numbers</code></li>
   <li><code>centered_pentagonal_numbers</code></li>
   <li><code>centered_hexagonal_numbers</code></li>
   <li><code>centered_heptagonal_numbers</code></li>
@@ -118,20 +119,26 @@ end
   <li><code>centered_icosinonagonal_numbers</code></li>
   <li><code>centered_triacontagonal_numbers</code></li>
   <li><code>centered_mgonal_numbers(m)</code></li>
-  <li><code>pronic_numbers</code></li>
+  <li><code>pronic_numbers = heteromecic numbers = oblong numbers</code></li>
+  <li><code>heteromecic_numbers</code></li>
+  <li><code>oblong_numbers</code></li>
+  <!-- polite numbers -->
   <li><code>cross_numbers</code></li>
   <li><code>aztec_diamond_numbers</code></li>
   <li><code>polygram_numbers(m) = centered star polygonal numbers</code></li>
   <li><code>centered_star_polygonal_numbers(m)</code></li>
+  <li><code>pentagram_numbers</code></li>
   <li><code>gnomic_numbers</code></li>
   <li><code>truncated_triangular_numbers</code></li>
   <li><code>truncated_square_numbers</code></li>
   <li><code>truncated_pronic_numbers</code></li>
-  <li><code>truncated_center_pol_numbers(k)</code></li>
+  <li><code>truncated_centered_pol_numbers(k) = truncated centered mgonal numbers</code></li>
+  <li><code>truncated_centered_mgonal_numbers(k)</code></li>
   <li><code>truncated_centered_triangular_numbers</code></li>
   <li><code>truncated_centered_square_numbers</code></li>
   <li><code>truncated_centered_pentagonal_numbers</code></li>
-  <li><code>truncated_centered_hexagonal_numbers</code></li>
+  <li><code>truncated_centered_hexagonal_numbers = truncated hex numbers</code></li>
+  <li><code>truncated_hex_numbers</code></li>
   <li><code>generalized_mgonal_numbers(m, left_index = 0)</code></li>
   <li><code>generalized_centered_pol_numbers(m, left_index = 0)</code></li>
   <li><code>generalized_pronic_numbers(left_index = 0)</code></li>
@@ -328,6 +335,14 @@ end
   | Name                 | Formula |      |
   | -------------------- | ------- | ---- |
   | Cent. icosioctagonal |         | `85` |
+
+- Chapter 1, page 65 (polite numbers) says:
+  > `inpolite numbers`
+
+  It should read:
+
+  > `impolite numbers`
+
 
 - Chapter 1, formula (truncated centered pentagonal numbers) of  page 72 says:
   > `TCSS_5(n) = (35n^2 - 55n) / 2 + 3`
