@@ -280,7 +280,9 @@ end
   <li><code>six_dimensional_centered_hyperoctahedron_numbers</code></li>
   <li><code>generalized_pentatope_numbers(left_index = 0)</code></li>
   <li><code>generalized_k_dimensional_hypertetrahedron_numbers(k = 5, left_index = 0)</code></li>
+  <li><code>generalized_biquadratic_numbers(left_index = 0)</code></li>
   <li><code>generalized_k_dimensional_hypercube_numbers(k = 5, left_index = 0)</code></li>
+  <li><code>generalized_hyperoctahedral_numbers(left_index = 0)</code></li>
   <li><code>generalized_k_dimensional_hyperoctahedron_numbers(k = 5, left_index = 0) = even or odd dimension only changes sign</code></li>
   <li><code>generalized_nexus_numbers(k, left_index = 0) = even or odd dimension only changes sign</code></li>
 </ol>
