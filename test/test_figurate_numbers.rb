@@ -385,6 +385,10 @@ class TestFigurateNumbers  < Minitest::Test
     assert_equal([1, 10, 40, 105, 219, 396, 650, 995, 1445, 2014], FigurateNumbers.centered_octagonal_pyramid_numbers.take(10))
   end
 
+  def test_centered_octahedron_numbers
+    assert_equal([1, 7, 25, 63, 129, 231, 377, 575, 833, 1159, 1561, 2047, 2625, 3303, 4089, 4991, 6017, 7175, 8473, 9919], FigurateNumbers.centered_octahedron_numbers.take(20))
+  end
+
   def test_centered_icosahedron_numbers
     assert_equal([1, 13, 55, 147, 309, 561, 923, 1415, 2057, 2869], FigurateNumbers.centered_icosahedron_numbers.take(10))
   end
