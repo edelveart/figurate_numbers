@@ -993,6 +993,7 @@ module FigurateNumbers
   alias_method :k_hypertetrahedron_numbers, :k_dimensional_hypertetrahedron_numbers
   alias_method :regular_k_polytopic_numbers, :k_dimensional_hypertetrahedron_numbers
   alias_method :figurate_number_of_order_k, :k_dimensional_hypertetrahedron_numbers
+  alias_method :k_simplex_numbers, :k_dimensional_hypertetrahedron_numbers
 
   def five_dimensional_hypertetrahedron_numbers
     Enumerator.new do |y|
@@ -1035,6 +1036,7 @@ module FigurateNumbers
   end
 
   alias_method :k_hypercube_numbers, :k_dimensional_hypercube_numbers
+  alias_method :k_measure_polytope_numbers, :k_dimensional_hypercube_numbers
 
   def five_dimensional_hypercube_numbers
     Enumerator.new do |y|
@@ -1096,6 +1098,10 @@ module FigurateNumbers
     end
   end
 
+  alias_method :icositetrachoron_numbers, :polyoctahedral_numbers
+  alias_method :octaplex_numbers, :polyoctahedral_numbers
+  alias_method :hyperdiamond_numbers, :polyoctahedral_numbers
+
   def four_dimensional_hyperoctahedron_numbers
     Enumerator.new do |y|
       (1..Float::INFINITY).each do |delta|
@@ -1120,6 +1126,41 @@ module FigurateNumbers
     end
   end
 
+  def seven_dimensional_hyperoctahedron_numbers
+    Enumerator.new do |y|
+      (1..Float::INFINITY).each do |delta|
+        y << (4 * delta**6 + 70 * delta**4 + 196 * delta**2 + 45) * delta / 315
+      end
+    end
+  end
+
+  def eight_dimensional_hyperoctahedron_numbers
+    Enumerator.new do |y|
+      (1..Float::INFINITY).each do |delta|
+        y << (delta**6 + 28 * delta**4 + 154 * delta**2 + 132) * delta**2 / 315
+      end
+    end
+  end
+
+  def nine_dimensional_hyperoctahedron_numbers
+    Enumerator.new do |y|
+      (1..Float::INFINITY).each do |delta|
+        y << (2 * delta**8 + 84 * delta**6 + 798 * delta**4 + 1636 * delta**2 + 315) * delta / 2835
+      end
+    end
+  end
+
+  def ten_dimensional_hyperoctahedron_numbers
+    Enumerator.new do |y|
+      (1..Float::INFINITY).each do |delta|
+        y << (2 * delta**8 + 120 * delta**6 + 1806 * delta**4 + 7180 * delta**2 + 5067) * delta**2 / 14175
+      end
+    end
+  end
+
+
+
+
   def k_dimensional_hyperoctahedron_numbers(k)
     Enumerator.new do |y|
       (1..Float::INFINITY).each do |delta|
@@ -1132,10 +1173,86 @@ module FigurateNumbers
     end
   end
 
+  alias_method :k_cross_polytope_numbers, :k_dimensional_hyperoctahedron_numbers
+
   def four_dimensional_mgonal_pyramidal_numbers(m)
     Enumerator.new do |y|
       (1..Float::INFINITY).each do |delta|
         y << (delta * (delta + 1) * (delta + 2) *  ((m - 2) * delta - m + 6)) / 24
+      end
+    end
+  end
+
+  alias_method :mgonal_pyramidal_number_of_the_second_order, :four_dimensional_mgonal_pyramidal_numbers
+
+  def four_dimensional_square_pyramidal_numbers
+    Enumerator.new do |y|
+      (1..Float::INFINITY).each do |delta|
+        y << (delta * (delta + 1) * (delta + 2) *  ((4 - 2) * delta - 4 + 6)) / 24
+      end
+    end
+  end
+
+  def four_dimensional_pentagonal_pyramidal_numbers
+    Enumerator.new do |y|
+      (1..Float::INFINITY).each do |delta|
+        y << (delta * (delta + 1) * (delta + 2) *  ((5 - 2) * delta - 5 + 6)) / 24
+      end
+    end
+  end
+
+  def four_dimensional_hexagonal_pyramidal_numbers
+    Enumerator.new do |y|
+      (1..Float::INFINITY).each do |delta|
+        y << (delta * (delta + 1) * (delta + 2) *  ((6 - 2) * delta - 6 + 6)) / 24
+      end
+    end
+  end
+
+  def four_dimensional_heptagonal_pyramidal_numbers
+    Enumerator.new do |y|
+      (1..Float::INFINITY).each do |delta|
+        y << (delta * (delta + 1) * (delta + 2) *  ((7 - 2) * delta - 7 + 6)) / 24
+      end
+    end
+  end
+
+  def four_dimensional_octagonal_pyramidal_numbers
+    Enumerator.new do |y|
+      (1..Float::INFINITY).each do |delta|
+        y << (delta * (delta + 1) * (delta + 2) *  ((8 - 2) * delta - 8 + 6)) / 24
+      end
+    end
+  end
+
+  def four_dimensional_nonagonal_pyramidal_numbers
+    Enumerator.new do |y|
+      (1..Float::INFINITY).each do |delta|
+        y << (delta * (delta + 1) * (delta + 2) *  ((9 - 2) * delta - 9 + 6)) / 24
+      end
+    end
+  end
+
+  def four_dimensional_decagonal_pyramidal_numbers
+    Enumerator.new do |y|
+      (1..Float::INFINITY).each do |delta|
+        y << (delta * (delta + 1) * (delta + 2) *  ((10 - 2) * delta - 10 + 6)) / 24
+      end
+    end
+  end
+
+  def four_dimensional_hendecagonal_pyramidal_numbers
+    Enumerator.new do |y|
+      (1..Float::INFINITY).each do |delta|
+        y << (delta * (delta + 1) * (delta + 2) *  ((11 - 2) * delta - 11 + 6)) / 24
+      end
+    end
+  end
+
+  def four_dimensional_dodecagonal_pyramidal_numbers
+    Enumerator.new do |y|
+      (1..Float::INFINITY).each do |delta|
+        y << (delta * (delta + 1) * (delta + 2) *  ((12 - 2) * delta - 12 + 6)) / 24
       end
     end
   end
@@ -1179,6 +1296,8 @@ module FigurateNumbers
       end
     end
   end
+
+  alias_method :mgonal_pyramidal_number_of_the_k_2_th_order, :k_dimensional_mgonal_pyramidal_numbers
 
   def centered_biquadratic_numbers
     Enumerator.new do |y|
@@ -1252,6 +1371,22 @@ module FigurateNumbers
     end
   end
 
+  def five_dimensional_centered_hypertetrahedron_numbers
+    Enumerator.new do |y|
+      (1..Float::INFINITY).each do |n|
+        y << acc_helper_centered_hypertetrahedron(5, n)
+      end
+    end
+  end
+
+  def six_dimensional_centered_hypertetrahedron_numbers
+    Enumerator.new do |y|
+      (1..Float::INFINITY).each do |n|
+        y << acc_helper_centered_hypertetrahedron(6, n)
+      end
+    end
+  end
+
   def centered_hyperotahedral_numbers
     Enumerator.new do |y|
       (1..Float::INFINITY).each do |delta|
@@ -1259,6 +1394,8 @@ module FigurateNumbers
       end
     end
   end
+
+  alias_method :orthoplex_numbers, :centered_hyperotahedral_numbers
 
   def nexus_numbers(k)
     Enumerator.new do |y|
@@ -1287,6 +1424,24 @@ module FigurateNumbers
       y << 1
       (1..Float::INFINITY).each do |n|
         y << ext_int_double_summation(k, n)
+      end
+    end
+  end
+
+  def five_dimensional_centered_hyperoctahedron_numbers
+    Enumerator.new do |y|
+      y << 1
+      (1..Float::INFINITY).each do |n|
+        y << ext_int_double_summation(5, n)
+      end
+    end
+  end
+
+  def six_dimensional_centered_hyperoctahedron_numbers
+    Enumerator.new do |y|
+      y << 1
+      (1..Float::INFINITY).each do |n|
+        y << ext_int_double_summation(6, n)
       end
     end
   end
@@ -1473,9 +1628,3 @@ module FigurateNumbers
   end
 
 end
-
-
-# print FigurateNumbers.hyperoctahedral_numbers.take(25)
-# puts
-# print FigurateNumbers.four_dimensional_hyperoctahedron_numbers.take(25)
-# print FigurateNumbers.six_dimensional_hypercube_numbers.take(25)
