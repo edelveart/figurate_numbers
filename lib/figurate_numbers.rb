@@ -736,6 +736,14 @@ module FigurateNumbers
     end
   end
 
+  def centered_octahedron_numbers
+    Enumerator.new do |y|
+      (1..Float::INFINITY).each do |delta|
+        y << (2 * delta - 1) * (2 * delta**2 - 2 * delta + 3) / 3
+      end
+    end
+  end
+
   def centered_icosahedron_numbers
     Enumerator.new do |y|
       (1..Float::INFINITY).each do |delta|
@@ -743,6 +751,8 @@ module FigurateNumbers
       end
     end
   end
+
+  alias_method :centered_cuboctahedron_numbers, :centered_icosahedron_numbers
 
   def centered_dodecahedron_numbers
     Enumerator.new do |y|
@@ -1410,4 +1420,3 @@ module FigurateNumbers
   end
 
 end
-print FigurateNumbers.centered_pentagonal_pyramidal_numbers.take(10)
