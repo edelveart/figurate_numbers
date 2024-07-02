@@ -154,11 +154,13 @@ end
   <li><code>hauy_rhombic_dodecahedral_numbers</code></li>
   <li><code>centered_tetrahedral_numbers</code></li>
   <li><code>centered_square_pyramid_numbers</code></li>
-  <li><code>centered_pentagonal_pyramid_numbers = centered octahedron numbers</code></li>
+  <li><code>centered_pentagonal_pyramid_numbers = centered octahedron numbers (equality only in quantity)</code></li>
   <li><code>centered_hexagonal_pyramid_numbers</code></li>
   <li><code>centered_heptagonal_pyramid_numbers</code></li>
   <li><code>centered_octagonal_pyramid_numbers</code></li>
-  <li><code>centered_icosahedron_numbers</code></li>
+  <li><code>centered_octahedron_numbers</code></li>
+  <li><code>centered_icosahedron_numbers = centered_cuboctahedron_numbers</code></li>
+  <li><code>centered_cuboctahedron_numbers</code></li>
   <li><code>centered_dodecahedron_numbers</code></li>
   <li><code>centered_truncated_tetrahedron_numbers</code></li>
   <li><code>centered_truncated_cube_numbers</code></li>
