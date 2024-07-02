@@ -122,7 +122,8 @@ end
   <li><code>pronic_numbers = heteromecic numbers = oblong numbers</code></li>
   <li><code>heteromecic_numbers</code></li>
   <li><code>oblong_numbers</code></li>
-  <!-- polite numbers -->
+  <li><code>polite_numbers</code></li>
+  <li><code>impolite_numbers</code></li>
   <li><code>cross_numbers</code></li>
   <li><code>aztec_diamond_numbers</code></li>
   <li><code>polygram_numbers(m) = centered star polygonal numbers</code></li>
@@ -191,6 +192,7 @@ end
   <li><code>generalized_centered_square_pyramid_numbers(left_index = 0)</code></li>
   <li><code>generalized_rhombic_dodecahedral_numbers(left_index = 0)</code></li>
   <li><code>generalized_centered_mgonal_pyramidal_numbers(m, left_index = 0)</code></li>
+  <li><code>generalized_mgonal_prism_numbers(m, left_index = 0)</code></li>
   <li><code>generalized_hexagonal_prism_numbers(left_index = 0)</code></li>
 </ol>
 
@@ -284,6 +286,12 @@ end
   <li><code>generalized_k_dimensional_hypercube_numbers(k = 5, left_index = 0)</code></li>
   <li><code>generalized_hyperoctahedral_numbers(left_index = 0)</code></li>
   <li><code>generalized_k_dimensional_hyperoctahedron_numbers(k = 5, left_index = 0) = even or odd dimension only changes sign</code></li>
+  <li><code>generalized_hyperdodecahedral_numbers(left_index = 0)</code></li>
+  <li><code>generalized_hypericosahedral_numbers(left_index = 0)</code></li>
+  <li><code>generalized_polyoctahedral_numbers(left_index = 0)</code></li>
+  <li><code>generalized_k_dimensional_mgonal_pyramidal_numbers(k, m, left_index = 0)</code></li>
+  <li><code>generalized_k_dimensional_centered_hypercube_numbers(k, left_index = 0)</code></li>
+
   <li><code>generalized_nexus_numbers(k, left_index = 0) = even or odd dimension only changes sign</code></li>
 </ol>
 
