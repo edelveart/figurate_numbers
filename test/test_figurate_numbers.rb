@@ -310,6 +310,14 @@ class TestFigurateNumbers  < Minitest::Test
     assert_equal([1030, 931, 837, 748, 664, 585, 511, 442, 378, 319, 265, 216, 172, 133, 99, 70, 46, 27, 13, 4, 0, 1, 7, 18, 34, 55, 81, 112, 148, 189, 235, 286, 342, 403, 469, 540, 616, 697, 783, 874, 970, 1071, 1177, 1288, 1404, 1525, 1651, 1782, 1918, 2059, 2205, 2356, 2512, 2673, 2839, 3010, 3186, 3367, 3553, 3744, 3940, 4141, 4347, 4558, 4774], FigurateNumbers.generalized_mgonal_numbers(7, 20).take(65))
   end
 
+  def test_generalized_pentagonal_numbers
+    assert_equal([155, 126, 100, 77, 57, 40, 26, 15, 7, 2, 0, 1, 5, 12, 22, 35, 51, 70, 92, 117], FigurateNumbers.generalized_pentagonal_numbers(10).take(20))
+  end
+
+  def test_generalized_hexagonal_numbers
+    assert_equal([210, 171, 136, 105, 78, 55, 36, 21, 10, 3, 0, 1, 6, 15, 28, 45, 66, 91, 120, 153], FigurateNumbers.generalized_hexagonal_numbers(10).take(20))
+  end
+
   def test_generalized_centered_pol_numbers
     assert_equal([1441, 1261, 1093, 937, 793, 661, 541, 433, 337, 253, 181, 121, 73, 37, 13, 1, 1, 13, 37, 73, 121, 181, 253, 337, 433, 541, 661, 793, 937, 1093, 1261, 1441, 1633, 1837, 2053, 2281, 2521, 2773,
     3037, 3313, 3601, 3901], FigurateNumbers.generalized_centered_pol_numbers(12, 15).take(42))
