@@ -315,6 +315,8 @@ module FigurateNumbers
     end
   end
 
+  alias_method :star_numbers, :centered_dodecagonal_numbers
+
   def centered_tridecagonal_numbers
     Enumerator.new do |y|
       (1..Float::INFINITY).each do |delta|
