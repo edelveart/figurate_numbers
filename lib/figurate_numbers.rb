@@ -1594,10 +1594,26 @@ module FigurateNumbers
     end
   end
 
+  def generalized_biquadratic_numbers(left_index = 0)
+    Enumerator.new do |y|
+      ((-1 * left_index.abs)..Float::INFINITY).each do |delta|
+        y << delta**4
+      end
+    end
+  end
+
   def generalized_k_dimensional_hypercube_numbers(k = 5, left_index = 0)
     Enumerator.new do |y|
       ((-1 * left_index.abs)..Float::INFINITY).each do |delta|
         y << delta**k
+      end
+    end
+  end
+
+  def generalized_hyperoctahedral_numbers(left_index = 0)
+    Enumerator.new do |y|
+      ((-1 * left_index.abs)..Float::INFINITY).each do |delta|
+        y << (delta**2 * (delta**2 + 2)) / 3
       end
     end
   end
