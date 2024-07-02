@@ -98,6 +98,7 @@ end
   <li><code>centered_decagonal_numbers</code></li>
   <li><code>centered_hendecagonal_numbers</code></li>
   <li><code>centered_dodecagonal_numbers = star number</code></li>
+  <li><code>star_numbers</code></li>
   <li><code>centered_tridecagonal_numbers</code></li>
   <li><code>centered_tetradecagonal_numbers</code></li>
   <li><code>centered_pentadecagonal_numbers</code></li>
