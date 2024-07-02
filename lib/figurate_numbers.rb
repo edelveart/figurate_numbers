@@ -808,6 +808,16 @@ module FigurateNumbers
     end
   end
 
+  def centered_hexagonal_pyramidal_numbers
+    Enumerator.new do |y|
+      (1..Float::INFINITY).each do |delta|
+        y << delta**3
+      end
+    end
+  end
+
+  alias_method :hex_pyramidal_numbers, :centered_hexagonal_pyramidal_numbers
+
   def centered_mgonal_pyramidal_numbers(m)
     Enumerator.new do |y|
       (1..Float::INFINITY).each do |delta|
@@ -1400,4 +1410,4 @@ module FigurateNumbers
   end
 
 end
-
+print FigurateNumbers.centered_pentagonal_pyramidal_numbers.take(10)
