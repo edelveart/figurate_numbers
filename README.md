@@ -159,7 +159,7 @@ end
   <li><code>centered_heptagonal_pyramid_numbers</code></li>
   <li><code>centered_octagonal_pyramid_numbers</code></li>
   <li><code>centered_octahedron_numbers</code></li>
-  <li><code>centered_icosahedron_numbers = centered_cuboctahedron_numbers</code></li>
+  <li><code>centered_icosahedron_numbers = centered cuboctahedron numbers</code></li>
   <li><code>centered_cuboctahedron_numbers</code></li>
   <li><code>centered_dodecahedron_numbers</code></li>
   <li><code>centered_truncated_tetrahedron_numbers</code></li>
@@ -189,30 +189,79 @@ end
 
 ### 3. Multidimensional figurate numbers
 <ol>
-  <li><code>pentatope_numbers</code></li>
-  <li><code>k_dimensional_hypertetrahedron_numbers(k) = regular k-polytopic number, k-simplex numbers</code></li>
+  <li><code>pentatope_numbers = hypertetrahedral_number = triangulotriangular_number</code></li>
+  <li><code>hypertetrahedral_number</code></li>
+  <li><code>triangulotriangular_number</code></li>
+  <li><code>k_dimensional_hypertetrahedron_numbers(k) = k hypertetrahedron numbers = regular k-polytopic number = figurate number of order k = k-simplex numbers</code></li>
+  <li><code>k_hypertetrahedron_numbers(k)</code></li>
+  <li><code>regular_k_polytopic_numbers(k)</code></li>
+  <li><code>figurate_number_of_order_k(k)</code></li>
+  <!-- <li><code>k_simplex_numbers(k) = for k >= 5</code></li> -->
+  <li><code>five_dimensional_hypertetrahedron_numbers</code></li>
+  <li><code>six_dimensional_hypertetrahedron_numbers</code></li>
   <li><code>biquadratic_numbers</code></li>
-  <li><code>k_dimensional_hypercube_numbers(k)</code></li>
-  <li><code>hyperoctahedral_numbers = 4D hyperoctahedron numbers</code></li>
-  <li><code>hypericosahedral_numbers</code></li>
-  <li><code>hyperdodecahedral_numbers</code></li>
-  <li><code>polyoctahedral_numbers</code></li>
+  <li><code>k_dimensional_hypercube_numbers(k) = k-measure polytope numbers </code></li>
+  <!-- <li><code>k_measure_polytope_numbers(k) = for k >= 5</code></li> -->
+  <li><code>five_dimensional_hypercube_numbers</code></li>
+  <li><code>six_dimensional_hypercube_numbers</code></li>
+  <li><code>hyperoctahedral_numbers = 4D hyperoctahedron numbers = hexadecachoron_numbers = four_cross_polytope_numbers = four_orthoplex_numbers</code></li>
+  <li><code>hexadecachoron_numbers</code></li>
+  <li><code>four_cross_polytope_numbers</code></li>
+  <li><code>four_orthoplex_numbers</code></li>
+  <li><code>hypericosahedral_numbers = tetraplex numbers = polytetrahedron numbers </code></li>
+  <li><code>tetraplex_numbers</code></li>
+  <li><code>polytetrahedron_numbers</code></li>
+  <li><code>hexacosichoron_numbers</code></li>
+  <li><code>hyperdodecahedral_numbers = hecatonicosachoron_numbers = dodecaplex numbers = polydodecahedron numbers</code></li>
+  <li><code>hecatonicosachoron_numbers</code></li>
+  <li><code>dodecaplex_numbers</code></li>
+  <li><code>polydodecahedron_numbers,</code></li>
+  <li><code>polyoctahedral_numbers = icositetrachoron numbers = octaplex numbers = hyperdiamond numbers</code></li>
+  <li><code>icositetrachoron_numbers</code></li>
+  <li><code>octaplex_numbers</code></li>
+  <li><code>hyperdiamond_numbers</code></li>
   <li><code>four_dimensional_hyperoctahedron_numbers</code></li>
   <li><code>five_dimensional_hyperoctahedron_numbers</code></li>
-  <li><code>k_dimensional_hyperoctahedron_numbers(k)</code></li>
+  <li><code>six_dimensional_hyperoctahedron_numbers</code></li>
+  <li><code>seven_dimensional_hyperoctahedron_numbers</code></li>
+  <li><code>eight_dimensional_hyperoctahedron_numbers</code></li>
+  <li><code>nine_dimensional_hyperoctahedron_numbers</code></li>
+  <li><code>ten_dimensional_hyperoctahedron_numbers</code></li>
+  <li><code>k_dimensional_hyperoctahedron_numbers(k) = k-cross polytope numbers </code></li>
+  <li><code>k_cross_polytope_numbers(k)</code></li>
   <li><code>four_dimensional_mgonal_pyramidal_numbers(m) = mgonal pyramidal number of the second order</code></li>
+  <li><code>mgonal_pyramidal_number_of_the_second_order(m)</code></li>
+  <li><code>four_dimensional_square_pyramidal_numbers</code></li>
+  <li><code>four_dimensional_pentagonal_pyramidal_numbers</code></li>
+  <li><code>four_dimensional_hexagonal_pyramidal_numbers</code></li>
+  <li><code>four_dimensional_heptagonal_pyramidal_numbers</code></li>
+  <li><code>four_dimensional_octagonal_pyramidal_numbers</code></li>
+  <li><code>four_dimensional_nonagonal_pyramidal_numbers</code></li>
+  <li><code>four_dimensional_decagonal_pyramidal_numbers</code></li>
+  <li><code>four_dimensional_hendecagonal_pyramidal_numbers</code></li>
+  <li><code>four_dimensional_dodecagonal_pyramidal_numbers</code></li>
   <li><code>five_dimensional_mgonal_pyramidal_numbers(m)</code></li>
   <li><code>six_dimensional_mgonal_pyramidal_numbers(m)</code></li>
+
   <li><code>k_dimensional_mgonal_pyramidal_numbers(k, m) = mgonal pyramidal of the (k-2)-th order</code></li>
+  <li><code>mgonal_pyramidal_number_of_the_k_2_th_order(k, m)</code></li>
+
   <li><code>centered_biquadratic_numbers</code></li>
   <li><code>k_dimensional_centered_hypercube_numbers(k)</code></li>
   <li><code>five_dimensional_centered_hypercube_numbers</code></li>
   <li><code>six_dimensional_centered_hypercube_numbers</code></li>
   <li><code>centered_polytope_numbers</code></li>
   <li><code>k_dimensional_centered_hypertetrahedron_numbers(k)</code></li>
-  <li><code>centered_hyperotahedral_numbers = ortoplex numbers</code></li>
+  <li><code>five_dimensional_centered_hypertetrahedron_numbers(k)</code></li>
+  <li><code>six_dimensional_centered_hypertetrahedron_numbers(k)</code></li>
+
+
+  <li><code>centered_hyperotahedral_numbers = orthoplex numbers</code></li>
+  <li><code>orthoplex numbers</code></li>
   <li><code>nexus_numbers(k)</code></li>
   <li><code>k_dimensional_centered_hyperoctahedron_numbers(k)</code></li>
+  <li><code>five_dimensional_centered_hyperoctahedron_numbers(k)</code></li>
+  <li><code>six_dimensional_centered_hyperoctahedron_numbers(k)</code></li>
   <li><code>generalized_pentatope_numbers(left_index = 0)</code></li>
   <li><code>generalized_k_dimensional_hypertetrahedron_numbers(k = 5, left_index = 0)</code></li>
   <li><code>generalized_k_dimensional_hypercube_numbers(k = 5, left_index = 0)</code></li>
@@ -306,4 +355,18 @@ end
   Formula must write:
 
   > `S_4^3(n) = ((2n - 1) * (n^2 - n + 2)) / 2`
+
+- Chapter 3, page 188 (hyperoctahedral numbers) says:
+  > `hexadecahoron numbers`
+
+  It should read:
+
+  > `hexadecachoron numbers`
+
+- Chapter 3, page 190 (hypericosahedral numbers) says:
+  > `hexacisihoron numbers`
+
+  It should read:
+
+  > `hexacosichoron numbers`
 
