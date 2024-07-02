@@ -216,7 +216,7 @@ end
   <li><code>k_measure_polytope_numbers(k) = for k >= 5</code></li>
   <li><code>five_dimensional_hypercube_numbers</code></li>
   <li><code>six_dimensional_hypercube_numbers</code></li>
-  <li><code>hyperoctahedral_numbers = 4D hyperoctahedron numbers = hexadecachoron_numbers = four_cross_polytope_numbers = four_orthoplex_numbers</code></li>
+  <li><code>hyperoctahedral_numbers = hexadecachoron_numbers = four_cross_polytope_numbers = four_orthoplex_numbers</code></li>
   <li><code>hexadecachoron_numbers</code></li>
   <li><code>four_cross_polytope_numbers</code></li>
   <li><code>four_orthoplex_numbers</code></li>
