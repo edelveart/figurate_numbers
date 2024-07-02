@@ -965,6 +965,14 @@ module FigurateNumbers
     end
   end
 
+  def generalized_mgonal_prism_numbers(m, left_index = 0)
+    Enumerator.new do |y|
+      ((-1 * left_index.abs)..Float::INFINITY).each do |delta|
+        y << delta * (m * delta**2 - m * delta + 2) / 2
+      end
+    end
+  end
+
   def generalized_hexagonal_prism_numbers(left_index = 0)
     Enumerator.new do |y|
       ((-1 * left_index.abs)..Float::INFINITY).each do |delta|
@@ -1630,9 +1638,6 @@ module FigurateNumbers
     end
   end
 
-
-
-
   def generalized_hyperdodecahedral_numbers(left_index = 0)
     Enumerator.new do |y|
       ((-1 * left_index.abs)..Float::INFINITY).each do |delta|
@@ -1653,6 +1658,23 @@ module FigurateNumbers
     Enumerator.new do |y|
       ((-1 * left_index.abs)..Float::INFINITY).each do |delta|
         y << delta**2 * (3 * delta**2 - 4 * delta + 2)
+      end
+    end
+  end
+
+  def generalized_k_dimensional_mgonal_pyramidal_numbers(k, m, left_index = 0)
+    Enumerator.new do |y|
+      ((-1 * left_index.abs)..Float::INFINITY).each do |n|
+        y << (pseudo_pochhammer_function(n, k) * ((m - 2) * n - m + k + 2)) /
+        factorial_iter(k)
+      end
+    end
+  end
+
+  def generalized_k_dimensional_centered_hypercube_numbers(k, left_index = 0)
+    Enumerator.new do |y|
+      ((-1 * left_index.abs)..Float::INFINITY).each do |delta|
+        y << delta**k + (delta - 1)**k
       end
     end
   end
