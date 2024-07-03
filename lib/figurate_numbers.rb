@@ -1162,7 +1162,6 @@ module FigurateNumbers
   end
 
   alias_method :k_hypercube_numbers, :k_dimensional_hypercube_numbers
-  alias_method :k_measure_polytope_numbers, :k_dimensional_hypercube_numbers
 
   def five_dimensional_hypercube_numbers
     Enumerator.new do |y|
