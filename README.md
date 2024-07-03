@@ -2,23 +2,19 @@
 
 [![Gem Version](https://badge.fury.io/rb/figurate_numbers.svg)](https://badge.fury.io/rb/figurate_numbers)
 
-`figurate_numbers` is a Ruby module that implements `151 infinite number sequences` based on the formulas from the wonderful book
+`figurate_numbers` is a Ruby module that implements `206 infinite number sequences` based on the formulas from the wonderful book
 > [Figurate Numbers (2012)](https://books.google.com.pe/books/about/Figurate_Numbers.html?id=ERS7CgAAQBAJ&redir_esc=y) by Elena Deza and Michel Deza.
 
 This implementation uses the **Enumerator class** to deal with **INFINITE SEQUENCES**.
 
 Following the order of the book, the methods are divided into 3 types according to the spatial dimension (see complete list below):
 
-1. **Plane** figurate numbers implemented = `74`
-2. **Space** figurate numbers implemented = `42`
-3. **Multidimensional** figurate numbers implemented = `29`
-
-Additionally we have the sequences mentioned in chapter 6:
-
+1. **Plane** figurate numbers implemented = `79`
+2. **Space** figurate numbers implemented = `53`
+3. **Multidimensional** figurate numbers implemented = `68`
 4. **Zoo of figurate-related numbers** implemented = `6`
 
-- [x] **TOTAL** = `151` infinite sequences of figurate numbers implemented
-
+- [x] **TOTAL** = `206` infinite sequences of figurate numbers implemented
 
 ## Installation and use
 
@@ -56,6 +52,8 @@ end
 ```
 
 ## List of implemented sequences
+
+* Note that `=` means that you can call the same function with those names.
 
 ### 1. Plane Figurate Numbers
 <ol>
@@ -208,13 +206,14 @@ end
   <li><code>five_dimensional_hypertetrahedron_numbers</code></li>
   <li><code>six_dimensional_hypertetrahedron_numbers</code></li>
   <li><code>biquadratic_numbers</code></li>
-  <li><code>k_dimensional_hypercube_numbers(k) = k_hypercube_numbers =  k_measure_polytope_numbers(for k >=5) </code></li>
+  <li><code>k_dimensional_hypercube_numbers(k) = k_hypercube_numbers = k_measure_polytope_numbers(for k >=5) </code></li>
   <li><code>five_dimensional_hypercube_numbers</code></li>
   <li><code>six_dimensional_hypercube_numbers</code></li>
   <li><code>hyperoctahedral_numbers = hexadecachoron_numbers = four_cross_polytope_numbers = four_orthoplex_numbers</code></li>
   <li><code>hypericosahedral_numbers = tetraplex_numbers = polytetrahedron_numbers = hexacosichoron_numbers </code></li>
   <li><code>hyperdodecahedral_numbers = hecatonicosachoron_numbers = dodecaplex_numbers = polydodecahedron_numbers</code></li>
   <li><code>polyoctahedral_numbers = icositetrachoron_numbers = octaplex_numbers = hyperdiamond_numbers</code></li>
+
   <li><code>four_dimensional_hyperoctahedron_numbers</code></li>
   <li><code>five_dimensional_hyperoctahedron_numbers</code></li>
   <li><code>six_dimensional_hyperoctahedron_numbers</code></li>
@@ -223,6 +222,7 @@ end
   <li><code>nine_dimensional_hyperoctahedron_numbers</code></li>
   <li><code>ten_dimensional_hyperoctahedron_numbers</code></li>
   <li><code>k_dimensional_hyperoctahedron_numbers(k) = k_cross_polytope_numbers(k)</code></li>
+
   <li><code>four_dimensional_mgonal_pyramidal_numbers(m) = mgonal_pyramidal_number_of_the_second_order(m)</code></li>
   <li><code>four_dimensional_square_pyramidal_numbers</code></li>
   <li><code>four_dimensional_pentagonal_pyramidal_numbers</code></li>
@@ -233,6 +233,7 @@ end
   <li><code>four_dimensional_decagonal_pyramidal_numbers</code></li>
   <li><code>four_dimensional_hendecagonal_pyramidal_numbers</code></li>
   <li><code>four_dimensional_dodecagonal_pyramidal_numbers</code></li>
+
   <li><code>k_dimensional_mgonal_pyramidal_numbers(k, m) = mgonal_pyramidal_number_of_the_k_2_th_order(k, m)</code></li>
   <li><code>five_dimensional_mgonal_pyramidal_numbers</code></li>
   <li><code>five_dimensional_square_pyramidal_numbers</code></li>
@@ -266,7 +267,7 @@ end
   <li><code>generalized_biquadratic_numbers(left_index = 0)</code></li>
   <li><code>generalized_k_dimensional_hypercube_numbers(k = 5, left_index = 0)</code></li>
   <li><code>generalized_hyperoctahedral_numbers(left_index = 0)</code></li>
-  <li><code>generalized_k_dimensional_hyperoctahedron_numbers(k = 5, left_index = 0) = even or odd dimension only changes sign</code></li>
+  <li><code>generalized_k_dimensional_hyperoctahedron_numbers(k = 5, left_index = 0) [even or odd dimension only changes sign]</code></li>
   <li><code>generalized_hyperdodecahedral_numbers(left_index = 0)</code></li>
   <li><code>generalized_hypericosahedral_numbers(left_index = 0)</code></li>
   <li><code>generalized_polyoctahedral_numbers(left_index = 0)</code></li>
@@ -277,17 +278,16 @@ end
   <!-- <li><code>generalized_k_dimensional_centered_hypertetrahedron_numbers(k, left_index = 0)</code></li>
   <li><code>generalized_k_dimensional_centered_hyperoctahedron_numbers(k, left_index = 0)</code></li> -->
 
-
-  <li><code>generalized_nexus_numbers(k, left_index = 0) = even or odd dimension only changes sign</code></li>
+  <li><code>generalized_nexus_numbers(k, left_index = 0) [even or odd dimension only changes sign]</code></li>
 </ol>
 
 ### 6. Zoo of figurate-related numbers
 <ol>
   <li><code>cuban_numbers = cuban_prime_numbers</code></li>
-  <li><code>quartan_numbers = Needs to improve the algorithmic complexity for n > 70</code></li>
+  <li><code>quartan_numbers [Needs to improve the algorithmic complexity for n > 70]</code></li>
   <li><code>pell_numbers</code></li>
-  <li><code>carmichael_numbers = Needs to improve the algorithmic complexity for n > 20</code></li>
-  <li><code>stern_prime_numbers(infty = false) = Quick calculations up to 8 terms.</code></li>
+  <li><code>carmichael_numbers [Needs to improve the algorithmic complexity for n > 20]</code></li>
+  <li><code>stern_prime_numbers(infty = false) [Quick calculations up to 8 terms]</code></li>
   <li><code>apocalyptic_numbers</code></li>
 </ol>
 
