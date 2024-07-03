@@ -540,10 +540,10 @@ module FigurateNumbers
     end
   end
 
-  def truncated_centered_pol_numbers(k)
+  def truncated_centered_pol_numbers(m)
     Enumerator.new do |y|
       (1..Float::INFINITY).each do |delta|
-        y << 1 + (k * (7 * delta**2 - 11 * delta + 4)) / 2
+        y << 1 + (m * (7 * delta**2 - 11 * delta + 4)) / 2
       end
     end
   end
@@ -625,7 +625,6 @@ module FigurateNumbers
       end
     end
   end
-
 
   def r_pyramidal_numbers(r = 3)
     Enumerator.new do |y|
@@ -1120,7 +1119,7 @@ module FigurateNumbers
   alias_method :k_hypertetrahedron_numbers, :k_dimensional_hypertetrahedron_numbers
   alias_method :regular_k_polytopic_numbers, :k_dimensional_hypertetrahedron_numbers
   alias_method :figurate_number_of_order_k, :k_dimensional_hypertetrahedron_numbers
-  alias_method :k_simplex_numbers, :k_dimensional_hypertetrahedron_numbers
+
 
   def five_dimensional_hypertetrahedron_numbers
     Enumerator.new do |y|
@@ -1790,6 +1789,8 @@ module FigurateNumbers
       end
     end
   end
+
+  alias_method :cuban_prime_numbers, :cuban_numbers
 
   def helper_quartan_numbers(delta)
     seq = [2]
