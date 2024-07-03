@@ -162,13 +162,16 @@ end
   <li><code>centered_cube_numbers</code></li>
   <li><code>rhombic_dodecahedral_numbers</code></li>
   <li><code>hauy_rhombic_dodecahedral_numbers</code></li>
+
+  <li><code>centered_tetrahedron_numbers = centered tetrahedral numbers</code></li>
   <li><code>centered_tetrahedral_numbers</code></li>
   <li><code>centered_square_pyramid_numbers = centered pyramid numbers</code></li>
-  <li><code>centered_pyramid_numbers</code></li>
+  <li><code>centered_mgonal_pyramid_numbers(m)</code></li>
   <li><code>centered_pentagonal_pyramid_numbers = centered octahedron numbers (equality only in quantity)</code></li>
   <li><code>centered_hexagonal_pyramid_numbers</code></li>
   <li><code>centered_heptagonal_pyramid_numbers</code></li>
   <li><code>centered_octagonal_pyramid_numbers</code></li>
+
   <li><code>centered_octahedron_numbers</code></li>
   <li><code>centered_icosahedron_numbers = centered cuboctahedron numbers</code></li>
   <li><code>centered_cuboctahedron_numbers</code></li>
@@ -176,16 +179,25 @@ end
   <li><code>centered_truncated_tetrahedron_numbers</code></li>
   <li><code>centered_truncated_cube_numbers</code></li>
   <li><code>centered_truncated_octahedron_numbers</code></li>
-  <li><code>centered_mgonal_pyramid_numbers(m)</code></li>
+
+  <li><code>centered_mgonal_pyramidal_numbers(m)</code></li>
   <li><code>centered_triangular_pyramidal_numbers</code></li>
   <li><code>centered_square_pyramidal_numbers</code></li>
   <li><code>centered_pentagonal_pyramidal_numbers</code></li>
   <li><code>centered_hexagonal_pyramidal_numbers = hex_pyramidal_numbers</code></li>
   <li><code>hex_pyramidal_numbers</code></li>
-  <li><code>centered_mgonal_pyramidal_numbers(m)</code></li>
+  <li><code>centered_heptagonal_pyramidal_numbers</code></li>
+  <li><code>centered_octagonal_pyramidal_numbers</code></li>
+  <li><code>centered_nonagonal_pyramidal_numbers</code></li>
+  <li><code>centered_decagonal_pyramidal_numbers</code></li>
+  <li><code>centered_hendecagonal_pyramidal_numbers</code></li>
+  <li><code>centered_dodecagonal_pyramidal_numbers</code></li>
+
   <li><code>hexagonal_prism_numbers</code></li>
   <li><code>mgonal_prism_numbers(m)</code></li>
   <li><code>generalized_mgonal_pyramidal_numbers(m, left_index = 0)</code></li>
+  <li><code>generalized_pentagonal_pyramidal_numbers(left_index = 0)</code></li>
+  <li><code>generalized_hexagonal_pyramidal_numbers(left_index = 0)</code></li>
   <li><code>generalized_cubic_numbers(left_index = 0)</code></li>
   <li><code>generalized_octahedral_numbers(left_index = 0)</code></li>
   <li><code>generalized_icosahedral_numbers(left_index = 0)</code></li>
@@ -294,6 +306,11 @@ end
   <li><code>generalized_polyoctahedral_numbers(left_index = 0)</code></li>
   <li><code>generalized_k_dimensional_mgonal_pyramidal_numbers(k, m, left_index = 0)</code></li>
   <li><code>generalized_k_dimensional_centered_hypercube_numbers(k, left_index = 0)</code></li>
+
+  <!-- * Problems with math definition via binomial coeff in helper functions, n < 0 -->
+  <!-- <li><code>generalized_k_dimensional_centered_hypertetrahedron_numbers(k, left_index = 0)</code></li>
+  <li><code>generalized_k_dimensional_centered_hyperoctahedron_numbers(k, left_index = 0)</code></li> -->
+
 
   <li><code>generalized_nexus_numbers(k, left_index = 0) = even or odd dimension only changes sign</code></li>
 </ol>
