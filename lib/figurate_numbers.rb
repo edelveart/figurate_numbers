@@ -731,13 +731,15 @@ module FigurateNumbers
     end
   end
 
-  def centered_tetrahedral_numbers
+  def centered_tetrahedron_numbers
     Enumerator.new do |y|
       (1..Float::INFINITY).each do |delta|
         y << (2 * delta - 1) * ((delta**2 - delta + 3)) / 3
       end
     end
   end
+
+  alias_method :centered_tetrahedral_numbers, :centered_tetrahedron_numbers
 
   def centered_square_pyramid_numbers
     Enumerator.new do |y|
@@ -748,6 +750,14 @@ module FigurateNumbers
   end
 
   alias_method :centered_pyramid_numbers, :centered_square_pyramid_numbers
+
+  def centered_mgonal_pyramid_numbers(m)
+    Enumerator.new do |y|
+      (1..Float::INFINITY).each do |delta|
+        y << (m - 1) * ((delta - 1) * delta * (2 * delta - 1)) / 6 + (2 * delta - 1)
+      end
+    end
+  end
 
   def centered_pentagonal_pyramid_numbers
     Enumerator.new do |y|
@@ -831,10 +841,10 @@ module FigurateNumbers
     end
   end
 
-  def centered_mgonal_pyramid_numbers(m)
+  def centered_mgonal_pyramidal_numbers(m)
     Enumerator.new do |y|
       (1..Float::INFINITY).each do |delta|
-        y << (m - 1) * ((delta - 1) * delta * (2 * delta - 1)) / 6 + (2 * delta - 1)
+        y << (m * delta**3 + delta * (6 - m)) / 6
       end
     end
   end
@@ -873,7 +883,53 @@ module FigurateNumbers
 
   alias_method :hex_pyramidal_numbers, :centered_hexagonal_pyramidal_numbers
 
-  def centered_mgonal_pyramidal_numbers(m)
+  def centered_heptagonal_pyramidal_numbers
+    m = 7
+    Enumerator.new do |y|
+      (1..Float::INFINITY).each do |delta|
+        y << (m * delta**3 + delta * (6 - m)) / 6
+      end
+    end
+  end
+
+  def centered_octagonal_pyramidal_numbers
+    m = 8
+    Enumerator.new do |y|
+      (1..Float::INFINITY).each do |delta|
+        y << (m * delta**3 + delta * (6 - m)) / 6
+      end
+    end
+  end
+
+  def centered_nonagonal_pyramidal_numbers
+    m = 9
+    Enumerator.new do |y|
+      (1..Float::INFINITY).each do |delta|
+        y << (m * delta**3 + delta * (6 - m)) / 6
+      end
+    end
+  end
+
+  def centered_decagonal_pyramidal_numbers
+    m = 10
+    Enumerator.new do |y|
+      (1..Float::INFINITY).each do |delta|
+        y << (m * delta**3 + delta * (6 - m)) / 6
+      end
+    end
+  end
+
+  def centered_hendecagonal_pyramidal_numbers
+    m = 11
+    Enumerator.new do |y|
+      (1..Float::INFINITY).each do |delta|
+        y << (m * delta**3 + delta * (6 - m)) / 6
+      end
+    end
+  end
+
+  def centered_dodecagonal_pyramidal_numbers
+    m = 12
     Enumerator.new do |y|
       (1..Float::INFINITY).each do |delta|
         y << (m * delta**3 + delta * (6 - m)) / 6
@@ -898,6 +954,24 @@ module FigurateNumbers
   end
 
   def generalized_mgonal_pyramidal_numbers(m, left_index = 0)
+    Enumerator.new do |y|
+      ((-1 * left_index.abs)..Float::INFINITY).each do |delta|
+        y << (delta * (delta + 1) * ((m - 2) * delta - m + 5 )) / 6
+      end
+    end
+  end
+
+  def generalized_pentagonal_pyramidal_numbers(left_index = 0)
+    m = 5
+    Enumerator.new do |y|
+      ((-1 * left_index.abs)..Float::INFINITY).each do |delta|
+        y << (delta * (delta + 1) * ((m - 2) * delta - m + 5 )) / 6
+      end
+    end
+  end
+
+  def generalized_hexagonal_pyramidal_numbers(left_index = 0)
+    m = 6
     Enumerator.new do |y|
       ((-1 * left_index.abs)..Float::INFINITY).each do |delta|
         y << (delta * (delta + 1) * ((m - 2) * delta - m + 5 )) / 6
