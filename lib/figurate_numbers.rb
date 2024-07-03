@@ -242,7 +242,7 @@ module FigurateNumbers
       end
     end
   end
-end
+
   def centered_square_numbers
     Enumerator.new do |y|
       (1..Float::INFINITY).each do |delta|
@@ -1919,3 +1919,4 @@ end
   end
 
 end
+
