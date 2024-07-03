@@ -53,7 +53,7 @@ end
 
 ## List of implemented sequences
 
-* Note that `=` means that you can call the same function with those names.
+* Note that `=` means that you can call the same function with those .
 
 ### 1. Plane Figurate Numbers
 <ol>
@@ -141,7 +141,7 @@ end
 ### 2. Space Figurate Numbers
 <ol>
   <li><code>r_pyramidal_numbers(r)</code></li>
-  <li><code>cubic_numbers ???? hex_pyramidal_numbers (equality only by quantity) </code></li>
+  <li><code>cubic_numbers != hex_pyramidal_numbers (equality only by quantity) </code></li>
   <li><code>tetrahedral_numbers</code></li>
   <li><code>octahedral_numbers</code></li>
   <li><code>dodecahedral_numbers</code></li>
@@ -157,7 +157,7 @@ end
   <li><code>centered_tetrahedron_numbers = centered_tetrahedral_numbers</code></li>
   <li><code>centered_square_pyramid_numbers = centered_pyramid_numbers</code></li>
   <li><code>centered_mgonal_pyramid_numbers(m)</code></li>
-  <li><code>centered_pentagonal_pyramid_numbers ????? centered octahedron numbers (equality only in quantity)</code></li>
+  <li><code>centered_pentagonal_pyramid_numbers != centered octahedron numbers (equality only in quantity)</code></li>
   <li><code>centered_hexagonal_pyramid_numbers</code></li>
   <li><code>centered_heptagonal_pyramid_numbers</code></li>
   <li><code>centered_octagonal_pyramid_numbers</code></li>
@@ -202,15 +202,15 @@ end
 ### 3. Multidimensional figurate numbers
 <ol>
   <li><code>pentatope_numbers = hypertetrahedral_number = triangulotriangular_number</code></li>
-  <li><code>k_dimensional_hypertetrahedron_numbers(k) = k hypertetrahedron numbers = regular k-polytopic number = figurate number of order k = k-simplex numbers(for k >= 5)</code></li>
+  <li><code>k_dimensional_hypertetrahedron_numbers(k) = k_hypertetrahedron_numbers(k) = regular_k_polytopic_numbers(k) = figurate_number_of_order_k(k)</code></li>
   <li><code>five_dimensional_hypertetrahedron_numbers</code></li>
   <li><code>six_dimensional_hypertetrahedron_numbers</code></li>
   <li><code>biquadratic_numbers</code></li>
-  <li><code>k_dimensional_hypercube_numbers(k) = k_hypercube_numbers = k_measure_polytope_numbers(for k >=5) </code></li>
+  <li><code>k_dimensional_hypercube_numbers(k) = k_hypercube_numbers(k)</code></li>
   <li><code>five_dimensional_hypercube_numbers</code></li>
   <li><code>six_dimensional_hypercube_numbers</code></li>
   <li><code>hyperoctahedral_numbers = hexadecachoron_numbers = four_cross_polytope_numbers = four_orthoplex_numbers</code></li>
-  <li><code>hypericosahedral_numbers = tetraplex_numbers = polytetrahedron_numbers = hexacosichoron_numbers </code></li>
+  <li><code>hypericosahedral_numbers = tetraplex_numbers = polytetrahedron_numbers = hexacosichoron_numbers</code></li>
   <li><code>hyperdodecahedral_numbers = hecatonicosachoron_numbers = dodecaplex_numbers = polydodecahedron_numbers</code></li>
   <li><code>polyoctahedral_numbers = icositetrachoron_numbers = octaplex_numbers = hyperdiamond_numbers</code></li>
 
