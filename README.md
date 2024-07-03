@@ -289,7 +289,7 @@ end
   <li><code>five_dimensional_centered_hypertetrahedron_numbers(k)</code></li>
   <li><code>six_dimensional_centered_hypertetrahedron_numbers(k)</code></li>
 
-  <li><code>centered_hyperotahedral_numbers = orthoplex numbers</code></li>
+  <li><code>centered_hyperoctahedral_numbers = orthoplex numbers</code></li>
   <li><code>orthoplex numbers</code></li>
   <li><code>nexus_numbers(k)</code></li>
   <li><code>k_dimensional_centered_hyperoctahedron_numbers(k)</code></li>
