@@ -744,8 +744,8 @@ class TestFigurateNumbers  < Minitest::Test
     assert_equal([1, 8, 36, 120, 330, 792, 1716, 3431, 6427, 11404, 19328, 31494, 49596, 75804, 112848, 164109, 233717, 326656, 448876, 607412], FigurateNumbers.six_dimensional_centered_hypertetrahedron_numbers.take(20))
   end
 
-  def test_centered_hyperotahedral_numbers
-    assert_equal([1, 9, 41, 129, 321, 681, 1289, 2241, 3649, 5641, 8361, 11969, 16641, 22569, 29961, 39041, 50049, 63241, 78889, 97281, 118721, 143529, 172041, 204609, 241601, 283401, 330409, 383041, 441729, 506921, 579081, 658689, 746241, 842249, 947241, 1061761, 1186369, 1321641, 1468169, 1626561], FigurateNumbers.centered_hyperotahedral_numbers.take(40))
+  def test_centered_hyperoctahedral_numbers
+    assert_equal([1, 9, 41, 129, 321, 681, 1289, 2241, 3649, 5641, 8361, 11969, 16641, 22569, 29961, 39041, 50049, 63241, 78889, 97281, 118721, 143529, 172041, 204609, 241601, 283401, 330409, 383041, 441729, 506921, 579081, 658689, 746241, 842249, 947241, 1061761, 1186369, 1321641, 1468169, 1626561], FigurateNumbers.centered_hyperoctahedral_numbers.take(40))
   end
 
   def test_nexus_numbers
