@@ -53,7 +53,7 @@ end
 
 ## List of implemented sequences
 
-* Note that `=` means that you can call the same function with those .
+* Note that `=` means that you can call the same sequence with different names.
 
 ### 1. Plane Figurate Numbers
 <ol>
