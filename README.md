@@ -157,7 +157,7 @@ end
   <li><code>hauy_rhombic_dodecahedral_numbers</code></li>
 
   <li><code>centered_tetrahedron_numbers = centered_tetrahedral_numbers</code></li>
-  <li><code>centered_square_pyramid_numbers = centered_pyramid_ numbers</code></li>
+  <li><code>centered_square_pyramid_numbers = centered_pyramid_numbers</code></li>
   <li><code>centered_mgonal_pyramid_numbers(m)</code></li>
   <li><code>centered_pentagonal_pyramid_numbers ????? centered octahedron numbers (equality only in quantity)</code></li>
   <li><code>centered_hexagonal_pyramid_numbers</code></li>
@@ -241,7 +241,6 @@ end
   <li><code>five_dimensional_heptagonal_pyramidal_numbers</code></li>
   <li><code>five_dimensional_octagonal_pyramidal_numbers</code></li>
   <li><code>six_dimensional_mgonal_pyramidal_numbers(m)</code></li>
-  <li><code>six_dimensional_mgonal_pyramidal_numbers</code></li>
   <li><code>six_dimensional_square_pyramidal_numbers</code></li>
   <li><code>six_dimensional_pentagonal_pyramidal_numbers</code></li>
   <li><code>six_dimensional_hexagonal_pyramidal_numbers</code></li>
@@ -284,7 +283,7 @@ end
 
 ### 6. Zoo of figurate-related numbers
 <ol>
-  <li><code>cuban_numbers = cuban prime numbers</code></li>
+  <li><code>cuban_numbers = cuban_prime_numbers</code></li>
   <li><code>quartan_numbers = Needs to improve the algorithmic complexity for n > 70</code></li>
   <li><code>pell_numbers</code></li>
   <li><code>carmichael_numbers = Needs to improve the algorithmic complexity for n > 20</code></li>
