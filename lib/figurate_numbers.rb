@@ -242,7 +242,7 @@ module FigurateNumbers
       end
     end
   end
-
+end
   def centered_square_numbers
     Enumerator.new do |y|
       (1..Float::INFINITY).each do |delta|
@@ -1621,7 +1621,7 @@ module FigurateNumbers
     end
   end
 
-  def centered_hyperotahedral_numbers
+  def centered_hyperoctahedral_numbers
     Enumerator.new do |y|
       (1..Float::INFINITY).each do |delta|
         y << (2 * delta**4 - 4 * delta**3 + 10 * delta**2 - 8 * delta + 3) / 3
@@ -1629,7 +1629,7 @@ module FigurateNumbers
     end
   end
 
-  alias_method :orthoplex_numbers, :centered_hyperotahedral_numbers
+  alias_method :orthoplex_numbers, :centered_hyperoctahedral_numbers
 
   def nexus_numbers(k)
     Enumerator.new do |y|
