@@ -1026,14 +1026,6 @@ module FigurateNumbers
     end
   end
 
-  def generalized_centered_tetrahedron_numbers(left_index = 0)
-    Enumerator.new do |y|
-      ((-1 * left_index.abs)..Float::INFINITY).each do |delta|
-        y <<  (2 * delta - 1) * (delta**2 - delta + 3) / 3
-      end
-    end
-  end
-
   def generalized_centered_square_pyramid_numbers(left_index = 0)
     Enumerator.new do |y|
       ((-1 * left_index.abs)..Float::INFINITY).each do |delta|
