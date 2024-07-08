@@ -782,6 +782,87 @@ module FigurateNumbers
     end
   end
 
+  def icosihenagonal_pyramidal_numbers
+    Enumerator.new do |y|
+      (1..Float::INFINITY).each do |delta|
+          y << delta * (delta + 1) * (19 * delta - 16) / 6
+      end
+    end
+  end
+
+  def icosidigonal_pyramidal_numbers
+    Enumerator.new do |y|
+      (1..Float::INFINITY).each do |delta|
+          y << delta * (delta + 1) * (20 * delta - 17) / 6
+      end
+    end
+  end
+
+  def icositrigonal_pyramidal_numbers
+    Enumerator.new do |y|
+      (1..Float::INFINITY).each do |delta|
+          y << delta * (delta + 1) * (21 * delta - 18) / 6
+      end
+    end
+  end
+
+  def icositetragonal_pyramidal_numbers
+    Enumerator.new do |y|
+      (1..Float::INFINITY).each do |delta|
+          y << delta * (delta + 1) * (22 * delta - 19) / 6
+      end
+    end
+  end
+
+  def icosipentagonal_pyramidal_numbers
+    Enumerator.new do |y|
+      (1..Float::INFINITY).each do |delta|
+          y << delta * (delta + 1) * (23 * delta - 20) / 6
+      end
+    end
+  end
+
+  def icosihexagonal_pyramidal_numbers
+    Enumerator.new do |y|
+      (1..Float::INFINITY).each do |delta|
+          y << delta * (delta + 1) * (24 * delta - 21) / 6
+      end
+    end
+  end
+
+  def icosiheptagonal_pyramidal_numbers
+    Enumerator.new do |y|
+      (1..Float::INFINITY).each do |delta|
+          y << delta * (delta + 1) * (25 * delta - 22) / 6
+      end
+    end
+  end
+
+  def icosioctagonal_pyramidal_numbers
+    Enumerator.new do |y|
+      (1..Float::INFINITY).each do |delta|
+          y << delta * (delta + 1) * (26 * delta - 23) / 6
+      end
+    end
+  end
+
+
+  def icosinonagonal_pyramidal_numbers
+    Enumerator.new do |y|
+      (1..Float::INFINITY).each do |delta|
+          y << delta * (delta + 1) * (27 * delta - 24) / 6
+      end
+    end
+  end
+
+  def triacontagonal_pyramidal_numbers
+    Enumerator.new do |y|
+      (1..Float::INFINITY).each do |delta|
+          y << delta * (delta + 1) * (28 * delta - 25) / 6
+      end
+    end
+  end
+
 
   def cubic_numbers
     Enumerator.new do |y|
