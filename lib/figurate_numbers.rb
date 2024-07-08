@@ -874,6 +874,8 @@ module FigurateNumbers
     end
   end
 
+  alias_method :perfect_cube, :cubic_numbers
+
   def tetrahedral_numbers
     Enumerator.new do |y|
       (1..Float::INFINITY).each do |delta|
