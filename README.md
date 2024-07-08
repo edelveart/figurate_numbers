@@ -348,11 +348,17 @@ end
 
   > `impolite numbers`
 
-- Chapter 1, formula (truncated centered pentagonal numbers) of  page 72 says:
+- Chapter 1, formula (truncated centered pentagonal numbers) on  page 72 says:
   > `TCSS_5(n) = (35n^2 - 55n) / 2 + 3`
 
   It should be:
   > `TCSS_5(n) = (35n^2 - 55n) / 2 + 11`
+
+- Chapter 2, formula of octagonal pyramidal number on  page 92 says:
+  > `n(n+1)(6n-1) / 6`
+
+  It should be:
+  > `n(n+1)(6n-3) / 6`
 
 - Chapter 2, page 140 says:
   > centered square pyramidal numbers are 1, 6, 19, 44, 85, 111, 146, 231, ...
