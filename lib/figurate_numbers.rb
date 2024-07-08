@@ -874,6 +874,15 @@ module FigurateNumbers
     end
   end
 
+  def triangular_square_pyramidal_number
+    Enumerator.new do |y|
+      finite_set = [1, 55, 91, 208335]
+      (finite_set).each do |delta|
+          y << delta
+      end
+    end
+  end
+
   def cubic_numbers
     Enumerator.new do |y|
       (1..Float::INFINITY).each do |delta|
