@@ -660,6 +660,31 @@ module FigurateNumbers
     end
   end
 
+  def hexagonal_pyramidal_numbers
+    Enumerator.new do |y|
+      (1..Float::INFINITY).each do |delta|
+          y << delta * (delta + 1) * (4 * delta - 1) / 6
+      end
+    end
+  end
+
+  def heptagonal_pyramidal_numbers
+    Enumerator.new do |y|
+      (1..Float::INFINITY).each do |delta|
+          y << delta * (delta + 1) * (5 * delta - 2) / 6
+      end
+    end
+  end
+
+  def octagonal_pyramidal_numbers
+    Enumerator.new do |y|
+      (1..Float::INFINITY).each do |delta|
+          y << delta * (delta + 1) * (6 * delta - 3) / 6
+      end
+    end
+  end
+
+
   def cubic_numbers
     Enumerator.new do |y|
       (1..Float::INFINITY).each do |delta|
@@ -1937,4 +1962,3 @@ module FigurateNumbers
   end
 
 end
-
