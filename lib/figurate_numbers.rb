@@ -883,6 +883,15 @@ module FigurateNumbers
     end
   end
 
+  def square_tetrahedral_number
+    Enumerator.new do |y|
+      finite_set = [1, 4, 19600]
+      (finite_set).each do |delta|
+          y << delta
+      end
+    end
+  end
+
   def cubic_numbers
     Enumerator.new do |y|
       (1..Float::INFINITY).each do |delta|
