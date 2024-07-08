@@ -642,6 +642,8 @@ module FigurateNumbers
     end
   end
 
+  alias_method :tetrahedral_numbers, :triangular_pyramidal_numbers
+
   def square_pyramidal_numbers
     Enumerator.new do |y|
       (1..Float::INFINITY).each do |delta|
