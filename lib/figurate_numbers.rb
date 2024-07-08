@@ -874,7 +874,7 @@ module FigurateNumbers
     end
   end
 
-  def triangular_square_pyramidal_number
+  def triangular_square_pyramidal_numbers
     Enumerator.new do |y|
       finite_set = [1, 55, 91, 208335]
       (finite_set).each do |delta|
@@ -883,9 +883,18 @@ module FigurateNumbers
     end
   end
 
-  def square_tetrahedral_number
+  def square_tetrahedral_numbers
     Enumerator.new do |y|
       finite_set = [1, 4, 19600]
+      (finite_set).each do |delta|
+          y << delta
+      end
+    end
+  end
+
+  def square_square_pyramidal_numbers
+    Enumerator.new do |y|
+      finite_set = [1, 4900]
       (finite_set).each do |delta|
           y << delta
       end
