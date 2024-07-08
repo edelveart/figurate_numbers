@@ -141,6 +141,35 @@ end
 ### 2. Space Figurate Numbers
 <ol>
   <li><code>r_pyramidal_numbers(r)</code></li>
+  <li><code>triangular_pyramidal_numbers = tetrahedral_numbers</code></li>
+  <li><code>square_pyramidal_numbers = pyramidal_numbers</code></li>
+  <li><code>pentagonal_pyramidal_numbers</code></li>
+  <li><code>hexagonal_pyramidal_numbers</code></li>
+  <li><code>heptagonal_pyramidal_numbers</code></li>
+  <li><code>octagonal_pyramidal_numbers</code></li>
+  <li><code>nonagonal_pyramidal_numbers</code></li>
+  <li><code>decagonal_pyramidal_numbers</code></li>
+  <li><code>hendecagonal_pyramidal_numbers</code></li>
+  <li><code>dodecagonal_pyramidal_numbers</code></li>
+  <li><code>tridecagonal_pyramidal_numbers</code></li>
+  <li><code>tetradecagonal_pyramidal_numbers</code></li>
+  <li><code>pentadecagonal_pyramidal_numbers</code></li>
+  <li><code>hexadecagonal_pyramidal_numbers</code></li>
+  <li><code>heptadecagonal_pyramidal_numbers</code></li>
+  <li><code>octadecagonal_pyramidal_numbers</code></li>
+  <li><code>nonadecagonal_pyramidal_numbers</code></li>
+  <li><code>icosagonal_pyramidal_numbers</code></li>
+  <li><code>icosihenagonal_pyramidal_numbers</code></li>
+  <li><code>icosidigonal_pyramidal_numbers</code></li>
+  <li><code>icositrigonal_pyramidal_numbers</code></li>
+  <li><code>icositetragonal_pyramidal_numbers</code></li>
+  <li><code>icosipentagonal_pyramidal_numbers</code></li>
+  <li><code>icosihexagonal_pyramidal_numbers</code></li>
+  <li><code>icosiheptagonal_pyramidal_numbers</code></li>
+  <li><code>icosioctagonal_pyramidal_numbers</code></li>
+  <li><code>icosinonagonal_pyramidal_numbers</code></li>
+  <li><code>triacontagonal_pyramidal_numbers</code></li>
+
   <li><code>cubic_numbers != hex_pyramidal_numbers (equality only by quantity) </code></li>
   <li><code>tetrahedral_numbers</code></li>
   <li><code>octahedral_numbers</code></li>
