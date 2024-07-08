@@ -652,6 +652,14 @@ module FigurateNumbers
 
   alias_method :pyramidal_numbers, :square_pyramidal_numbers
 
+  def pentagonal_pyramidal_numbers
+    Enumerator.new do |y|
+      (1..Float::INFINITY).each do |delta|
+          y << delta**2 * (delta + 1) / 2
+      end
+    end
+  end
+
   def cubic_numbers
     Enumerator.new do |y|
       (1..Float::INFINITY).each do |delta|
@@ -1929,3 +1937,4 @@ module FigurateNumbers
   end
 
 end
+
