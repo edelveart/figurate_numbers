@@ -874,7 +874,7 @@ module FigurateNumbers
     end
   end
 
-  alias_method :perfect_cube, :cubic_numbers
+  alias_method :perfect_cube_numbers, :cubic_numbers
 
   def tetrahedral_numbers
     Enumerator.new do |y|
