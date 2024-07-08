@@ -2,7 +2,7 @@
 
 [![Gem Version](https://badge.fury.io/rb/figurate_numbers.svg)](https://badge.fury.io/rb/figurate_numbers)
 
-`figurate_numbers` is a Ruby module that implements `206 infinite number sequences` based on the formulas from the wonderful book
+`figurate_numbers` is a Ruby module that implements `234 infinite number sequences` based on the formulas from the wonderful book
 > [Figurate Numbers (2012)](https://books.google.com.pe/books/about/Figurate_Numbers.html?id=ERS7CgAAQBAJ&redir_esc=y) by Elena Deza and Michel Deza.
 
 This implementation uses the **Enumerator class** to deal with **INFINITE SEQUENCES**.
@@ -10,7 +10,7 @@ This implementation uses the **Enumerator class** to deal with **INFINITE SEQUEN
 Following the order of the book, the methods are divided into 3 types according to the spatial dimension (see complete list below):
 
 1. **Plane** figurate numbers implemented = `79`
-2. **Space** figurate numbers implemented = `53`
+2. **Space** figurate numbers implemented = `81`
 3. **Multidimensional** figurate numbers implemented = `68`
 4. **Zoo of figurate-related numbers** implemented = `6`
 
