@@ -170,7 +170,7 @@ end
   <li><code>icosinonagonal_pyramidal_numbers</code></li>
   <li><code>triacontagonal_pyramidal_numbers</code></li>
 
-  <li><code>cubic_numbers != hex_pyramidal_numbers (equality only by quantity) </code></li>
+  <li><code>cubic_numbers = perfect_cube_numbers != hex_pyramidal_numbers (equality only by quantity) </code></li>
   <li><code>tetrahedral_numbers</code></li>
   <li><code>octahedral_numbers</code></li>
   <li><code>dodecahedral_numbers</code></li>

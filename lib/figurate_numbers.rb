@@ -865,6 +865,14 @@ module FigurateNumbers
     end
   end
 
+  def triangular_tetrahedral_numbers
+    Enumerator.new do |y|
+      finite_set = [1, 10, 120, 1540, 7140]
+      (finite_set).each do |delta|
+          y << delta
+      end
+    end
+  end
 
   def cubic_numbers
     Enumerator.new do |y|
