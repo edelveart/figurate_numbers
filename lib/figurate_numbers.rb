@@ -650,6 +650,8 @@ module FigurateNumbers
     end
   end
 
+  alias_method :pyramidal_numbers, :square_pyramidal_numbers
+
   def cubic_numbers
     Enumerator.new do |y|
       (1..Float::INFINITY).each do |delta|
@@ -1927,4 +1929,3 @@ module FigurateNumbers
   end
 
 end
-
