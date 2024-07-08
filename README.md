@@ -14,7 +14,7 @@ Following the order of the book, the methods are divided into 3 types according 
 3. **Multidimensional** figurate numbers implemented = `68`
 4. **Zoo of figurate-related numbers** implemented = `6`
 
-- [x] **TOTAL** = `206` infinite sequences of figurate numbers implemented
+- [x] **TOTAL** = `234` infinite sequences of figurate numbers implemented
 
 ## Installation and use
 
