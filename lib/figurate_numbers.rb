@@ -684,6 +684,62 @@ module FigurateNumbers
     end
   end
 
+  def nonagonal_pyramidal_numbers
+    Enumerator.new do |y|
+      (1..Float::INFINITY).each do |delta|
+          y << delta * (delta + 1) * (7 * delta - 4) / 6
+      end
+    end
+  end
+
+  def decagonal_pyramidal_numbers
+    Enumerator.new do |y|
+      (1..Float::INFINITY).each do |delta|
+          y << delta * (delta + 1) * (8 * delta - 5) / 6
+      end
+    end
+  end
+
+  def hendecagonal_pyramidal_numbers
+    Enumerator.new do |y|
+      (1..Float::INFINITY).each do |delta|
+          y << delta * (delta + 1) * (9 * delta - 6) / 6
+      end
+    end
+  end
+
+  def dodecagonal_pyramidal_numbers
+    Enumerator.new do |y|
+      (1..Float::INFINITY).each do |delta|
+          y << delta * (delta + 1) * (10 * delta - 7) / 6
+      end
+    end
+  end
+
+  def tridecagonal_pyramidal_numbers
+    Enumerator.new do |y|
+      (1..Float::INFINITY).each do |delta|
+          y << delta * (delta + 1) * (11 * delta - 8) / 6
+      end
+    end
+  end
+
+  def tetradecagonal_pyramidal_numbers
+    Enumerator.new do |y|
+      (1..Float::INFINITY).each do |delta|
+          y << delta * (delta + 1) * (12 * delta - 9) / 6
+      end
+    end
+  end
+
+
+  def pentadecagonal_pyramidal_numbers
+    Enumerator.new do |y|
+      (1..Float::INFINITY).each do |delta|
+          y << delta * (delta + 1) * (12 * delta - 9) / 6
+      end
+    end
+  end
 
   def cubic_numbers
     Enumerator.new do |y|
