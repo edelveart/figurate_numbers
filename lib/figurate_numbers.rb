@@ -736,10 +736,52 @@ module FigurateNumbers
   def pentadecagonal_pyramidal_numbers
     Enumerator.new do |y|
       (1..Float::INFINITY).each do |delta|
-          y << delta * (delta + 1) * (12 * delta - 9) / 6
+          y << delta * (delta + 1) * (13 * delta - 10) / 6
       end
     end
   end
+
+
+  def hexadecagonal_pyramidal_numbers
+    Enumerator.new do |y|
+      (1..Float::INFINITY).each do |delta|
+          y << delta * (delta + 1) * (14 * delta - 11) / 6
+      end
+    end
+  end
+
+  def heptadecagonal_pyramidal_numbers
+    Enumerator.new do |y|
+      (1..Float::INFINITY).each do |delta|
+          y << delta * (delta + 1) * (15 * delta - 12) / 6
+      end
+    end
+  end
+
+  def octadecagonal_pyramidal_numbers
+    Enumerator.new do |y|
+      (1..Float::INFINITY).each do |delta|
+          y << delta * (delta + 1) * (16 * delta - 13) / 6
+      end
+    end
+  end
+
+  def nonadecagonal_pyramidal_numbers
+    Enumerator.new do |y|
+      (1..Float::INFINITY).each do |delta|
+          y << delta * (delta + 1) * (17 * delta - 14) / 6
+      end
+    end
+  end
+
+  def icosagonal_pyramidal_numbers
+    Enumerator.new do |y|
+      (1..Float::INFINITY).each do |delta|
+          y << delta * (delta + 1) * (18 * delta - 15) / 6
+      end
+    end
+  end
+
 
   def cubic_numbers
     Enumerator.new do |y|
