@@ -2,7 +2,7 @@
 
 [![Gem Version](https://badge.fury.io/rb/figurate_numbers.svg)](https://badge.fury.io/rb/figurate_numbers)
 
-`figurate_numbers` is a Ruby module that implements `234 infinite number sequences` based on the formulas from the wonderful book
+`figurate_numbers` is a Ruby module that implements `239 infinite number sequences` based on the formulas from the wonderful book
 > [Figurate Numbers (2012)](https://books.google.com.pe/books/about/Figurate_Numbers.html?id=ERS7CgAAQBAJ&redir_esc=y) by Elena Deza and Michel Deza.
 
 This implementation uses the **Enumerator class** to deal with **INFINITE SEQUENCES**.
@@ -10,11 +10,11 @@ This implementation uses the **Enumerator class** to deal with **INFINITE SEQUEN
 Following the order of the book, the methods are divided into 3 types according to the spatial dimension (see complete list below):
 
 1. **Plane** figurate numbers implemented = `79`
-2. **Space** figurate numbers implemented = `81`
+2. **Space** figurate numbers implemented = `86`
 3. **Multidimensional** figurate numbers implemented = `68`
 4. **Zoo of figurate-related numbers** implemented = `6`
 
-- [x] **TOTAL** = `234` infinite sequences of figurate numbers implemented
+- [x] **TOTAL** = `239` infinite sequences of figurate numbers implemented
 
 ## Installation and use
 
@@ -169,6 +169,12 @@ end
   <li><code>icosioctagonal_pyramidal_numbers</code></li>
   <li><code>icosinonagonal_pyramidal_numbers</code></li>
   <li><code>triacontagonal_pyramidal_numbers</code></li>
+
+  <li><code>triangular_tetrahedral_numbers [finite]</code></li>
+  <li><code>triangular_square_pyramidal_numbers [finite]</code></li>
+  <li><code>square_tetrahedral_numbers [finite]</code></li>
+  <li><code>square_square_pyramidal_numbers [finite]</code></li>
+  <li><code>tetrahedral_square_pyramidal_number [finite]</code></li>
 
   <li><code>cubic_numbers = perfect_cube_numbers != hex_pyramidal_numbers (equality only by quantity) </code></li>
   <li><code>tetrahedral_numbers</code></li>
