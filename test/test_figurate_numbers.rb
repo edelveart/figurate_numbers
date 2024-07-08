@@ -386,6 +386,27 @@ class TestFigurateNumbers  < Minitest::Test
     assert_equal([1, 16, 58, 140, 275, 476, 756, 1128, 1605, 2200, 2926, 3796, 4823, 6020, 7400, 8976, 10761, 12768, 15010, 17500], FigurateNumbers.pentadecagonal_pyramidal_numbers.take(20))
   end
 
+  def test_hexadecagonal_pyramidal_numbers
+    assert_equal([1, 17, 62, 150, 295, 511, 812, 1212, 1725, 2365, 3146, 4082, 5187, 6475, 7960, 9656, 11577, 13737, 16150, 18830], FigurateNumbers.hexadecagonal_pyramidal_numbers.take(20))
+  end
+
+  def test_heptadecagonal_pyramidal_numbers
+    assert_equal([1, 18, 66, 160, 315, 546, 868, 1296, 1845, 2530, 3366, 4368, 5551, 6930, 8520, 10336, 12393, 14706, 17290, 20160], FigurateNumbers.heptadecagonal_pyramidal_numbers.take(20))
+  end
+
+  def test_octadecagonal_pyramidal_numbers
+    assert_equal([1, 19, 70, 170, 335, 581, 924, 1380, 1965, 2695, 3586, 4654, 5915, 7385, 9080, 11016, 13209, 15675, 18430, 21490], FigurateNumbers.octadecagonal_pyramidal_numbers.take(20))
+  end
+
+  def test_nonadecagonal_pyramidal_numbers
+    assert_equal([1, 20, 74, 180, 355, 616, 980, 1464, 2085, 2860, 3806, 4940, 6279, 7840, 9640, 11696, 14025, 16644, 19570, 22820], FigurateNumbers.nonadecagonal_pyramidal_numbers.take(20))
+  end
+
+  def test_icosagonal_pyramidal_numbers
+    assert_equal([1, 21, 78, 190, 375, 651, 1036, 1548, 2205, 3025, 4026, 5226, 6643, 8295, 10200, 12376, 14841, 17613, 20710, 24150], FigurateNumbers.icosagonal_pyramidal_numbers.take(20))
+  end
+
+
 
 
 
