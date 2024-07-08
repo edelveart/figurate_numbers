@@ -642,7 +642,13 @@ module FigurateNumbers
     end
   end
 
-
+  def square_pyramidal_numbers
+    Enumerator.new do |y|
+      (1..Float::INFINITY).each do |delta|
+          y << (delta * (delta + 1) * (2 * delta + 1)) / 6
+      end
+    end
+  end
 
   def cubic_numbers
     Enumerator.new do |y|
@@ -1921,3 +1927,4 @@ module FigurateNumbers
   end
 
 end
+
