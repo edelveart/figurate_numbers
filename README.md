@@ -326,6 +326,10 @@ end
   <li><code>apocalyptic_numbers</code></li>
 </ol>
 
+## License
+
+[MIT License](https://github.com/edelveart/figurate_numbers_sonic_pi/blob/main/LICENSE)
+
 ## Errata
 
 - Chapter 1, formula in the table on page 6 says:
