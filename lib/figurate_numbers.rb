@@ -1575,7 +1575,7 @@ module FigurateNumbers
     end
   end
 
-  alias_method :mgonal_pyramidal_number_of_the_second_order, :four_dimensional_mgonal_pyramidal_numbers
+  alias_method :mgonal_pyramidal_numbers_of_the_second_order, :four_dimensional_mgonal_pyramidal_numbers
 
   def four_dimensional_square_pyramidal_numbers
     Enumerator.new do |y|
@@ -1673,7 +1673,7 @@ module FigurateNumbers
     end
   end
 
-  alias_method :mgonal_pyramidal_number_of_the_k_2_th_order, :k_dimensional_mgonal_pyramidal_numbers
+  alias_method :mgonal_pyramidal_numbers_of_the_k_2_th_order, :k_dimensional_mgonal_pyramidal_numbers
 
   def five_dimensional_mgonal_pyramidal_numbers(m)
     Enumerator.new do |y|
