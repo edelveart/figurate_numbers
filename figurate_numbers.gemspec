@@ -9,7 +9,7 @@ Gem::Specification.new do |s|
   s.authors     = ["Edgar Armando Delgado Vega"]
   s.email       = ["edelve91@gmail.com"]
   s.files       = ["lib/figurate_numbers.rb"]
-  s.homepage    = "https://github.com/edelveart/figurate_numbers_sonic_pi"
+  s.homepage    = "https://github.com/edelveart/figurate_numbers"
   s.license     = "MIT"
   s.metadata = {
     "documentation_uri" => "https://www.rubydoc.info/gems/figurate_numbers",
