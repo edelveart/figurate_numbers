@@ -192,7 +192,7 @@ end
   <li><code>centered_tetrahedron_numbers = centered_tetrahedral_numbers</code></li>
   <li><code>centered_square_pyramid_numbers = centered_pyramid_numbers</code></li>
   <li><code>centered_mgonal_pyramid_numbers(m)</code></li>
-  <li><code>centered_pentagonal_pyramid_numbers != centered octahedron numbers (equality only in quantity)</code></li>
+  <li><code>centered_pentagonal_pyramid_numbers != centered_octahedron_numbers (equality only in quantity)</code></li>
   <li><code>centered_hexagonal_pyramid_numbers</code></li>
   <li><code>centered_heptagonal_pyramid_numbers</code></li>
   <li><code>centered_octagonal_pyramid_numbers</code></li>
@@ -258,7 +258,7 @@ end
   <li><code>ten_dimensional_hyperoctahedron_numbers</code></li>
   <li><code>k_dimensional_hyperoctahedron_numbers(k) = k_cross_polytope_numbers(k)</code></li>
 
-  <li><code>four_dimensional_mgonal_pyramidal_numbers(m) = mgonal_pyramidal_number_of_the_second_order(m)</code></li>
+  <li><code>four_dimensional_mgonal_pyramidal_numbers(m) = mgonal_pyramidal_numbers_of_the_second_order(m)</code></li>
   <li><code>four_dimensional_square_pyramidal_numbers</code></li>
   <li><code>four_dimensional_pentagonal_pyramidal_numbers</code></li>
   <li><code>four_dimensional_hexagonal_pyramidal_numbers</code></li>
@@ -269,7 +269,7 @@ end
   <li><code>four_dimensional_hendecagonal_pyramidal_numbers</code></li>
   <li><code>four_dimensional_dodecagonal_pyramidal_numbers</code></li>
 
-  <li><code>k_dimensional_mgonal_pyramidal_numbers(k, m) = mgonal_pyramidal_number_of_the_k_2_th_order(k, m)</code></li>
+  <li><code>k_dimensional_mgonal_pyramidal_numbers(k, m) = mgonal_pyramidal_numbers_of_the_k_2_th_order(k, m)</code></li>
   <li><code>five_dimensional_mgonal_pyramidal_numbers</code></li>
   <li><code>five_dimensional_square_pyramidal_numbers</code></li>
   <li><code>five_dimensional_pentagonal_pyramidal_numbers</code></li>
