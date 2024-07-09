@@ -1367,8 +1367,8 @@ module FigurateNumbers
     end
   end
 
-  alias_method :hypertetrahedral_number,  :pentatope_numbers
-  alias_method :triangulotriangular_number,  :pentatope_numbers
+  alias_method :hypertetrahedral_numbers,  :pentatope_numbers
+  alias_method :triangulotriangular_numbers,  :pentatope_numbers
 
   def rising_factorial(n, k)
     t = 1
@@ -1388,7 +1388,7 @@ module FigurateNumbers
 
   alias_method :k_hypertetrahedron_numbers, :k_dimensional_hypertetrahedron_numbers
   alias_method :regular_k_polytopic_numbers, :k_dimensional_hypertetrahedron_numbers
-  alias_method :figurate_number_of_order_k, :k_dimensional_hypertetrahedron_numbers
+  alias_method :figurate_numbers_of_order_k, :k_dimensional_hypertetrahedron_numbers
 
 
   def five_dimensional_hypertetrahedron_numbers
