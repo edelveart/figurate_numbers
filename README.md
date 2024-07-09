@@ -236,8 +236,8 @@ end
 
 ### 3. Multidimensional figurate numbers
 <ol>
-  <li><code>pentatope_numbers = hypertetrahedral_number = triangulotriangular_number</code></li>
-  <li><code>k_dimensional_hypertetrahedron_numbers(k) = k_hypertetrahedron_numbers(k) = regular_k_polytopic_numbers(k) = figurate_number_of_order_k(k)</code></li>
+  <li><code>pentatope_numbers = hypertetrahedral_numbers = triangulotriangular_numbers</code></li>
+  <li><code>k_dimensional_hypertetrahedron_numbers(k) = k_hypertetrahedron_numbers(k) = regular_k_polytopic_numbers(k) = figurate_numbers_of_order_k(k)</code></li>
   <li><code>five_dimensional_hypertetrahedron_numbers</code></li>
   <li><code>six_dimensional_hypertetrahedron_numbers</code></li>
   <li><code>biquadratic_numbers</code></li>
