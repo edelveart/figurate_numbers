@@ -9,3 +9,5 @@ version: 1.2.0
 doi:
 date-released: 2024-07-08
 url: "https://github.com/edelveart/figurate_numbers_sonic_pi"
+repository-code: "https://github.com/edelveart/figurate_numbers_sonic_pi"
+license: MIT
