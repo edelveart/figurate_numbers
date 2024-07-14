@@ -1,6 +1,8 @@
 # Figurate Numbers
 
-[![Gem Version](https://badge.fury.io/rb/figurate_numbers.svg)](https://badge.fury.io/rb/figurate_numbers)
+![Gem Version](https://img.shields.io/gem/v/figurate_numbers)
+![Gem Total Downloads](https://img.shields.io/gem/dt/figurate_numbers)
+![GitHub License](https://img.shields.io/github/license/edelveart/figurate_numbers)
 
 `figurate_numbers` is a Ruby module that implements `239 infinite number sequences` based on the formulas from the wonderful book
 > [Figurate Numbers (2012)](https://books.google.com.pe/books/about/Figurate_Numbers.html?id=ERS7CgAAQBAJ&redir_esc=y) by Elena Deza and Michel Deza.
@@ -325,10 +327,6 @@ end
   <li><code>stern_prime_numbers(infty = false) [Quick calculations up to 8 terms]</code></li>
   <li><code>apocalyptic_numbers</code></li>
 </ol>
-
-## License
-
-[MIT License](https://github.com/edelveart/figurate_numbers_sonic_pi/blob/main/LICENSE)
 
 ## Errata
 
