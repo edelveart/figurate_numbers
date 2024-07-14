@@ -272,7 +272,7 @@ end
   <li><code>four_dimensional_dodecagonal_pyramidal_numbers</code></li>
 
   <li><code>k_dimensional_mgonal_pyramidal_numbers(k, m) = mgonal_pyramidal_numbers_of_the_k_2_th_order(k, m)</code></li>
-  <li><code>five_dimensional_mgonal_pyramidal_numbers</code></li>
+  <li><code>five_dimensional_mgonal_pyramidal_numbers(m)</code></li>
   <li><code>five_dimensional_square_pyramidal_numbers</code></li>
   <li><code>five_dimensional_pentagonal_pyramidal_numbers</code></li>
   <li><code>five_dimensional_hexagonal_pyramidal_numbers</code></li>
