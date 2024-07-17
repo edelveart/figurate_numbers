@@ -895,8 +895,8 @@ module FigurateNumbers
   def square_square_pyramidal_numbers
     Enumerator.new do |y|
       finite_set = [1, 4900]
-      (finite_set).each do |delta|
-          y << delta
+      (0..Float::INFINITY).each do |delta|
+          y << finite_set[delta % 2]
       end
     end
   end
