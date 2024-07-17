@@ -868,8 +868,8 @@ module FigurateNumbers
   def triangular_tetrahedral_numbers
     Enumerator.new do |y|
       finite_set = [1, 10, 120, 1540, 7140]
-      (finite_set).each do |delta|
-          y << delta
+      (0..Float::INFINITY).each do |delta|
+          y << finite_set[delta % 5]
       end
     end
   end
