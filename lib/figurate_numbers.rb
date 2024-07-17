@@ -886,8 +886,8 @@ module FigurateNumbers
   def square_tetrahedral_numbers
     Enumerator.new do |y|
       finite_set = [1, 4, 19600]
-      (finite_set).each do |delta|
-          y << delta
+      (0..Float::INFINITY).each do |delta|
+          y << finite_set[delta % 3]
       end
     end
   end
