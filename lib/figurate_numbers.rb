@@ -877,8 +877,8 @@ module FigurateNumbers
   def triangular_square_pyramidal_numbers
     Enumerator.new do |y|
       finite_set = [1, 55, 91, 208335]
-      (finite_set).each do |delta|
-          y << delta
+      (0..Float::INFINITY).each do |delta|
+          y << finite_set[delta % 4]
       end
     end
   end
