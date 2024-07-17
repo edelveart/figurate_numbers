@@ -2058,6 +2058,30 @@ module FigurateNumbers
     end
   end
 
+  def gen_ext_int_double_summation(k, n)
+    is_positive_n = n
+    n = n.abs
+    t = ((2) * binomial_coefficient(k, 1) * binomial_coefficient(1, 0))
+    a = 0
+    (1..(n - 1)).each do |j|
+      (0..(k - 1)).each do |i|
+        a += (2**(1 + i)) * binomial_coefficient(k, 1 + i) * binomial_coefficient(j, i)
+      end
+    end
+    is_positive_n > 0 ?  (1 + t + a) : (1 + t + a) * -1
+  end
+
+  private_class_method :gen_ext_int_double_summation
+
+  def generalized_k_dimensional_centered_hyperoctahedron_numbers(k, left_index = 0)
+    Enumerator.new do |y|
+      ((-1 * left_index.abs)..Float::INFINITY).each do |n|
+        y << 1 if n == 1
+        y << gen_ext_int_double_summation(k, n) if n != 0
+      end
+    end
+  end
+
   def generalized_nexus_numbers(k, left_index = 0)
     Enumerator.new do |y|
       ((-1 * left_index.abs)..Float::INFINITY).each do |delta|
