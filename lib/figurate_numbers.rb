@@ -903,9 +903,8 @@ module FigurateNumbers
 
   def tetrahedral_square_pyramidal_number
     Enumerator.new do |y|
-      finite_set = [1]
-      (finite_set).each do |delta|
-          y << delta
+      (1..Float::INFINITY).each do |delta|
+          y << 1
       end
     end
   end
@@ -2230,3 +2229,4 @@ module FigurateNumbers
   end
 
 end
+print FigurateNumbers.tetrahedral_square_pyramidal_number.take(50)
