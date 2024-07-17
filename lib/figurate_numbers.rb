@@ -2041,6 +2041,22 @@ module FigurateNumbers
     end
   end
 
+  def gen_acc_helper_centered_hypertetrahedron(k, n)
+    a = 0
+    (1..n.abs).each do |j|
+      a += helper_centered_hypertetrahedron(k, j)
+    end
+    n > 0 ? a : -a
+  end
+
+  def generalized_k_dimensional_centered_hypertetrahedron_numbers(k, left_index = 0)
+    Enumerator.new do |y|
+      ((-1 * left_index.abs)..Float::INFINITY).each do |n|
+        y << gen_acc_helper_centered_hypertetrahedron(k, n)
+      end
+    end
+  end
+
   def generalized_nexus_numbers(k, left_index = 0)
     Enumerator.new do |y|
       ((-1 * left_index.abs)..Float::INFINITY).each do |delta|
