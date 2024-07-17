@@ -311,9 +311,8 @@ end
   <li><code>generalized_k_dimensional_mgonal_pyramidal_numbers(k, m, left_index = 0)</code></li>
   <li><code>generalized_k_dimensional_centered_hypercube_numbers(k, left_index = 0)</code></li>
 
-  <!-- * Problems with math definition via binomial coeff in helper functions, n < 0 -->
-  <li><code>generalized_k_dimensional_centered_hypertetrahedron_numbers(k, left_index = 0)</code></li>
-  <!-- <li><code>generalized_k_dimensional_centered_hyperoctahedron_numbers(k, left_index = 0)</code></li> -->
+  <li><code>generalized_k_dimensional_centered_hypertetrahedron_numbers(k, left_index = 0)[provisional symmetry]</code></li>
+  <li><code>generalized_k_dimensional_centered_hyperoctahedron_numbers(k, left_index = 0)[provisional symmetry]</code></li>
 
   <li><code>generalized_nexus_numbers(k, left_index = 0) [even or odd dimension only changes sign]</code></li>
 </ol>
