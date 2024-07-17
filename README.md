@@ -4,7 +4,7 @@
 ![Gem Total Downloads](https://img.shields.io/gem/dt/figurate_numbers)
 ![GitHub License](https://img.shields.io/github/license/edelveart/figurate_numbers)
 
-`figurate_numbers` is a Ruby module that implements `239 infinite number sequences` based on the formulas from the wonderful book
+`figurate_numbers` is a Ruby module that implements `241 infinite number sequences` based on the formulas from the wonderful book
 > [Figurate Numbers (2012)](https://books.google.com.pe/books/about/Figurate_Numbers.html?id=ERS7CgAAQBAJ&redir_esc=y) by Elena Deza and Michel Deza.
 
 This implementation uses the **Enumerator class** to deal with **INFINITE SEQUENCES**.
