@@ -1909,7 +1909,6 @@ module FigurateNumbers
 
   def ext_int_double_summation(k, n)
     t = ((2**(1)) * binomial_coefficient(k, 1) * binomial_coefficient(1, 0))
-    return (t + 1) if n == 1
     a = 0
     (1..(n - 1)).each do |j|
       (0..(k - 1)).each do |i|
@@ -2048,6 +2047,8 @@ module FigurateNumbers
     end
     n > 0 ? a : -a
   end
+
+  private_class_method :gen_acc_helper_centered_hypertetrahedron
 
   def generalized_k_dimensional_centered_hypertetrahedron_numbers(k, left_index = 0)
     Enumerator.new do |y|
