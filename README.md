@@ -8,7 +8,7 @@
 > [Figurate Numbers](https://books.google.com.pe/books/about/Figurate_Numbers.html?id=ERS7CgAAQBAJ&redir_esc=y)  by Elena Deza and Michel Deza, published in 2012.
 
 This implementation uses the **Enumerator class** to deal with **INFINITE SEQUENCES**.
-It is intended for use in math projects and on Sonic Pi.
+It is intended for use in math projects and in Sonic Pi.
 
 Following the order of the book, the methods are divided into 3 types according to the spatial dimension (see complete list below):
 
