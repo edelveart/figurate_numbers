@@ -233,7 +233,7 @@ class TestFigurateNumbers  < Minitest::Test
   end
 
   def test_centered_triacontagonal_numbers
-    assert_equal([1, 30, 88, 175, 291, 436, 610, 813, 1045, 1306, 1596, 1915, 2263, 2640, 3046, 3481, 3945, 4438, 4960, 5511], FigurateNumbers.centered_icosinonagonal_numbers.take(20))
+    assert_equal([1, 31, 91, 181, 301, 451, 631, 841, 1081, 1351, 1651, 1981, 2341, 2731, 3151, 3601, 4081, 4591, 5131, 5701], FigurateNumbers.centered_triacontagonal_numbers.take(20))
   end
 
   def test_centered_mgonal_numbers
@@ -270,6 +270,7 @@ class TestFigurateNumbers  < Minitest::Test
   def test_pentagram_numbers
     assert_equal([1, 11, 31, 61, 101, 151, 211, 281, 361, 451], FigurateNumbers.pentagram_numbers.take(10))
   end
+
   def test_gnomic_numbers
     assert_equal([1, 3, 5, 7, 9, 11, 13, 15, 17, 19], FigurateNumbers.gnomic_numbers.take(10).to_a)
   end
