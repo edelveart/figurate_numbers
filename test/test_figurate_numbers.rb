@@ -451,23 +451,23 @@ class TestFigurateNumbers  < Minitest::Test
   end
 
   def test_triangular_tetrahedral_numbers
-    assert_equal([1, 10, 120, 1540, 7140], FigurateNumbers.triangular_tetrahedral_numbers.take(10))
+    assert_equal([1, 10, 120, 1540, 7140, 1, 10, 120, 1540, 7140], FigurateNumbers.triangular_tetrahedral_numbers.take(10))
   end
 
   def test_triangular_square_pyramidal_numbers
-    assert_equal([1, 55, 91, 208335], FigurateNumbers.triangular_square_pyramidal_numbers.take(10))
+    assert_equal([1, 55, 91, 208335, 1, 55, 91, 208335, 1, 55], FigurateNumbers.triangular_square_pyramidal_numbers.take(10))
   end
 
   def test_square_tetrahedral_numbers
-    assert_equal([1, 4, 19600], FigurateNumbers.square_tetrahedral_numbers.take(10))
+    assert_equal([1, 4, 19600, 1, 4, 19600, 1, 4, 19600, 1], FigurateNumbers.square_tetrahedral_numbers.take(10))
   end
 
   def test_square_square_pyramidal_numbers
-    assert_equal([1, 4900], FigurateNumbers.square_square_pyramidal_numbers.take(10))
+    assert_equal([1, 4900, 1, 4900, 1, 4900, 1, 4900, 1, 4900], FigurateNumbers.square_square_pyramidal_numbers.take(10))
   end
 
   def test_tetrahedral_square_pyramidal_number
-    assert_equal([1], FigurateNumbers.tetrahedral_square_pyramidal_number.take(10))
+    assert_equal([1, 1, 1, 1, 1, 1, 1, 1, 1, 1], FigurateNumbers.tetrahedral_square_pyramidal_number.take(10))
   end
 
   def test_cubic_numbers
