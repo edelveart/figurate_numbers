@@ -4,11 +4,12 @@
 ![Gem Total Downloads](https://img.shields.io/gem/dt/figurate_numbers)
 ![GitHub License](https://img.shields.io/github/license/edelveart/figurate_numbers)
 
-`figurate_numbers` is the most complete and specialized figurate number module written in Ruby and probably in other languages ​​as well to date.  It implements `241 infinite number sequences` based on the remarkable book
+`figurate_numbers` is the most comprehensive and specialized gem for figurate numbers written in `Ruby` to date.
+ It implements `241 infinite number sequences` based on the remarkable book
 > [Figurate Numbers](https://books.google.com.pe/books/about/Figurate_Numbers.html?id=ERS7CgAAQBAJ&redir_esc=y)  by Elena Deza and Michel Deza, published in 2012.
 
-This implementation uses the **Enumerator class** to deal with **INFINITE SEQUENCES**.
-It is intended for use in math projects and in Sonic Pi.
+This implementation uses the **Enumerator class** to handle **infinite sequences**.
+It is intended for use in mathematical projects and with Sonic Pi.
 
 Following the order of the book, the methods are divided into 3 types according to the spatial dimension (see complete list below):
 
