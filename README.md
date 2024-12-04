@@ -42,18 +42,22 @@ f.next
 ```
 ### How to use in Sonic Pi
 
+You can read and comment in the [**Sonic Pi community thread right here!**](https://in-thread.sonic-pi.net/t/figurate-numbers-for-sonic-pi-new-ruby-gem-for-infinite-number-sequences-and-patterns/8962)
+
 1. Locate or download the file in the path `lib/figurate_numbers.rb`
 2. Drag the file to a buffer in Sonic Pi (this generates the `<PATH>`)
 
 ```rb
 run_file "<PATH>"
-
+sleep 1 # see the quote below
 pol_num = FigurateNumbers.polygonal_numbers(8)
 80.times do
   play pol_num.next % 12 * 7  # Some mathematical function or transformation
   sleep 0.25
 end
 ```
+
+> `sleep 1` #to allow **figurate_numbers** to complete load and setup otherwise first run can give error ([Robin Newman](https://in-thread.sonic-pi.net/t/figurate-numbers-for-sonic-pi-new-ruby-gem-for-infinite-number-sequences-and-patterns/8962/12) - Sonic Pi Core Team)
 
 ## List of implemented sequences
 
