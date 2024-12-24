@@ -1,9 +1,8 @@
 <h1 align="center"> Figurate_numbers </h1>
 
-<p align="center">
-  <strong>Figurate_numbers</strong> is the most comprehensive and specialized gem for figurate numbers written in Ruby to date.
-  It implements <strong>241 infinite number sequences</strong> inspired by the groundbreaking work <a href="https://books.google.com.pe/books/about/Figurate_Numbers.html?id=ERS7CgAAQBAJ&redir_esc=y"><em>Figurate Numbers</em></a> by Elena Deza and Michel Deza, published in 2012.
-</p>
+
+**Figurate_numbers** is the most comprehensive and specialized gem for figurate numbers written in Ruby to date.
+It implements **241 infinite number sequences** inspired by the groundbreaking work [*Figurate Numbers*](https://books.google.com.pe/books/about/Figurate_Numbers.html?id=ERS7CgAAQBAJ&redir_esc=y) by Elena Deza and Michel Deza, published in 2012.
 
 <p align="center">
   <img src="https://img.shields.io/gem/v/figurate_numbers" alt="Gem Version">
@@ -15,7 +14,7 @@
 
 ## Installation
 
-Install it from the gem repository
+Install it from the gem repository:
 
 ```rb
 gem install figurate_numbers
