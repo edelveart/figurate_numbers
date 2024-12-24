@@ -1,12 +1,27 @@
-# Figurate Numbers
+<h1 align="center"> Figurate_numbers </h1>
 
-![Gem Version](https://img.shields.io/gem/v/figurate_numbers)
-![Gem Total Downloads](https://img.shields.io/gem/dt/figurate_numbers)
-![GitHub License](https://img.shields.io/github/license/edelveart/figurate_numbers)
+<p style="text-align: center;">
+  <strong>Figurate_numbers</strong> is the most comprehensive and specialized gem for figurate numbers written in Ruby to date.
+  It implements <strong>241 infinite number sequences</strong> inspired by the groundbreaking work <a href="https://books.google.com.pe/books/about/Figurate_Numbers.html?id=ERS7CgAAQBAJ&redir_esc=y"><em>Figurate Numbers</em></a> by Elena Deza and Michel Deza, published in 2012.
+</p>
 
-`figurate_numbers` is the most comprehensive and specialized gem for figurate numbers written in `Ruby` to date.
- It implements `241 infinite number sequences` based on the remarkable book
-> [Figurate Numbers](https://books.google.com.pe/books/about/Figurate_Numbers.html?id=ERS7CgAAQBAJ&redir_esc=y)  by Elena Deza and Michel Deza, published in 2012.
+<p align="center">
+  <img src="https://img.shields.io/gem/v/figurate_numbers" alt="Gem Version">
+  <img src="https://img.shields.io/gem/dt/figurate_numbers" alt="NPM Type Definitions">
+  <img src="https://img.shields.io/github/license/edelveart/figurate_numbers" alt="NPM License">
+</p>
+
+![figurate_number-social-image](figurate_numbers.png)
+
+## Installation
+
+Install it from the gem repository
+
+```rb
+gem install figurate_numbers
+```
+
+## Features
 
 This implementation uses the **Enumerator class** to handle **infinite sequences**.
 It is intended for use in mathematical projects and with Sonic Pi.
@@ -19,10 +34,6 @@ Following the order of the book, the methods are divided into 3 types according 
 4. **Zoo of figurate-related numbers** implemented = `6`
 
 - [x] **TOTAL** = `241` infinite sequences of figurate numbers implemented
-
-## Installation and use
-
-* `gem install figurate_numbers`
 
 ###  How to use in Ruby
 
