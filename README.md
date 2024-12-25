@@ -6,8 +6,9 @@ It implements **241 infinite number sequences** inspired by the groundbreaking w
 
 <p align="center">
   <img src="https://img.shields.io/gem/v/figurate_numbers" alt="Gem Version">
-  <img src="https://img.shields.io/gem/dt/figurate_numbers" alt="NPM Type Definitions">
-  <img src="https://img.shields.io/github/license/edelveart/figurate_numbers" alt="NPM License">
+  <img src="https://img.shields.io/gem/dt/figurate_numbers" alt="Gem Total Downloads">
+  <img src="https://img.shields.io/github/stars/edelveart/figurate_numbers" alt="GitHub Repo stars">
+    <img src="https://img.shields.io/github/license/edelveart/figurate_numbers" alt="GitHub License">
 </p>
 
 ![figurate_number-social-image](figurate_numbers.png)
