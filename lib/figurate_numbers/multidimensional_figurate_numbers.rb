@@ -1,4 +1,4 @@
-require_relative './utils/utils'
+require_relative 'utils/utils'
 
 module MultiDimensionalFigurateNumbers
   extend self
