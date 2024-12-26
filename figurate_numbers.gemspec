@@ -1,5 +1,5 @@
 total_sequences = 241
-require_relative "./lib/figurate_numbers/version"
+require_relative "lib/figurate_numbers/version"
 
 Gem::Specification.new do |s|
   s.name        = "figurate_numbers"
