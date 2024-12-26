@@ -1,5 +1,5 @@
-require_relative "lib/figurate_numbers/version"
 total_sequences = 241
+require_relative "./lib/figurate_numbers/version"
 
 Gem::Specification.new do |s|
   s.name        = "figurate_numbers"
@@ -8,7 +8,8 @@ Gem::Specification.new do |s|
   s.description = "Generates #{total_sequences} infinite sequences of plane, space, and multidimensional figurate numbers based on the book ‘Figurate Numbers’ (2012) by Elena Deza and Michel Deza. The methods are implemented using the Enumerator class and are designed for use in your math projects or in Sonic Pi."
   s.authors     = ["Edgar Armando Delgado Vega"]
   s.email       = ["edelve91@gmail.com"]
-  s.files       = ["lib/figurate_numbers.rb"]
+  s.files       = Dir['lib/**/*']
+  s.require_paths = ['lib']
   s.homepage    = "https://github.com/edelveart/figurate_numbers"
   s.license     = "MIT"
   s.metadata = {
