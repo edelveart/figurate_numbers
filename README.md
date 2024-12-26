@@ -1,6 +1,6 @@
-<h1 align="center"> Figurate_numbers </h1>
+<h1 align="center"> Figurate Numbers </h1>
 
-**Figurate_numbers** is the most comprehensive and specialized gem for figurate numbers written in Ruby to date.
+**Figurate Numbers** is the most comprehensive and specialized gem for figurate numbers written in Ruby to date.
 It implements **241 infinite number sequences** inspired by the groundbreaking work [*Figurate Numbers*](https://books.google.com.pe/books/about/Figurate_Numbers.html?id=ERS7CgAAQBAJ&redir_esc=y) by Elena Deza and Michel Deza, published in 2012.
 
 <p align="center">

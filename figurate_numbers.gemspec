@@ -14,7 +14,7 @@ Gem::Specification.new do |s|
   s.license     = "MIT"
   s.metadata = {
     "documentation_uri" => "https://www.rubydoc.info/gems/figurate_numbers",
-    "source_code_uri" => s.homepage,
+    "source_code_uri" => "https://github.com/edelveart/figurate_numbers/tree/v#{s.version}",
     "homepage_uri" => s.homepage
   }
 
