@@ -27,10 +27,10 @@ It is intended for use in mathematical projects and with Sonic Pi.
 
 Following the order of the book, the methods are divided into 3 types according to the spatial dimension (see complete list below):
 
-1. **Plane** figurate numbers implemented = `79`
-2. **Space** figurate numbers implemented = `86`
-3. **Multidimensional** figurate numbers implemented = `70`
-4. **Zoo of figurate-related numbers** implemented = `6`
+1. **PlaneFigurateNumbers** figurate numbers implemented = `79`
+2. **SpaceFigurateNumbers** figurate numbers implemented = `86`
+3. **MultiDimensionalFigurateNumbers** figurate numbers implemented = `70`
+4. **Zoo of figurate-related numbers** implemented = `6` (included in MultiDimensional module)
 
 - [x] **TOTAL** = `241` infinite sequences of figurate numbers implemented
 
@@ -54,8 +54,8 @@ If the sequence is defined with `lazy`, to make the numbers explicit we must inc
 Since version **1.4.0**, you can alternatively call from the classes
 ```rb
 PlaneFigurateNumbers.polygonal(3)
-SpaceFigurateNumbers.rhombic_dodecahedral_numbers
-MultiDimensionalFigurateNumbers.six_dimensional_hyperoctahedron_numbers
+SpaceFigurateNumbers.rhombic_dodecahedral
+MultiDimensionalFigurateNumbers.six_dimensional_hyperoctahedron
 ```
 
 This ensures that you only use the numbers belonging to each geometric dimension.
@@ -98,85 +98,85 @@ end
 
 ### 1. Plane Figurate Numbers
 
-1. `polygonal_numbers(m)`
-2. `triangular_numbers`
-3. `square_numbers`
-4. `pentagonal_numbers`
-5. `hexagonal_numbers`
-6. `heptagonal_numbers`
-7. `octagonal_numbers`
-8. `nonagonal_numbers`
-9. `decagonal_numbers`
-10. `hendecagonal_numbers`
-11. `dodecagonal_numbers`
-12. `tridecagonal_numbers`
-13. `tetradecagonal_numbers`
-14. `pentadecagonal_numbers`
-15. `hexadecagonal_numbers`
-16. `heptadecagonal_numbers`
-17. `octadecagonal_numbers`
-18. `nonadecagonal_numbers`
-19. `icosagonal_numbers`
-20. `icosihenagonal_numbers`
-21. `icosidigonal_numbers`
-22. `icositrigonal_numbers`
-23. `icositetragonal_numbers`
-24. `icosipentagonal_numbers`
-25. `icosihexagonal_numbers`
-26. `icosiheptagonal_numbers`
-27. `icosioctagonal_numbers`
-28. `icosinonagonal_numbers`
-29. `triacontagonal_numbers`
-30. `centered_triangular_numbers`
-31. `centered_square_numbers` = `diamond_numbers` (equality only by quantity)
-32. `centered_pentagonal_numbers`
-33. `centered_hexagonal_numbers`
-34. `centered_heptagonal_numbers`
-35. `centered_octagonal_numbers`
-36. `centered_nonagonal_numbers`
-37. `centered_decagonal_numbers`
-38. `centered_hendecagonal_numbers`
-39. `centered_dodecagonal_numbers` = `star_numbers` (equality only by quantity)
-40. `centered_tridecagonal_numbers`
-41. `centered_tetradecagonal_numbers`
-42. `centered_pentadecagonal_numbers`
-43. `centered_hexadecagonal_numbers`
-44. `centered_heptadecagonal_numbers`
-45. `centered_octadecagonal_numbers`
-46. `centered_nonadecagonal_numbers`
-47. `centered_icosagonal_numbers`
-48. `centered_icosihenagonal_numbers`
-49. `centered_icosidigonal_numbers`
-50. `centered_icositrigonal_numbers`
-51. `centered_icositetragonal_numbers`
-52. `centered_icosipentagonal_numbers`
-53. `centered_icosihexagonal_numbers`
-54. `centered_icosiheptagonal_numbers`
-55. `centered_icosioctagonal_numbers`
-56. `centered_icosinonagonal_numbers`
-57. `centered_triacontagonal_numbers`
-58. `centered_mgonal_numbers(m)`
-59. `pronic_numbers` = `heteromecic_numbers` = `oblong_numbers`
-60. `polite_numbers`
-61. `impolite_numbers`
-62. `cross_numbers`
-63. `aztec_diamond_numbers`
-64. `polygram_numbers(m)` = `centered_star_polygonal_numbers(m)`
-65. `pentagram_numbers`
-66. `gnomic_numbers`
-67. `truncated_triangular_numbers`
-68. `truncated_square_numbers`
-69. `truncated_pronic_numbers`
-70. `truncated_centered_pol_numbers(m)` = `truncated_centered_mgonal_numbers(m)`
-71. `truncated_centered_triangular_numbers`
-72. `truncated_centered_square_numbers`
-73. `truncated_centered_pentagonal_numbers`
-74. `truncated_centered_hexagonal_numbers` = `truncated_hex_numbers`
-75. `generalized_mgonal_numbers(m, left_index = 0)`
-76. `generalized_pentagonal_numbers(left_index = 0)`
-77. `generalized_hexagonal_numbers(left_index = 0)`
-78. `generalized_centered_pol_numbers(m, left_index = 0)`
-79. `generalized_pronic_numbers(left_index = 0)`
+1. `polygonal(m)`
+2. `triangular`
+3. `square`
+4. `pentagonal`
+5. `hexagonal`
+6. `heptagonal`
+7. `octagonal`
+8. `nonagonal`
+9. `decagonal`
+10. `hendecagonal`
+11. `dodecagonal`
+12. `tridecagonal`
+13. `tetradecagonal`
+14. `pentadecagonal`
+15. `hexadecagonal`
+16. `heptadecagonal`
+17. `octadecagonal`
+18. `nonadecagonal`
+19. `icosagonal`
+20. `icosihenagonal`
+21. `icosidigonal`
+22. `icositrigonal`
+23. `icositetragonal`
+24. `icosipentagonal`
+25. `icosihexagonal`
+26. `icosiheptagonal`
+27. `icosioctagonal`
+28. `icosinonagonal`
+29. `triacontagonal`
+30. `centered_triangular`
+31. `centered_square` = `diamond` (equality only by quantity)
+32. `centered_pentagonal`
+33. `centered_hexagonal`
+34. `centered_heptagonal`
+35. `centered_octagonal`
+36. `centered_nonagonal`
+37. `centered_decagonal`
+38. `centered_hendecagonal`
+39. `centered_dodecagonal` = `star` (equality only by quantity)
+40. `centered_tridecagonal`
+41. `centered_tetradecagonal`
+42. `centered_pentadecagonal`
+43. `centered_hexadecagonal`
+44. `centered_heptadecagonal`
+45. `centered_octadecagonal`
+46. `centered_nonadecagonal`
+47. `centered_icosagonal`
+48. `centered_icosihenagonal`
+49. `centered_icosidigonal`
+50. `centered_icositrigonal`
+51. `centered_icositetragonal`
+52. `centered_icosipentagonal`
+53. `centered_icosihexagonal`
+54. `centered_icosiheptagonal`
+55. `centered_icosioctagonal`
+56. `centered_icosinonagonal`
+57. `centered_triacontagonal`
+58. `centered_mgonal(m)`
+59. `pronic` = `heteromecic` = `oblong`
+60. `polite`
+61. `impolite`
+62. `cross`
+63. `aztec_diamond`
+64. `polygram(m)` = `centered_star_polygonal(m)`
+65. `pentagram`
+66. `gnomic`
+67. `truncated_triangular`
+68. `truncated_square`
+69. `truncated_pronic`
+70. `truncated_centered_pol(m)` = `truncated_centered_mgonal(m)`
+71. `truncated_centered_triangular`
+72. `truncated_centered_square`
+73. `truncated_centered_pentagonal`
+74. `truncated_centered_hexagonal` = `truncated_hex`
+75. `generalized_mgonal(m, left_index = 0)`
+76. `generalized_pentagonal(left_index = 0)`
+77. `generalized_hexagonal(left_index = 0)`
+78. `generalized_centered_pol(m, left_index = 0)`
+79. `generalized_pronic(left_index = 0)`
 
 ### 2. Space Figurate Numbers
 
