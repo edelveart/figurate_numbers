@@ -10,7 +10,7 @@ It implements **241 infinite number sequences** inspired by the groundbreaking w
     <img src="https://img.shields.io/github/license/edelveart/figurate_numbers" alt="GitHub License">
 </p>
 
-![figurate_number-social-image](figurate_numbers.png)
+[![figurate numbers image](https://github.com/edelveart/figurate_numbers/blob/main/figurate_numbers.png)](https://rubygems.org/gems/figurate_numbers)
 
 ## Installation
 
