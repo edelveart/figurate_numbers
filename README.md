@@ -69,6 +69,11 @@ The main change compared to version **1.3.0** is that you now need to import the
 
 ```rb
 require "<PATH>"
+pol_num = FigurateNumbers.polygonal(8)
+350.times do
+  play pol_num.next % 12 * 7  # Some mathematical function or transformation
+  sleep 0.125
+end
 ```
 
 Simply copy the entry point path from the `lib/figurate_numbers.rb` file where the *gem* is installed.
