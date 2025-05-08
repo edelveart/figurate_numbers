@@ -438,11 +438,11 @@ end
   > `S_3^3(n) = ((2n - 1)(n^2 - n + 3)) / 3`
 
 - Chapter 2, page 156 (generalized centered square pyramid numbers) says:
-  > `S_4^3(n) = ((2n - 1) * (n^2 - n + 2)^2) / 3`
+  > `S_4^3(n) = ((2n - 1)(n^2 - n + 2)^2) / 3`
 
   Formula must write:
 
-  > `S_4^3(n) = ((2n - 1) * (n^2 - n + 2)) / 2`
+  > `S_4^3(n) = ((2n - 1)(n^2 - n + 2)) / 2`
 
 - Chapter 3, page 188 (hyperoctahedral numbers) says:
   > `hexadecahoron numbers`
