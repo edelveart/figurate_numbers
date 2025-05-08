@@ -370,15 +370,15 @@ end
 
 - Chapter 1, formula in the table on page 51 says:
 
-  | Name                 | Formula               |                       |
-  | -------------------- | --------------------- | --------------------- |
-  | Cent. icosihexagonal | `1/3n^2 - 13 * n + 1` | `546, 728, 936, 1170` |
+  | Name                 | Formula            |                       |
+  | -------------------- | ------------------ | --------------------- |
+  | Cent. icosihexagonal | `1/3n^2 - 13n + 1` | `546, 728, 936, 1170` |
 
 
   It should be:
-  | Name                 | Formula               |                       |
-  | -------------------- | --------------------- | --------------------- |
-  | Cent. icosihexagonal | `1/3n^2 - 13 * n + 1` | `547, 729, 937, 1171` |
+  | Name                 | Formula           |                       |
+  | -------------------- | ----------------- | --------------------- |
+  | Cent. icosihexagonal | `13n^2 - 13n + 1` | `547, 729, 937, 1171` |
 
 - Chapter 1, formula in the table on page 51 says:
 
