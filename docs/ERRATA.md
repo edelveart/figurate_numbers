@@ -1,4 +1,4 @@
-## Errata
+# Errata
 
 - **Chapter 1, page 6:**
   The formula for *Square* in the table is given as:
