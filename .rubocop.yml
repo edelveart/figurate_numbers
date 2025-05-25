@@ -14,3 +14,9 @@ Naming/MethodParameterName:
     - r
     - p
   Enabled: true
+
+Layout/LineLength:
+  Enabled: false
+
+Style/ModuleFunction:
+  Enabled: false
