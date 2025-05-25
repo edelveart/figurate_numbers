@@ -10,7 +10,8 @@ It implements **241 infinite number sequences** inspired by the groundbreaking w
     <img src="https://img.shields.io/github/license/edelveart/figurate_numbers" alt="GitHub License">
 </p>
 
-[![figurate numbers image](https://github.com/edelveart/figurate_numbers/blob/main/figurate_numbers.png)](https://rubygems.org/gems/figurate_numbers)
+[![figurate numbers image](https://raw.githubusercontent.com/edelveart/figurate_numbers/main/figurate_numbers.png)](https://rubygems.org/gems/figurate_numbers)
+
 
 ## 💎 Installation
 
@@ -30,7 +31,7 @@ The sequences are organized following the structure of the *Figurate Numbers* bo
 -  🟨 **MultiDimensionalFigurateNumbers** – 70 sequences (4D and beyond)
 -  🧬 **Zoo of figurate-related numbers** – 6 additional sequences *(included in the MultiDimensional module)*
 
-> 📚 For the complete list of methods, see the [full API reference →](docs/METHODS.md)
+> 📚 Explore the detailed list of figurate numbers [here 🔍.](docs/METHODS.md)
 
 ##  🧰 How to use in Ruby
 
@@ -80,14 +81,14 @@ Simply copy the entry point path from the `lib/figurate_numbers.rb` file where t
 
 See discussion in the [**Sonic Pi community thread right here!**](https://in-thread.sonic-pi.net/t/figurate-numbers-for-sonic-pi-new-ruby-gem-for-infinite-number-sequences-and-patterns/8962)
 
-## 📚 API Reference: List of Implemented Sequences in `figurate_numbers`
+## 📚 List of Implemented Sequences in `figurate_numbers`
 
 Explore the complete list of figurate number sequences and their Ruby methods:
 
-- [🔍 View all implemented methods and sequences →](docs/METHODS.md)
+- [View all implemented methods and sequences 🔍](docs/METHODS.md)
 
 ## 📝 Book Errata
 
 Corrections to formulas and data found in *Figurate Numbers* (2012):
 
-- [🔍 See full list of known errata →](docs/ERRATA.md)
+- [See full list of known errata 🔍](docs/ERRATA.md)
