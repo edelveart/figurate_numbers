@@ -1,0 +1,16 @@
+Naming/MethodParameterName:
+  AllowedNames:
+    - k
+    - h
+    - n
+    - x
+    - y
+    - z
+    - t
+    - q
+    - a
+    - b
+    - m
+    - r
+    - p
+  Enabled: true
