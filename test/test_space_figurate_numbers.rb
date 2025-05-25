@@ -1,9 +1,9 @@
-require "minitest/autorun"
-require_relative "../lib/figurate_numbers"
+require 'minitest/autorun'
+require_relative '../lib/figurate_numbers'
 
-class TestSpaceFigurateNumbers  < Minitest::Test
+class TestSpaceFigurateNumbers < Minitest::Test # rubocop:disable Metrics/ClassLength
   def test_r_pyramidal
-    assert_equal([1, 19, 70, 170, 335, 581, 924, 1380, 1965, 2695, 3586, 4654, 5915, 7385, 9080, 11016, 13209, 15675, 18430, 21490, 24871, 28589, 32660, 37100, 41925, 47151, 52794, 58870, 65395, 72385, 79856, 87824, 96305, 105315, 114870, 124986, 135679, 146965, 158860, 171380, 184541, 198359, 212850, 228030, 243915, 260521, 277864, 295960, 314825, 334475, 354926, 376194, 398295, 421245, 445060, 469756, 495349, 521855, 549290, 577670], SpaceFigurateNumbers.r_pyramidal(18).take(60))
+    assert_equal([1, 19, 70, 170, 335, 581, 924, 1380, 1965, 2695, 3586, 4654, 5915, 7385, 9080, 11_016, 13_209, 15_675, 18_430, 21_490, 24_871, 28_589, 32_660, 37_100, 41_925, 47_151, 52_794, 58_870, 65_395, 72_385, 79_856, 87_824, 96_305, 105_315, 114_870, 124_986, 135_679, 146_965, 158_860, 171_380, 184_541, 198_359, 212_850, 228_030, 243_915, 260_521, 277_864, 295_960, 314_825, 334_475, 354_926, 376_194, 398_295, 421_245, 445_060, 469_756, 495_349, 521_855, 549_290, 577_670], SpaceFigurateNumbers.r_pyramidal(18).take(60))
   end
 
   def test_triangular_pyramidal
@@ -20,7 +20,7 @@ class TestSpaceFigurateNumbers  < Minitest::Test
 
   def test_hexagonal_pyramidal
     assert_equal([1, 7, 22, 50, 95, 161, 252, 372, 525, 715, 946, 1222, 1547, 1925, 2360, 2856, 3417, 4047, 4750,
-    5530], SpaceFigurateNumbers.hexagonal_pyramidal.take(20))
+                  5530], SpaceFigurateNumbers.hexagonal_pyramidal.take(20))
   end
 
   def test_heptagonal_pyramidal
@@ -36,92 +36,91 @@ class TestSpaceFigurateNumbers  < Minitest::Test
   end
 
   def test_decagonal_pyramidal
-    assert_equal([1, 11, 38, 90, 175, 301, 476, 708, 1005, 1375, 1826, 2366, 3003, 3745, 4600, 5576, 6681, 7923, 9310, 10850], SpaceFigurateNumbers.decagonal_pyramidal.take(20))
+    assert_equal([1, 11, 38, 90, 175, 301, 476, 708, 1005, 1375, 1826, 2366, 3003, 3745, 4600, 5576, 6681, 7923, 9310, 10_850], SpaceFigurateNumbers.decagonal_pyramidal.take(20))
   end
 
   def test_hendecagonal_pyramidal
     assert_equal([1, 12, 42, 100, 195, 336, 532, 792, 1125, 1540, 2046, 2652, 3367, 4200, 5160, 6256, 7497, 8892,
-    10450, 12180], SpaceFigurateNumbers.hendecagonal_pyramidal.take(20))
+                  10_450, 12_180], SpaceFigurateNumbers.hendecagonal_pyramidal.take(20))
   end
 
   def test_dodecagonal_pyramidal
     assert_equal([1, 13, 46, 110, 215, 371, 588, 876, 1245, 1705, 2266, 2938, 3731, 4655, 5720, 6936, 8313, 9861,
-    11590, 13510], SpaceFigurateNumbers.dodecagonal_pyramidal.take(20))
+                  11_590, 13_510], SpaceFigurateNumbers.dodecagonal_pyramidal.take(20))
   end
 
   def test_tridecagonal_pyramidal
-    assert_equal([1, 14, 50, 120, 235, 406, 644, 960, 1365, 1870, 2486, 3224, 4095, 5110, 6280, 7616, 9129, 10830, 12730, 14840], SpaceFigurateNumbers.tridecagonal_pyramidal.take(20))
+    assert_equal([1, 14, 50, 120, 235, 406, 644, 960, 1365, 1870, 2486, 3224, 4095, 5110, 6280, 7616, 9129, 10_830, 12_730, 14_840], SpaceFigurateNumbers.tridecagonal_pyramidal.take(20))
   end
 
   def test_tetradecagonal_pyramidal
-    assert_equal([1, 15, 54, 130, 255, 441, 700, 1044, 1485, 2035, 2706, 3510, 4459, 5565, 6840, 8296, 9945, 11799, 13870, 16170], SpaceFigurateNumbers.tetradecagonal_pyramidal.take(20))
+    assert_equal([1, 15, 54, 130, 255, 441, 700, 1044, 1485, 2035, 2706, 3510, 4459, 5565, 6840, 8296, 9945, 11_799, 13_870, 16_170], SpaceFigurateNumbers.tetradecagonal_pyramidal.take(20))
   end
 
   def test_pentadecagonal_pyramidal
-    assert_equal([1, 16, 58, 140, 275, 476, 756, 1128, 1605, 2200, 2926, 3796, 4823, 6020, 7400, 8976, 10761, 12768, 15010, 17500], SpaceFigurateNumbers.pentadecagonal_pyramidal.take(20))
+    assert_equal([1, 16, 58, 140, 275, 476, 756, 1128, 1605, 2200, 2926, 3796, 4823, 6020, 7400, 8976, 10_761, 12_768, 15_010, 17_500], SpaceFigurateNumbers.pentadecagonal_pyramidal.take(20))
   end
 
   def test_hexadecagonal_pyramidal
-    assert_equal([1, 17, 62, 150, 295, 511, 812, 1212, 1725, 2365, 3146, 4082, 5187, 6475, 7960, 9656, 11577, 13737, 16150, 18830], SpaceFigurateNumbers.hexadecagonal_pyramidal.take(20))
+    assert_equal([1, 17, 62, 150, 295, 511, 812, 1212, 1725, 2365, 3146, 4082, 5187, 6475, 7960, 9656, 11_577, 13_737, 16_150, 18_830], SpaceFigurateNumbers.hexadecagonal_pyramidal.take(20))
   end
 
   def test_heptadecagonal_pyramidal
-    assert_equal([1, 18, 66, 160, 315, 546, 868, 1296, 1845, 2530, 3366, 4368, 5551, 6930, 8520, 10336, 12393, 14706, 17290, 20160], SpaceFigurateNumbers.heptadecagonal_pyramidal.take(20))
+    assert_equal([1, 18, 66, 160, 315, 546, 868, 1296, 1845, 2530, 3366, 4368, 5551, 6930, 8520, 10_336, 12_393, 14_706, 17_290, 20_160], SpaceFigurateNumbers.heptadecagonal_pyramidal.take(20))
   end
 
   def test_octadecagonal_pyramidal
-    assert_equal([1, 19, 70, 170, 335, 581, 924, 1380, 1965, 2695, 3586, 4654, 5915, 7385, 9080, 11016, 13209, 15675, 18430, 21490], SpaceFigurateNumbers.octadecagonal_pyramidal.take(20))
+    assert_equal([1, 19, 70, 170, 335, 581, 924, 1380, 1965, 2695, 3586, 4654, 5915, 7385, 9080, 11_016, 13_209, 15_675, 18_430, 21_490], SpaceFigurateNumbers.octadecagonal_pyramidal.take(20))
   end
 
   def test_nonadecagonal_pyramidal
-    assert_equal([1, 20, 74, 180, 355, 616, 980, 1464, 2085, 2860, 3806, 4940, 6279, 7840, 9640, 11696, 14025, 16644, 19570, 22820], SpaceFigurateNumbers.nonadecagonal_pyramidal.take(20))
+    assert_equal([1, 20, 74, 180, 355, 616, 980, 1464, 2085, 2860, 3806, 4940, 6279, 7840, 9640, 11_696, 14_025, 16_644, 19_570, 22_820], SpaceFigurateNumbers.nonadecagonal_pyramidal.take(20))
   end
 
   def test_icosagonal_pyramidal
-    assert_equal([1, 21, 78, 190, 375, 651, 1036, 1548, 2205, 3025, 4026, 5226, 6643, 8295, 10200, 12376, 14841, 17613, 20710, 24150], SpaceFigurateNumbers.icosagonal_pyramidal.take(20))
+    assert_equal([1, 21, 78, 190, 375, 651, 1036, 1548, 2205, 3025, 4026, 5226, 6643, 8295, 10_200, 12_376, 14_841, 17_613, 20_710, 24_150], SpaceFigurateNumbers.icosagonal_pyramidal.take(20))
   end
 
   def test_icosihenagonal_pyramidal
-    assert_equal([1, 22, 82, 200, 395, 686, 1092, 1632, 2325, 3190, 4246, 5512, 7007, 8750, 10760, 13056, 15657, 18582, 21850, 25480], SpaceFigurateNumbers.icosihenagonal_pyramidal.take(20))
+    assert_equal([1, 22, 82, 200, 395, 686, 1092, 1632, 2325, 3190, 4246, 5512, 7007, 8750, 10_760, 13_056, 15_657, 18_582, 21_850, 25_480], SpaceFigurateNumbers.icosihenagonal_pyramidal.take(20))
   end
 
   def test_icosidigonal_pyramidal
-    assert_equal([1, 23, 86, 210, 415, 721, 1148, 1716, 2445, 3355, 4466, 5798, 7371, 9205, 11320, 13736, 16473, 19551, 22990, 26810], SpaceFigurateNumbers.icosidigonal_pyramidal.take(20))
+    assert_equal([1, 23, 86, 210, 415, 721, 1148, 1716, 2445, 3355, 4466, 5798, 7371, 9205, 11_320, 13_736, 16_473, 19_551, 22_990, 26_810], SpaceFigurateNumbers.icosidigonal_pyramidal.take(20))
   end
 
   def test_icositrigonal_pyramidal
-    assert_equal([1, 24, 90, 220, 435, 756, 1204, 1800, 2565, 3520, 4686, 6084, 7735, 9660, 11880, 14416, 17289, 20520, 24130, 28140], SpaceFigurateNumbers.icositrigonal_pyramidal.take(20))
+    assert_equal([1, 24, 90, 220, 435, 756, 1204, 1800, 2565, 3520, 4686, 6084, 7735, 9660, 11_880, 14_416, 17_289, 20_520, 24_130, 28_140], SpaceFigurateNumbers.icositrigonal_pyramidal.take(20))
   end
 
-
   def test_icositetragonal_pyramidal
-    assert_equal([1, 25, 94, 230, 455, 791, 1260, 1884, 2685, 3685, 4906, 6370, 8099, 10115, 12440, 15096, 18105,
-    21489, 25270, 29470], SpaceFigurateNumbers.icositetragonal_pyramidal.take(20))
+    assert_equal([1, 25, 94, 230, 455, 791, 1260, 1884, 2685, 3685, 4906, 6370, 8099, 10_115, 12_440, 15_096, 18_105,
+                  21_489, 25_270, 29_470], SpaceFigurateNumbers.icositetragonal_pyramidal.take(20))
   end
 
   def test_icosipentagonal_pyramidal
-    assert_equal([1, 26, 98, 240, 475, 826, 1316, 1968, 2805, 3850, 5126, 6656, 8463, 10570, 13000, 15776, 18921,
-    22458, 26410, 30800], SpaceFigurateNumbers.icosipentagonal_pyramidal.take(20))
+    assert_equal([1, 26, 98, 240, 475, 826, 1316, 1968, 2805, 3850, 5126, 6656, 8463, 10_570, 13_000, 15_776, 18_921,
+                  22_458, 26_410, 30_800], SpaceFigurateNumbers.icosipentagonal_pyramidal.take(20))
   end
 
   def test_icosihexagonal_pyramidal
-    assert_equal([1, 27, 102, 250, 495, 861, 1372, 2052, 2925, 4015, 5346, 6942, 8827, 11025, 13560, 16456, 19737, 23427, 27550, 32130], SpaceFigurateNumbers.icosihexagonal_pyramidal.take(20))
+    assert_equal([1, 27, 102, 250, 495, 861, 1372, 2052, 2925, 4015, 5346, 6942, 8827, 11_025, 13_560, 16_456, 19_737, 23_427, 27_550, 32_130], SpaceFigurateNumbers.icosihexagonal_pyramidal.take(20))
   end
 
   def test_icosiheptagonal_pyramidal
-    assert_equal([1, 28, 106, 260, 515, 896, 1428, 2136, 3045, 4180, 5566, 7228, 9191, 11480, 14120, 17136, 20553, 24396, 28690, 33460], SpaceFigurateNumbers.icosiheptagonal_pyramidal.take(20))
+    assert_equal([1, 28, 106, 260, 515, 896, 1428, 2136, 3045, 4180, 5566, 7228, 9191, 11_480, 14_120, 17_136, 20_553, 24_396, 28_690, 33_460], SpaceFigurateNumbers.icosiheptagonal_pyramidal.take(20))
   end
 
   def test_icosioctagonal_pyramidal
-    assert_equal([1, 29, 110, 270, 535, 931, 1484, 2220, 3165, 4345, 5786, 7514, 9555, 11935, 14680, 17816, 21369, 25365, 29830, 34790], SpaceFigurateNumbers.icosioctagonal_pyramidal.take(20))
+    assert_equal([1, 29, 110, 270, 535, 931, 1484, 2220, 3165, 4345, 5786, 7514, 9555, 11_935, 14_680, 17_816, 21_369, 25_365, 29_830, 34_790], SpaceFigurateNumbers.icosioctagonal_pyramidal.take(20))
   end
 
   def test_icosinonagonal_pyramidal
-    assert_equal([1, 30, 114, 280, 555, 966, 1540, 2304, 3285, 4510, 6006, 7800, 9919, 12390, 15240, 18496, 22185, 26334, 30970, 36120], SpaceFigurateNumbers.icosinonagonal_pyramidal.take(20))
+    assert_equal([1, 30, 114, 280, 555, 966, 1540, 2304, 3285, 4510, 6006, 7800, 9919, 12_390, 15_240, 18_496, 22_185, 26_334, 30_970, 36_120], SpaceFigurateNumbers.icosinonagonal_pyramidal.take(20))
   end
 
   def test_triacontagonal_pyramidal
-    assert_equal([1, 31, 118, 290, 575, 1001, 1596, 2388, 3405, 4675, 6226, 8086, 10283, 12845, 15800, 19176, 23001, 27303, 32110, 37450], SpaceFigurateNumbers.triacontagonal_pyramidal.take(20))
+    assert_equal([1, 31, 118, 290, 575, 1001, 1596, 2388, 3405, 4675, 6226, 8086, 10_283, 12_845, 15_800, 19_176, 23_001, 27_303, 32_110, 37_450], SpaceFigurateNumbers.triacontagonal_pyramidal.take(20))
   end
 
   def test_triangular_tetrahedral
@@ -129,11 +128,11 @@ class TestSpaceFigurateNumbers  < Minitest::Test
   end
 
   def test_triangular_square_pyramidal
-    assert_equal([1, 55, 91, 208335, 1, 55, 91, 208335, 1, 55], SpaceFigurateNumbers.triangular_square_pyramidal.take(10))
+    assert_equal([1, 55, 91, 208_335, 1, 55, 91, 208_335, 1, 55], SpaceFigurateNumbers.triangular_square_pyramidal.take(10))
   end
 
   def test_square_tetrahedral
-    assert_equal([1, 4, 19600, 1, 4, 19600, 1, 4, 19600, 1], SpaceFigurateNumbers.square_tetrahedral.take(10))
+    assert_equal([1, 4, 19_600, 1, 4, 19_600, 1, 4, 19_600, 1], SpaceFigurateNumbers.square_tetrahedral.take(10))
   end
 
   def test_square_square_pyramidal
@@ -157,7 +156,7 @@ class TestSpaceFigurateNumbers  < Minitest::Test
   end
 
   def test_dodecahedral
-    assert_equal([1, 20, 84, 220, 455, 816, 1330, 2024, 2925, 4060, 5456, 7140, 9139, 11480, 14190, 17296, 20825, 24804, 29260, 34220, 39711, 45760, 52394, 59640, 67525, 76076, 85320, 95284, 105995, 117480, 129766, 142880, 156849, 171700, 187460, 204156, 221815, 240464, 260130, 280840, 302621, 325500, 349504, 374660, 400995, 428536, 457310, 487344, 518665, 551300, 585276, 620620, 657359, 695520, 735130, 776216, 818805, 862924, 908600, 955860, 1004731, 1055240, 1107414, 1161280, 1216865, 1274196, 1333300, 1394204, 1456935, 1521520, 1587986, 1656360, 1726669, 1798940, 1873200], SpaceFigurateNumbers.dodecahedral.take(75))
+    assert_equal([1, 20, 84, 220, 455, 816, 1330, 2024, 2925, 4060, 5456, 7140, 9139, 11_480, 14_190, 17_296, 20_825, 24_804, 29_260, 34_220, 39_711, 45_760, 52_394, 59_640, 67_525, 76_076, 85_320, 95_284, 105_995, 117_480, 129_766, 142_880, 156_849, 171_700, 187_460, 204_156, 221_815, 240_464, 260_130, 280_840, 302_621, 325_500, 349_504, 374_660, 400_995, 428_536, 457_310, 487_344, 518_665, 551_300, 585_276, 620_620, 657_359, 695_520, 735_130, 776_216, 818_805, 862_924, 908_600, 955_860, 1_004_731, 1_055_240, 1_107_414, 1_161_280, 1_216_865, 1_274_196, 1_333_300, 1_394_204, 1_456_935, 1_521_520, 1_587_986, 1_656_360, 1_726_669, 1_798_940, 1_873_200], SpaceFigurateNumbers.dodecahedral.take(75))
   end
 
   def test_icosahedral
@@ -169,12 +168,12 @@ class TestSpaceFigurateNumbers  < Minitest::Test
   end
 
   def test_truncated_cubic
-    assert_equal([1, 56, 311, 920, 2037, 3816, 6411, 9976, 14665, 20632, 28031, 37016, 47741, 60360, 75027, 91896, 111121, 132856, 157255, 184472, 214661, 247976, 284571, 324600, 368217, 415576, 466831, 522136, 581645, 645512, 713891, 786936, 864801, 947640, 1035607, 1128856, 1227541, 1331816, 1441835, 1557752, 1679721, 1807896, 1942431, 2083480, 2231197,
-    2385736, 2547251, 2715896, 2891825, 3075192, 3266151, 3464856, 3671461, 3886120, 4108987, 4340216, 4579961, 4828376, 5085615, 5351832], SpaceFigurateNumbers.truncated_cubic.take(60))
+    assert_equal([1, 56, 311, 920, 2037, 3816, 6411, 9976, 14_665, 20_632, 28_031, 37_016, 47_741, 60_360, 75_027, 91_896, 111_121, 132_856, 157_255, 184_472, 214_661, 247_976, 284_571, 324_600, 368_217, 415_576, 466_831, 522_136, 581_645, 645_512, 713_891, 786_936, 864_801, 947_640, 1_035_607, 1_128_856, 1_227_541, 1_331_816, 1_441_835, 1_557_752, 1_679_721, 1_807_896, 1_942_431, 2_083_480, 2_231_197,
+                  2_385_736, 2_547_251, 2_715_896, 2_891_825, 3_075_192, 3_266_151, 3_464_856, 3_671_461, 3_886_120, 4_108_987, 4_340_216, 4_579_961, 4_828_376, 5_085_615, 5_351_832], SpaceFigurateNumbers.truncated_cubic.take(60))
   end
 
   def test_truncated_octahedral
-    assert_equal([1, 38, 201, 586, 1289, 2406, 4033, 6266, 9201, 12934], SpaceFigurateNumbers.truncated_octahedral.take(10))
+    assert_equal([1, 38, 201, 586, 1289, 2406, 4033, 6266, 9201, 12_934], SpaceFigurateNumbers.truncated_octahedral.take(10))
   end
 
   def test_stella_octangula
@@ -182,15 +181,15 @@ class TestSpaceFigurateNumbers  < Minitest::Test
   end
 
   def test_centered_cube
-    assert_equal(  [1, 9, 35, 91, 189, 341, 559, 855, 1241, 1729], SpaceFigurateNumbers.centered_cube.take(10))
+    assert_equal([1, 9, 35, 91, 189, 341, 559, 855, 1241, 1729], SpaceFigurateNumbers.centered_cube.take(10))
   end
 
   def test_rhombic_dodecahedral
-    assert_equal([1, 15, 65, 175, 369, 671, 1105, 1695, 2465, 3439, 4641, 6095, 7825, 9855, 12209, 14911, 17985, 21455, 25345, 29679, 34481, 39775, 45585, 51935, 58849, 66351, 74465, 83215, 92625, 102719, 113521, 125055, 137345, 150415, 164289, 178991, 194545, 210975, 228305, 246559, 265761, 285935, 307105, 329295, 352529], SpaceFigurateNumbers.rhombic_dodecahedral.take(45))
+    assert_equal([1, 15, 65, 175, 369, 671, 1105, 1695, 2465, 3439, 4641, 6095, 7825, 9855, 12_209, 14_911, 17_985, 21_455, 25_345, 29_679, 34_481, 39_775, 45_585, 51_935, 58_849, 66_351, 74_465, 83_215, 92_625, 102_719, 113_521, 125_055, 137_345, 150_415, 164_289, 178_991, 194_545, 210_975, 228_305, 246_559, 265_761, 285_935, 307_105, 329_295, 352_529], SpaceFigurateNumbers.rhombic_dodecahedral.take(45))
   end
 
   def test_hauy_rhombic_dodecahedral
-    assert_equal([1, 33, 185, 553, 1233, 2321, 3913, 6105, 8993, 12673], SpaceFigurateNumbers.hauy_rhombic_dodecahedral.take(10))
+    assert_equal([1, 33, 185, 553, 1233, 2321, 3913, 6105, 8993, 12_673], SpaceFigurateNumbers.hauy_rhombic_dodecahedral.take(10))
   end
 
   def test_centered_tetrahedron
@@ -198,7 +197,7 @@ class TestSpaceFigurateNumbers  < Minitest::Test
   end
 
   def test_centered_square_pyramid
-    assert_equal([1, 6, 20, 49, 99, 176, 286, 435, 629, 874, 1176, 1541, 1975, 2484, 3074, 3751, 4521, 5390, 6364, 7449, 8651, 9976, 11430, 13019, 14749, 16626, 18656, 20845, 23199, 25724, 28426, 31311, 34385, 37654, 41124, 44801, 48691, 52800, 57134, 61699, 66501, 71546, 76840, 82389, 88199, 94276, 100626, 107255, 114169, 121374, 128876, 136681, 144795, 153224, 161974, 171051, 180461, 190210, 200304, 210749, 221551, 232716, 244250, 256159, 268449, 281126, 294196, 307665, 321539, 335824, 350526, 365651, 381205, 397194, 413624, 430501, 447831, 465620, 483874, 502599], SpaceFigurateNumbers.centered_square_pyramid.take(80))
+    assert_equal([1, 6, 20, 49, 99, 176, 286, 435, 629, 874, 1176, 1541, 1975, 2484, 3074, 3751, 4521, 5390, 6364, 7449, 8651, 9976, 11_430, 13_019, 14_749, 16_626, 18_656, 20_845, 23_199, 25_724, 28_426, 31_311, 34_385, 37_654, 41_124, 44_801, 48_691, 52_800, 57_134, 61_699, 66_501, 71_546, 76_840, 82_389, 88_199, 94_276, 100_626, 107_255, 114_169, 121_374, 128_876, 136_681, 144_795, 153_224, 161_974, 171_051, 180_461, 190_210, 200_304, 210_749, 221_551, 232_716, 244_250, 256_159, 268_449, 281_126, 294_196, 307_665, 321_539, 335_824, 350_526, 365_651, 381_205, 397_194, 413_624, 430_501, 447_831, 465_620, 483_874, 502_599], SpaceFigurateNumbers.centered_square_pyramid.take(80))
   end
 
   def test_centered_mgonal_pyramid
@@ -210,7 +209,7 @@ class TestSpaceFigurateNumbers  < Minitest::Test
   end
 
   def test_centered_hexagonal_pyramid
-    assert_equal([1, 8, 30, 77, 159, 286, 468, 715, 1037, 1444, 1946, 2553, 3275, 4122, 5104, 6231, 7513, 8960, 10582, 12389, 14391, 16598, 19020, 21667, 24549, 27676, 31058, 34705, 38627, 42834, 47336, 52143, 57265, 62712, 68494, 74621, 81103, 87950, 95172, 102779, 110781, 119188, 128010, 137257, 146939, 157066, 167648, 178695, 190217, 202224, 214726, 227733, 241255, 255302, 269884, 285011, 300693, 316940, 333762, 351169, 369171, 387778, 407000, 426847, 447329, 468456, 490238, 512685, 535807, 559614, 584116, 609323, 635245, 661892, 689274], SpaceFigurateNumbers.centered_hexagonal_pyramid.take(75))
+    assert_equal([1, 8, 30, 77, 159, 286, 468, 715, 1037, 1444, 1946, 2553, 3275, 4122, 5104, 6231, 7513, 8960, 10_582, 12_389, 14_391, 16_598, 19_020, 21_667, 24_549, 27_676, 31_058, 34_705, 38_627, 42_834, 47_336, 52_143, 57_265, 62_712, 68_494, 74_621, 81_103, 87_950, 95_172, 102_779, 110_781, 119_188, 128_010, 137_257, 146_939, 157_066, 167_648, 178_695, 190_217, 202_224, 214_726, 227_733, 241_255, 255_302, 269_884, 285_011, 300_693, 316_940, 333_762, 351_169, 369_171, 387_778, 407_000, 426_847, 447_329, 468_456, 490_238, 512_685, 535_807, 559_614, 584_116, 609_323, 635_245, 661_892, 689_274], SpaceFigurateNumbers.centered_hexagonal_pyramid.take(75))
   end
 
   def test_centered_heptagonal_pyramid
@@ -234,19 +233,19 @@ class TestSpaceFigurateNumbers  < Minitest::Test
   end
 
   def test_centered_truncated_tetrahedron
-    assert_equal([1, 17, 75, 203, 429, 781, 1287, 1975, 2873, 4009, 5411, 7107, 9125, 11493, 14239, 17391, 20977, 25025, 29563, 34619], SpaceFigurateNumbers.centered_truncated_tetrahedron.take(20))
+    assert_equal([1, 17, 75, 203, 429, 781, 1287, 1975, 2873, 4009, 5411, 7107, 9125, 11_493, 14_239, 17_391, 20_977, 25_025, 29_563, 34_619], SpaceFigurateNumbers.centered_truncated_tetrahedron.take(20))
   end
 
   def test_centered_truncated_cube
-    assert_equal([1, 49, 235, 651, 1389, 2541, 4199, 6455, 9401, 13129, 17731, 23299, 29925, 37701, 46719, 57071, 68849, 82145, 97051, 113659], SpaceFigurateNumbers.centered_truncated_cube.take(20))
+    assert_equal([1, 49, 235, 651, 1389, 2541, 4199, 6455, 9401, 13_129, 17_731, 23_299, 29_925, 37_701, 46_719, 57_071, 68_849, 82_145, 97_051, 113_659], SpaceFigurateNumbers.centered_truncated_cube.take(20))
   end
 
   def test_centered_truncated_octahedron
-    assert_equal([1, 33, 155, 427, 909, 1661, 2743, 4215, 6137, 8569, 11571, 15203, 19525, 24597, 30479, 37231, 44913, 53585, 63307, 74139], SpaceFigurateNumbers.centered_truncated_octahedron.take(20))
+    assert_equal([1, 33, 155, 427, 909, 1661, 2743, 4215, 6137, 8569, 11_571, 15_203, 19_525, 24_597, 30_479, 37_231, 44_913, 53_585, 63_307, 74_139], SpaceFigurateNumbers.centered_truncated_octahedron.take(20))
   end
 
   def test_centered_mgonal_pyramidal
-    assert_equal([1, 13, 47, 114, 225, 391, 623, 932, 1329, 1825, 2431, 3158, 4017, 5019, 6175, 7496, 8993, 10677, 12559, 14650, 16961, 19503, 22287, 25324, 28625, 32201, 36063, 40222, 44689, 49475, 54591, 60048, 65857, 72029, 78575, 85506, 92833, 100567, 108719, 117300, 126321, 135793, 145727, 156134, 167025, 178411, 190303, 202712, 215649, 229125, 243151, 257738, 272897, 288639, 304975, 321916, 339473, 357657, 376479, 395950], SpaceFigurateNumbers.centered_mgonal_pyramidal(11).take(60))
+    assert_equal([1, 13, 47, 114, 225, 391, 623, 932, 1329, 1825, 2431, 3158, 4017, 5019, 6175, 7496, 8993, 10_677, 12_559, 14_650, 16_961, 19_503, 22_287, 25_324, 28_625, 32_201, 36_063, 40_222, 44_689, 49_475, 54_591, 60_048, 65_857, 72_029, 78_575, 85_506, 92_833, 100_567, 108_719, 117_300, 126_321, 135_793, 145_727, 156_134, 167_025, 178_411, 190_303, 202_712, 215_649, 229_125, 243_151, 257_738, 272_897, 288_639, 304_975, 321_916, 339_473, 357_657, 376_479, 395_950], SpaceFigurateNumbers.centered_mgonal_pyramidal(11).take(60))
   end
 
   def test_centered_triangular_pyramidal
@@ -254,39 +253,39 @@ class TestSpaceFigurateNumbers  < Minitest::Test
   end
 
   def test_centered_square_pyramidal
-    assert_equal([1, 6, 19, 44, 85, 146, 231, 344, 489, 670, 891, 1156, 1469, 1834, 2255, 2736, 3281, 3894, 4579, 5340, 6181, 7106, 8119, 9224, 10425], SpaceFigurateNumbers.centered_square_pyramidal.take(25))
+    assert_equal([1, 6, 19, 44, 85, 146, 231, 344, 489, 670, 891, 1156, 1469, 1834, 2255, 2736, 3281, 3894, 4579, 5340, 6181, 7106, 8119, 9224, 10_425], SpaceFigurateNumbers.centered_square_pyramidal.take(25))
   end
 
   def test_centered_pentagonal_pyramidal
-    assert_equal([1, 7, 23, 54, 105, 181, 287, 428, 609, 835, 1111, 1442, 1833, 2289, 2815, 3416, 4097, 4863, 5719, 6670, 7721, 8877, 10143, 11524, 13025], SpaceFigurateNumbers.centered_pentagonal_pyramidal.take(25))
+    assert_equal([1, 7, 23, 54, 105, 181, 287, 428, 609, 835, 1111, 1442, 1833, 2289, 2815, 3416, 4097, 4863, 5719, 6670, 7721, 8877, 10_143, 11_524, 13_025], SpaceFigurateNumbers.centered_pentagonal_pyramidal.take(25))
   end
 
   def test_centered_hexagonal_pyramidal
-    assert_equal([1, 8, 27, 64, 125, 216, 343, 512, 729, 1000, 1331, 1728, 2197, 2744, 3375, 4096, 4913, 5832, 6859, 8000, 9261, 10648, 12167, 13824, 15625], SpaceFigurateNumbers.centered_hexagonal_pyramidal.take(25))
+    assert_equal([1, 8, 27, 64, 125, 216, 343, 512, 729, 1000, 1331, 1728, 2197, 2744, 3375, 4096, 4913, 5832, 6859, 8000, 9261, 10_648, 12_167, 13_824, 15_625], SpaceFigurateNumbers.centered_hexagonal_pyramidal.take(25))
   end
 
   def test_centered_heptagonal_pyramidal
-    assert_equal([1, 9, 31, 74, 145, 251, 399, 596, 849, 1165, 1551, 2014, 2561, 3199, 3935, 4776, 5729, 6801, 7999, 9330, 10801, 12419, 14191, 16124, 18225], SpaceFigurateNumbers.centered_heptagonal_pyramidal.take(25))
+    assert_equal([1, 9, 31, 74, 145, 251, 399, 596, 849, 1165, 1551, 2014, 2561, 3199, 3935, 4776, 5729, 6801, 7999, 9330, 10_801, 12_419, 14_191, 16_124, 18_225], SpaceFigurateNumbers.centered_heptagonal_pyramidal.take(25))
   end
 
   def test_centered_octagonal_pyramidal
-    assert_equal([1, 10, 35, 84, 165, 286, 455, 680, 969, 1330, 1771, 2300, 2925, 3654, 4495, 5456, 6545, 7770, 9139, 10660, 12341, 14190, 16215, 18424, 20825], SpaceFigurateNumbers.centered_octagonal_pyramidal.take(25))
+    assert_equal([1, 10, 35, 84, 165, 286, 455, 680, 969, 1330, 1771, 2300, 2925, 3654, 4495, 5456, 6545, 7770, 9139, 10_660, 12_341, 14_190, 16_215, 18_424, 20_825], SpaceFigurateNumbers.centered_octagonal_pyramidal.take(25))
   end
 
   def test_centered_nonagonal_pyramidal
-    assert_equal([1, 11, 39, 94, 185, 321, 511, 764, 1089, 1495, 1991, 2586, 3289, 4109, 5055, 6136, 7361, 8739, 10279, 11990, 13881, 15961, 18239, 20724, 23425], SpaceFigurateNumbers.centered_nonagonal_pyramidal.take(25))
+    assert_equal([1, 11, 39, 94, 185, 321, 511, 764, 1089, 1495, 1991, 2586, 3289, 4109, 5055, 6136, 7361, 8739, 10_279, 11_990, 13_881, 15_961, 18_239, 20_724, 23_425], SpaceFigurateNumbers.centered_nonagonal_pyramidal.take(25))
   end
 
   def test_centered_decagonal_pyramidal
-    assert_equal([1, 12, 43, 104, 205, 356, 567, 848, 1209, 1660, 2211, 2872, 3653, 4564, 5615, 6816, 8177, 9708, 11419, 13320, 15421, 17732, 20263, 23024, 26025], SpaceFigurateNumbers.centered_decagonal_pyramidal.take(25))
+    assert_equal([1, 12, 43, 104, 205, 356, 567, 848, 1209, 1660, 2211, 2872, 3653, 4564, 5615, 6816, 8177, 9708, 11_419, 13_320, 15_421, 17_732, 20_263, 23_024, 26_025], SpaceFigurateNumbers.centered_decagonal_pyramidal.take(25))
   end
 
   def test_centered_hendecagonal_pyramidal
-    assert_equal([1, 13, 47, 114, 225, 391, 623, 932, 1329, 1825, 2431, 3158, 4017, 5019, 6175, 7496, 8993, 10677, 12559, 14650, 16961, 19503, 22287, 25324, 28625], SpaceFigurateNumbers.centered_hendecagonal_pyramidal.take(25))
+    assert_equal([1, 13, 47, 114, 225, 391, 623, 932, 1329, 1825, 2431, 3158, 4017, 5019, 6175, 7496, 8993, 10_677, 12_559, 14_650, 16_961, 19_503, 22_287, 25_324, 28_625], SpaceFigurateNumbers.centered_hendecagonal_pyramidal.take(25))
   end
 
   def test_centered_dodecagonal_pyramidal
-    assert_equal([1, 14, 51, 124, 245, 426, 679, 1016, 1449, 1990, 2651, 3444, 4381, 5474, 6735, 8176, 9809, 11646, 13699, 15980, 18501, 21274, 24311, 27624, 31225], SpaceFigurateNumbers.centered_dodecagonal_pyramidal.take(25))
+    assert_equal([1, 14, 51, 124, 245, 426, 679, 1016, 1449, 1990, 2651, 3444, 4381, 5474, 6735, 8176, 9809, 11_646, 13_699, 15_980, 18_501, 21_274, 24_311, 27_624, 31_225], SpaceFigurateNumbers.centered_dodecagonal_pyramidal.take(25))
   end
 
   def test_hexagonal_prism
@@ -294,7 +293,7 @@ class TestSpaceFigurateNumbers  < Minitest::Test
   end
 
   def test_mgonal_prism
-    assert_equal([1, 30, 129, 340, 705, 1266, 2065, 3144, 4545, 6310, 8481, 11100, 14209, 17850, 22065, 26896, 32385, 38574, 45505, 53220], SpaceFigurateNumbers.mgonal_prism(14).take(20))
+    assert_equal([1, 30, 129, 340, 705, 1266, 2065, 3144, 4545, 6310, 8481, 11_100, 14_209, 17_850, 22_065, 26_896, 32_385, 38_574, 45_505, 53_220], SpaceFigurateNumbers.mgonal_prism(14).take(20))
   end
 
   def test_generalized_mgonal_pyramidal
@@ -326,7 +325,7 @@ class TestSpaceFigurateNumbers  < Minitest::Test
   end
 
   def test_generalized_centered_cube
-    assert_equal([-17261, -14859, -12691, -10745, -9009, -7471, -6119, -4941, -3925, -3059, -2331, -1729, -1241, -855, -559, -341, -189, -91, -35, -9, -1, 1, 9, 35, 91, 189, 341, 559, 855, 1241, 1729, 2331, 3059, 3925, 4941, 6119, 7471, 9009, 10745, 12691], SpaceFigurateNumbers.generalized_centered_cube(20).take(40))
+    assert_equal([-17_261, -14_859, -12_691, -10_745, -9009, -7471, -6119, -4941, -3925, -3059, -2331, -1729, -1241, -855, -559, -341, -189, -91, -35, -9, -1, 1, 9, 35, 91, 189, 341, 559, 855, 1241, 1729, 2331, 3059, 3925, 4941, 6119, 7471, 9009, 10_745, 12_691], SpaceFigurateNumbers.generalized_centered_cube(20).take(40))
   end
 
   def test_generalized_centered_tetrahedron
@@ -352,5 +351,4 @@ class TestSpaceFigurateNumbers  < Minitest::Test
   def test_generalized_hexagonal_prism
     assert_equal([-244, -111, -38, -7, 0, 1, 14, 57, 148, 305], SpaceFigurateNumbers.generalized_hexagonal_prism(4).take(10))
   end
-
 end
