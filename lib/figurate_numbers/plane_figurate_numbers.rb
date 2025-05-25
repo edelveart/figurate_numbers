@@ -470,26 +470,46 @@ module PlaneFigurateNumbers
   end
 
   def pronic
-    (1..Float::INFINITY).lazy.collect { |delta| delta * (delta + 1) }
+    Enumerator.new do |y|
+      (1..Float::INFINITY).each do |delta|
+        y << delta * (delta + 1)
+      end
+    end
   end
 
   alias_method :heteromecic, :pronic
   alias_method :oblong, :pronic
 
   def polite
-    (1..Float::INFINITY).lazy.collect { |delta| delta + Math.log((delta + Math.log(delta, 2)), 2).floor }
+    Enumerator.new do |y|
+      (1..Float::INFINITY).each do |delta|
+        y << delta + Math.log((delta + Math.log(delta, 2)), 2).floor
+      end
+    end
   end
 
   def impolite
-    (0..Float::INFINITY).lazy.collect { |delta| 2**delta }
+    Enumerator.new do |y|
+      (0..Float::INFINITY).each do |delta|
+        y << 2**delta
+      end
+    end
   end
 
   def cross
-    (1..Float::INFINITY).lazy.collect { |delta| 4 * delta - 3 }
+    Enumerator.new do |y|
+      (1..Float::INFINITY).each do |delta|
+        y << 4 * delta - 3
+      end
+    end
   end
 
   def aztec_diamond
-    (1..Float::INFINITY).lazy.collect { |delta| (2 * delta) * (delta + 1) }
+     Enumerator.new do |y|
+      (1..Float::INFINITY).each do |delta|
+        y << (2 * delta) * (delta + 1)
+      end
+    end
   end
 
   def polygram(m)
@@ -511,7 +531,11 @@ module PlaneFigurateNumbers
   end
 
   def gnomic
-    (1..Float::INFINITY).lazy.collect { |delta| 2 * delta - 1 }
+    Enumerator.new do |y|
+      (1..Float::INFINITY).each do |delta|
+        y << 2 * delta - 1
+      end
+    end
   end
 
   def truncated_triangular
