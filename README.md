@@ -22,7 +22,8 @@ gem install figurate_numbers
 ```
 
 ## 🧊 Features
-**Figurate Numbers** leverages Ruby’s `Enumerator` class to generate **241 infinite mathematical sequences**, based on geometric dimensions. It's ideal for use in mathematical modeling, algorithmic composition, and integration with tools like Sonic Pi.
+
+Figurate Numbers implements 241 infinite sequences using the Enumerator class in Ruby, each categorized by its geometric dimension. It is ideal for use in mathematical modeling, algorithmic composition, and integration with tools like Sonic Pi.
 
 The sequences are organized following the structure of the *Figurate Numbers* book:
 
@@ -48,16 +49,13 @@ f.next
 f.next
 ```
 
-If the sequence is defined with `lazy`, to make the numbers explicit we must include the converter method `to_a` at the end.
+Starting with version **1.4.0**, you can also call methods directly from their respective classes. This allows you to work with figurate numbers grouped by their geometric dimension:
 
-Since version **1.4.0**, you can alternatively call from the classes
 ```rb
 PlaneFigurateNumbers.polygonal(3)
 SpaceFigurateNumbers.rhombic_dodecahedral
 MultiDimensionalFigurateNumbers.six_dimensional_hyperoctahedron
 ```
-
-This ensures that you only use the numbers belonging to each geometric dimension.
 
 ## 🎶 How to use in Sonic Pi
 
