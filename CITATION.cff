@@ -5,7 +5,7 @@ authors:
     given-names: "Edgar Armando"
     orcid: "https://orcid.org/0000-0002-9672-9087"
 title: "Figurate Numbers for Ruby and Sonic Pi"
-version: 1.4.0
+version: 1.4.1
 doi:
 date-released: 2024-07-08
 url: "https://github.com/edelveart/figurate_numbers"
