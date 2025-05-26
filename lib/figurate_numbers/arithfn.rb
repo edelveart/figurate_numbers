@@ -19,7 +19,7 @@ module FigurateNumbers
     end
 
     def ring_padic_val(seq, p)
-      seq.each do |delta|
+      seq.map do |delta|
         PAdicUtils.padic_valuation(delta, p)
       end
     end
@@ -29,7 +29,7 @@ module FigurateNumbers
     end
 
     def ring_padic_norm(seq, p)
-      seq.each do |delta|
+      seq.map do |delta|
         PAdicUtils.padic_norm(delta, p)
       end
     end
@@ -39,7 +39,7 @@ module FigurateNumbers
     end
 
     def ring_padic_expansion(seq, p, precision = 11, reverse: false)
-      seq.each do |delta|
+      seq.map do |delta|
         PAdicUtils.padic_expansion(delta, p, precision, reverse)
       end
     end
