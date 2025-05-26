@@ -1,10 +1,11 @@
-# List of Implemented Sequences in `figurate_numbers`
+# List of Sequences in `figurate_numbers` and Arithmetic Transformations Methods
 
 ### Table of Contents
 - 🟦 [Plane Figurate Numbers](#1-plane-figurate-numbers)
 - 🟥 [Space Figurate Numbers](#2-space-figurate-numbers)
 - 🟨 [Multidimensional Figurate Numbers](#3-multidimensional-figurate-numbers)
-- 🧬 [Zoo of figurate-related numbers](#6-zoo-of-figurate-related-numbers)
+- 🧬 [Zoo of figurate-related numbers](#4-zoo-of-figurate-related-numbers)
+- ⚙️ [Arithmetic Transformations](#5-arithmetic-transformations)
 
 > Note that `=` means that you can call the same sequence with different names.
 
@@ -252,7 +253,7 @@
 69. `generalized_k_dimensional_centered_hyperoctahedron(k, left_index = 0)[provisional symmetry]`
 70. `generalized_nexus(k, left_index = 0) [even or odd dimension only changes sign]`
 
-### 6. Zoo of figurate-related numbers
+### 4. Zoo of figurate-related numbers
 
 1. `cuban_numbers = cuban_prime_numbers`
 2. `quartan_numbers [Needs to improve the algorithmic complexity for n > 70]`
@@ -260,3 +261,14 @@
 4. `carmichael_numbers [Needs to improve the algorithmic complexity for n > 20]`
 4. `stern_prime_numbers(infty = false) [Quick calculations up to 8 terms]`
 5. `apocalyptic_numbers`
+
+### 5. Arithmetic Transformations
+
+1. `ArithTransform.n_residue(n, pow, mod)`
+2. `ArithTransform.pc_inversion(n, mod)`
+3. `ArithTransform.padic_val(n, p)`
+4. `ArithTransform.ring_padic_val(seq, p)`
+5. `ArithTransform.padic_norm(n, p)`
+6. `ArithTransform.ring_padic_norm(seq, p)`
+7. `ArithTransform.padic_expansion(n, p, precision = 11, reverse: false)`
+8. `ArithTransform.ring_padic_expansion(seq, p, precision = 11, reverse: false)`
