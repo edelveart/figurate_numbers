@@ -10,8 +10,8 @@ module FigurateNumbers
       ModNUtils.q_residues(n, pow, mod)
     end
 
-    def pc_inversion(n, pow, mod)
-      ModNUtils.inversion(n, pow, mod)
+    def pc_inversion(n, mod)
+      ModNUtils.inversion(n, mod)
     end
 
     def padic_val(n, p)
