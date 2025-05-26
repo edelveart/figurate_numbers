@@ -13,7 +13,7 @@ Gem::Specification.new do |s|
   s.homepage    = 'https://github.com/edelveart/figurate_numbers'
   s.license     = 'MIT'
   s.metadata = {
-    'documentation_uri' => 'https://www.rubydoc.info/gems/figurate_numbers/',
+    'documentation_uri' => "https://www.rubydoc.info/gems/figurate_numbers/#{s.version}",
     'source_code_uri' => 'https://github.com/edelveart/figurate_numbers/',
     'homepage_uri' => s.homepage
   }
