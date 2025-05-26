@@ -1,6 +1,5 @@
 require_relative './utils/padic_utils'
 require_relative './utils/modn_utils'
-require_relative './utils/distributions_utils'
 
 module FigurateNumbers
   # Provides arithmetic methods for transforming and analyzing figurate number sequences.
