@@ -22,7 +22,7 @@ module FigurateNumbers
       return 0 if base_ten_number == 0 # rubocop:disable Style/NumericPredicate
 
       power = padic_valuation(base_ten_number, p)
-      Rational(1, p**power)
+      1.0 / p**power
     end
 
     def padic_expansion(base_ten_number, p, precision = 11, reverse_trim = false) # rubocop:disable Metrics/AbcSize,Metrics/MethodLength,Style/OptionalBooleanParameter
