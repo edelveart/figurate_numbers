@@ -13,15 +13,15 @@ Gem::Specification.new do |s|
   s.homepage    = 'https://github.com/edelveart/figurate_numbers'
   s.license     = 'MIT'
   s.metadata = {
-    'documentation_uri' => 'https://www.rubydoc.info/gems/figurate_numbers',
+    'documentation_uri' => 'https://www.rubydoc.info/gems/figurate_numbers/',
     'source_code_uri' => 'https://github.com/edelveart/figurate_numbers/',
     'homepage_uri' => s.homepage
   }
 
   s.required_ruby_version = '>= 2.0.0'
 
-  s.extra_rdoc_files = Dir['README.md', 'docs/METHODS.md', 'docs/ERRATA.md', 'LICENSE.txt']
-  s.rdoc_options    += [
+  s.extra_rdoc_files = Dir['/README.md', './LICENSE', 'docs/*.md']
+  s.rdoc_options += [
     '--main', 'README.md',
     '--line-numbers',
     '--inline-source',
