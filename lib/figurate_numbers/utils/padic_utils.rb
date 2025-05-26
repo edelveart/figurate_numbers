@@ -25,7 +25,7 @@ module FigurateNumbers
       Rational(1, p**power)
     end
 
-    def padic_expansion(base_ten_number, p, precision = 11, music_reverse: false) # rubocop:disable Metrics/AbcSize,Metrics/MethodLength
+    def padic_expansion(base_ten_number, p, precision = 11, reverse_trim = false) # rubocop:disable Metrics/AbcSize,Metrics/MethodLength,Style/OptionalBooleanParameter
       inverse_limit_arr = []
       (1...precision).each do |index|
         power = p**index
@@ -42,7 +42,7 @@ module FigurateNumbers
         p_adic_expansion_array << digits
       end
 
-      if music_reverse
+      if reverse_trim
         reversed = p_adic_expansion_array.reverse
         first_nonzero_index = reversed.index { |digit| digit != 0 } || 0
         reversed[first_nonzero_index..-1]
