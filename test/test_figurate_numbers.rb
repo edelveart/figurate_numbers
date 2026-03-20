@@ -271,8 +271,8 @@ class TestFigurateNumbers < Minitest::Test # rubocop:disable Metrics/ClassLength
     assert_equal([1, 11, 31, 61, 101, 151, 211, 281, 361, 451], FigurateNumbers.pentagram.take(10))
   end
 
-  def test_gnomic
-    assert_equal([1, 3, 5, 7, 9, 11, 13, 15, 17, 19], FigurateNumbers.gnomic.take(10).to_a)
+  def test_gnomonic
+    assert_equal([1, 3, 5, 7, 9, 11, 13, 15, 17, 19], FigurateNumbers.gnomonic.take(10).to_a)
   end
 
   def test_truncated_triangular

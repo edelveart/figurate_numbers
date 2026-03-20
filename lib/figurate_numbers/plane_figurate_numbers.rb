@@ -532,7 +532,7 @@ module FigurateNumbers
       end
     end
 
-    def gnomic
+    def gnomonic
       Enumerator.new do |y|
         (1..Float::INFINITY).each do |delta|
           y << 2 * delta - 1
