@@ -157,7 +157,7 @@ See discussion in the [**Sonic Pi community thread right here!**](https://in-thr
 63. `aztec_diamond`
 64. `polygram(m)` = `centered_star_polygonal(m)`
 65. `pentagram`
-66. `gnomic`
+66. `gnomonic`
 67. `truncated_triangular`
 68. `truncated_square`
 69. `truncated_pronic`
