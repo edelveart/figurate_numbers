@@ -336,23 +336,24 @@ See discussion in the [**Sonic Pi community thread right here!**](https://in-thr
 
 ### 4. Zoo of figurate-related numbers
 
-1. `cuban_numbers = cuban_prime_numbers`
-2. `quartan_numbers [Needs to improve the algorithmic complexity for n > 70]`
-3. `pell_numbers`
-4. `carmichael_numbers [Needs to improve the algorithmic complexity for n > 20]`
-4. `stern_prime_numbers(infty = false) [Quick calculations up to 8 terms]`
-5. `apocalyptic_numbers`
+1. `cuban = cuban_prime`
+2. `quartan [Needs to improve the algorithmic complexity for n > 70]`
+3. `pell`
+4. `carmichael [Needs to improve the algorithmic complexity for n > 20]`
+4. `stern_prime(infty = false) [Quick calculations up to 8 terms]`
+5. `apocalyptic`
 
 ### 5. Arithmetic Transformations
 
-1. `ArithTransform.n_residue(n, pow, mod)`
-2. `ArithTransform.pc_inversion(n, mod)`
-3. `ArithTransform.padic_val(n, p)`
-4. `ArithTransform.ring_padic_val(seq, p)`
-5. `ArithTransform.padic_norm(n, p)`
-6. `ArithTransform.ring_padic_norm(seq, p)`
-7. `ArithTransform.padic_expansion(n, p, precision = 11, reverse: false)`
-8. `ArithTransform.ring_padic_expansion(seq, p, precision = 11, reverse: false)`
+1. `ArithTransform.padic_val(n, p)`
+2. `ArithTransform.ring_padic_val(seq, p)`
+3. `ArithTransform.padic_norm(n, p)`
+4. `ArithTransform.ring_padic_norm(seq, p)`
+5. `ArithTransform.padic_expansion(n, p, precision = 11, reverse: false)`
+6. `ArithTransform.ring_padic_expansion(seq, p, precision = 11, reverse: false)`
+7. `ArithTransform.figuratenomial(n, k, seq)`
+8. `ArithTransform.n_residue(n, pow, mod)`
+9. `ArithTransform.pc_inversion(n, mod)`
 
 ## Book Errata
 
