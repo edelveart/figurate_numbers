@@ -93,4 +93,46 @@ class TestPlaneFigurateNumbers < Minitest::Test
     assert_equal([[1], [2, 2], [2, 1, 0], [1, 1, 1, 1], [2, 1, 0, 2]],
                  ArithTransform.ring_padic_expansion(f, 3, 12, reverse: true))
   end
+
+  def test_figuratenomial
+    f = FigurateNumbers.polygonal(3)
+    assert_equal(20, ArithTransform.figuratenomial(4, 2, f))
+  end
+
+  def test_figuratenomial_rational
+    f = FigurateNumbers.polygonal(7)
+    assert_equal(Rational(612, 7),
+                ArithTransform.figuratenomial(4, 2, f))
+  end
+
+  def test_figuratenomial_symmetry
+    f1 = FigurateNumbers.polygonal(5)
+    f2 = FigurateNumbers.polygonal(5)
+    assert_equal(
+      ArithTransform.figuratenomial(6, 2, f1),
+      ArithTransform.figuratenomial(6, 4, f2)
+    )
+  end
+
+  def test_figuratenomial_edges
+    f1 = FigurateNumbers.polygonal(7)
+    f2 = FigurateNumbers.polygonal(7)
+    assert_equal(1, ArithTransform.figuratenomial(6, 0, f1))
+    assert_equal(1, ArithTransform.figuratenomial(6, 6, f2))
+  end
+
+  def test_figuratenomial_invalid_n
+    seq = FigurateNumbers.polygonal(3)
+    assert_raises(ArgumentError) do
+      ArithTransform.figuratenomial(-1, 0, seq)
+    end
+  end
+
+  def test_figuratenomial_invalid_k
+    seq = FigurateNumbers.polygonal(3)
+    assert_raises(ArgumentError) do
+      ArithTransform.figuratenomial(5, 6, seq)
+    end
+  end
+
 end
