@@ -16,13 +16,26 @@ module FigurateNumbers
     alias hypertetrahedral pentatope
     alias triangulotriangular pentatope
 
-    def k_dimensional_hypertetrahedron(k)
+    def reference_of_book_k_dimensional_hypertetrahedron(k)
       Enumerator.new do |y|
         (1..Float::INFINITY).each do |delta|
           y << Utils.rising_factorial(delta, k) / Utils.factorial_iter(k)
         end
       end
     end
+
+    def k_dimensional_hypertetrahedron(k)
+      Enumerator.new do |y|
+        delta = 1
+        bin_coeff = 1
+        loop do
+          y << bin_coeff
+          bin_coeff = bin_coeff * (delta + k) / delta
+          delta += 1
+        end
+      end
+    end
+
 
     alias k_hypertetrahedron k_dimensional_hypertetrahedron
     alias regular_k_polytopic k_dimensional_hypertetrahedron
