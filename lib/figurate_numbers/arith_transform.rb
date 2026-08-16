@@ -43,5 +43,9 @@ module FigurateNumbers
         PAdicUtils.padic_expansion(delta, p, precision, reverse)
       end
     end
+
+    def figuratenomial(n, k, seq)
+      Utils.figurate_binomial(n, k, seq)
+    end
   end
 end
