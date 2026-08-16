@@ -36,7 +36,6 @@ module FigurateNumbers
       end
     end
 
-
     alias k_hypertetrahedron k_dimensional_hypertetrahedron
     alias regular_k_polytopic k_dimensional_hypertetrahedron
     alias figurate_numbers_of_order_k k_dimensional_hypertetrahedron
@@ -717,7 +716,7 @@ module FigurateNumbers
 
     require 'prime'
 
-    def cuban_numbers
+    def cuban
       Enumerator.new do |y|
         (1..Float::INFINITY).each do |delta|
           y << (delta + 1)**3 - delta**3
@@ -725,9 +724,9 @@ module FigurateNumbers
       end
     end
 
-    alias cuban_prime_numbers cuban_numbers
+    alias cuban_prime cuban
 
-    def helper_quartan_numbers(delta)
+    def helper_quartan(delta)
       seq = [2]
       (1..delta).each do |x|
         (x + 1..delta).each do |y|
@@ -738,17 +737,17 @@ module FigurateNumbers
       seq.sort
     end
 
-    private_class_method :helper_quartan_numbers
+    private_class_method :helper_quartan
 
-    def quartan_numbers
+    def quartan
       Enumerator.new do |y|
         (1..Float::INFINITY).each do |delta|
-          y << helper_quartan_numbers(delta)[delta - 1]
+          y << helper_quartan(delta)[delta - 1]
         end
       end
     end
 
-    def pell_numbers
+    def pell
       pell_numbers = [0, 1]
       Enumerator.new do |y|
         y << 0
@@ -765,17 +764,7 @@ module FigurateNumbers
       end
     end
 
-    def helper_carmichael_number_math_def(n)
-      return if prime_number?(n)
-
-      (2..(n - 1)).each do |a|
-        next unless n.gcd(a) == 1
-        return nil if a.pow(n - 1, n) != 1
-      end
-      n
-    end
-
-    def helper_carmichael_number(n)
+    def helper_carmichael(n)
       return if Prime.prime?(n)
 
       is_carmichael = (2..Math.sqrt(n)).none? do |a|
@@ -785,19 +774,18 @@ module FigurateNumbers
     end
 
     private_class_method :prime_number?
-    private_class_method :helper_carmichael_number_math_def
-    private_class_method :helper_carmichael_number
+    private_class_method :helper_carmichael
 
-    def carmichael_numbers
+    def carmichael
       Enumerator.new do |y|
         (561..Float::INFINITY).each do |delta|
-          num_seq = helper_carmichael_number(delta)
+          num_seq = helper_carmichael(delta)
           y << num_seq unless num_seq.nil?
         end
       end
     end
 
-    def helper_stern_prime_numbers(delta)
+    def helper_stern_prime(delta)
       prime_list = Prime.first(delta)
       q = prime_list[-1]
       b = 1
@@ -810,19 +798,19 @@ module FigurateNumbers
       q
     end
 
-    private_class_method :helper_stern_prime_numbers
+    private_class_method :helper_stern_prime
 
-    def stern_prime_numbers(infty = false) # rubocop:disable Style/OptionalBooleanParameter
+    def stern_prime(infty = false) # rubocop:disable Style/OptionalBooleanParameter
       Enumerator.new do |y|
         max_term = infty == false ? 238 : float::INFINITY
         (1..max_term).each do |delta|
-          num_seq = helper_stern_prime_numbers(delta)
+          num_seq = helper_stern_prime(delta)
           y << num_seq unless num_seq.nil?
         end
       end
     end
 
-    def helper_apocalyptic_numbers(delta)
+    def helper_apocalyptic(delta)
       search_666 = (2**delta).to_s # rubocop:disable Naming/VariableNumber
       len_666 = search_666.length - 1 # rubocop:disable Naming/VariableNumber
       (0..len_666).each do |index|
@@ -831,12 +819,12 @@ module FigurateNumbers
       nil
     end
 
-    private_class_method :helper_apocalyptic_numbers
+    private_class_method :helper_apocalyptic
 
-    def apocalyptic_numbers
+    def apocalyptic
       Enumerator.new do |y|
         (157..Float::INFINITY).each do |delta|
-          y << helper_apocalyptic_numbers(delta) unless helper_apocalyptic_numbers(delta).nil?
+          y << helper_apocalyptic(delta) unless helper_apocalyptic(delta).nil?
         end
       end
     end
