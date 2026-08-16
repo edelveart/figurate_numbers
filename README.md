@@ -91,7 +91,8 @@ See discussion in the [**Sonic Pi community thread right here!**](https://in-thr
 
 ## List of Sequences and Arithmetic Transformations Methods
 
-### 1. Plane Figurate Numbers
+<details>
+<summary>Plane Figurate Numbers (79 sequences)</summary>
 
 1. `polygonal(m)`
 2. `triangular`
@@ -172,8 +173,10 @@ See discussion in the [**Sonic Pi community thread right here!**](https://in-thr
 77. `generalized_hexagonal(left_index = 0)`
 78. `generalized_centered_pol(m, left_index = 0)`
 79. `generalized_pronic(left_index = 0)`
+</details>
 
-### 2. Space Figurate Numbers
+<details>
+<summary>Space Figurate Numbers (86 sequences)</summary>
 
 1. `r_pyramidal(r)`
 2. `triangular_pyramidal = tetrahedral`
@@ -261,8 +264,10 @@ See discussion in the [**Sonic Pi community thread right here!**](https://in-thr
 84. `generalized_centered_mgonal_pyramidal(m, left_index = 0)`
 85. `generalized_mgonal_prism(m, left_index = 0)`
 86. `generalized_hexagonal_prism(left_index = 0)`
+</details>
 
-### 3. Multidimensional figurate numbers
+<details>
+<summary>Multidimensional figurate numbers (79 sequences)</summary>
 
 1. `pentatope = hypertetrahedral = triangulotriangular`
 2. `k_dimensional_hypertetrahedron(k) = k_hypertetrahedron(k) = regular_k_polytopic(k) = figurate_numbers_of_order_k(k)`
@@ -334,25 +339,28 @@ See discussion in the [**Sonic Pi community thread right here!**](https://in-thr
 68. `generalized_k_dimensional_centered_hypertetrahedron(k, left_index = 0)[provisional symmetry]`
 69. `generalized_k_dimensional_centered_hyperoctahedron(k, left_index = 0)[provisional symmetry]`
 70. `generalized_nexus(k, left_index = 0) [even or odd dimension only changes sign]`
+</details>
 
-### 4. Zoo of figurate-related numbers
+<details>
+<summary>Zoo of figurate-related numbers(79 sequences)</summary>
 
 1. `cuban = cuban_prime`
 2. `quartan [Needs to improve the algorithmic complexity for n > 70]`
 3. `pell`
 4. `carmichael [Needs to improve the algorithmic complexity for n > 20]`
-4. `stern_prime(infty = false) [Quick calculations up to 8 terms]`
-5. `apocalyptic`
+5. `stern_prime(infty = false) [Quick calculations up to 8 terms]`
+6. `apocalyptic`
+</details>
 
-### 5. Arithmetic Transformations
+### Arithmetic Transformations
 
-1. `ArithTransform.padic_val(n, p)`
-2. `ArithTransform.ring_padic_val(seq, p)`
-3. `ArithTransform.padic_norm(n, p)`
-4. `ArithTransform.ring_padic_norm(seq, p)`
-5. `ArithTransform.padic_expansion(n, p, precision = 11, reverse: false)`
-6. `ArithTransform.ring_padic_expansion(seq, p, precision = 11, reverse: false)`
-7. `ArithTransform.figuratenomial(n, k, seq)`
+1. `ArithTransform.figuratenomial(n, k, seq)`
+2. `ArithTransform.padic_val(n, p)`
+3. `ArithTransform.ring_padic_val(seq, p)`
+4. `ArithTransform.padic_norm(n, p)`
+5. `ArithTransform.ring_padic_norm(seq, p)`
+6. `ArithTransform.padic_expansion(n, p, precision = 11, reverse: false)`
+7. `ArithTransform.ring_padic_expansion(seq, p, precision = 11, reverse: false)`
 8. `ArithTransform.n_residue(n, pow, mod)`
 9. `ArithTransform.pc_inversion(n, mod)`
 
