@@ -35,12 +35,11 @@ module FigurateNumbers
       (n..(n + k - 2)).reduce(:*)
     end
 
-    def figurate_binomial(n, k, seq)
-      raise ArgumentError, "n must be a non-negative Integer" unless n.is_a?(Integer) && n >= 0
-      raise ArgumentError, "k must be an Integer between 0 and n" unless k.is_a?(Integer) && k.between?(0, n)
+    def figurate_binomial(n, k, seq) # rubocop:disable Metrics/AbcSize,Metrics/CyclomaticComplexity,Metrics/MethodLength,Metrics/PerceivedComplexity
+      raise ArgumentError, 'n must be a non-negative Integer' unless n.is_a?(Integer) && n >= 0
+      raise ArgumentError, 'k must be an Integer between 0 and n' unless k.is_a?(Integer) && k.between?(0, n)
 
       k = [k, n - k].min
-
       first = []
       last = []
       (1..n).each do |i|

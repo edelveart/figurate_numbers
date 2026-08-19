@@ -20,3 +20,6 @@ Layout/LineLength:
 
 Style/ModuleFunction:
   Enabled: false
+
+Metrics/MethodLength:
+  Max: 15
