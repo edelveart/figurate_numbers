@@ -35,9 +35,29 @@ module FigurateNumbers
       (n..(n + k - 2)).reduce(:*)
     end
 
-    def figurate_binomial(n, k, seq) # rubocop:disable Metrics/AbcSize,Metrics/CyclomaticComplexity,Metrics/MethodLength,Metrics/PerceivedComplexity
+    def _validation_fnomial(n, k)
       raise ArgumentError, 'n must be a non-negative Integer' unless n.is_a?(Integer) && n >= 0
       raise ArgumentError, 'k must be an Integer between 0 and n' unless k.is_a?(Integer) && k.between?(0, n)
+    end
+
+    def _calculate_fnomial(first, last, k)
+      numerator = 1
+      denominator = 1
+
+      k.times do |i|
+        numerator *= last[i]
+        denominator *= first[i]
+
+        gcd = numerator.gcd(denominator)
+        numerator /= gcd
+        denominator /= gcd
+      end
+
+      [numerator, denominator]
+    end
+
+    def figurate_binomial(n, k, seq)
+      _validation_fnomial(n, k)
 
       k = [k, n - k].min
       first = []
@@ -47,17 +67,8 @@ module FigurateNumbers
         first << value if i <= k
         last << value if i > n - k
       end
+      numerator, denominator = _calculate_fnomial(first, last, k)
 
-      numerator = 1
-      denominator = 1
-      k.times do |i|
-        numerator *= last[i]
-        denominator *= first[i]
-
-        gcd = numerator.gcd(denominator)
-        numerator /= gcd
-        denominator /= gcd
-      end
       denominator == 1 ? numerator : Rational(numerator, denominator)
     end
   end
