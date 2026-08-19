@@ -1,7 +1,7 @@
 require 'minitest/autorun'
 require_relative '../lib/figurate_numbers'
 
-class TestPlaneFigurateNumbers < Minitest::Test
+class TestPlaneFigurateNumbers < Minitest::Test # rubocop:disable Metrics/ClassLength
   def test_n_residue
     f = FigurateNumbers.polygonal(5)
     arr = []
@@ -102,7 +102,7 @@ class TestPlaneFigurateNumbers < Minitest::Test
   def test_figuratenomial_rational
     f = FigurateNumbers.polygonal(7)
     assert_equal(Rational(612, 7),
-                ArithTransform.figuratenomial(4, 2, f))
+                 ArithTransform.figuratenomial(4, 2, f))
   end
 
   def test_figuratenomial_symmetry
@@ -134,5 +134,4 @@ class TestPlaneFigurateNumbers < Minitest::Test
       ArithTransform.figuratenomial(5, 6, seq)
     end
   end
-
 end
