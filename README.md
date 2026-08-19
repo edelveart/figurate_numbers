@@ -267,7 +267,7 @@ See discussion in the [**Sonic Pi community thread right here!**](https://in-thr
 </details>
 
 <details>
-<summary>Multidimensional figurate numbers (79 sequences)</summary>
+<summary>Multidimensional figurate numbers (70 sequences)</summary>
 
 1. `pentatope = hypertetrahedral = triangulotriangular`
 2. `k_dimensional_hypertetrahedron(k) = k_hypertetrahedron(k) = regular_k_polytopic(k) = figurate_numbers_of_order_k(k)`
@@ -342,7 +342,7 @@ See discussion in the [**Sonic Pi community thread right here!**](https://in-thr
 </details>
 
 <details>
-<summary>Zoo of figurate-related numbers(79 sequences)</summary>
+<summary>Zoo of figurate-related numbers(6 sequences)</summary>
 
 1. `cuban = cuban_prime`
 2. `quartan [Needs to improve the algorithmic complexity for n > 70]`
