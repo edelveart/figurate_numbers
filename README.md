@@ -83,12 +83,6 @@ amp_seq = SpaceFigurateNumbers.centered_hendecagonal_pyramidal
 end
 ```
 
-### Version 1.3.0 (legacy)
-
-The main change introduced after version **1.3.0** is that you must now import the file using **require** instead of **run_file**; otherwise, it will not function.
-
-See discussion in the [**Sonic Pi community thread right here!**](https://in-thread.sonic-pi.net/t/figurate-numbers-for-sonic-pi-new-ruby-gem-for-infinite-number-sequences-and-patterns/8962)
-
 ## List of Sequences and Arithmetic Transformations Methods
 
 <details>
@@ -367,3 +361,10 @@ See discussion in the [**Sonic Pi community thread right here!**](https://in-thr
 ## Book Errata
 
 [See the maintained errata PDF](https://edelveart.github.io/resources-files/errata-figuratenum.pdf)
+
+
+## Version 1.3.0 (legacy)
+
+The main change introduced after version **1.3.0** is that you must now import the file using **require** instead of **run_file**; otherwise, it will not function.
+
+See discussion in the [**Sonic Pi community thread right here!**](https://in-thread.sonic-pi.net/t/figurate-numbers-for-sonic-pi-new-ruby-gem-for-infinite-number-sequences-and-patterns/8962)
