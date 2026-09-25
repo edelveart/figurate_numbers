@@ -25,35 +25,30 @@ gem install figurate_numbers
 
 ## Features
 
-Figurate Numbers implements 241 infinite sequences using the Enumerator class in Ruby, each categorized by its geometric dimension. It is ideal for use in mathematical modeling, algorithmic composition, and integration with tools like Sonic Pi.
+Figurate Numbers implements **241 infinite sequences** using Ruby's `Enumerator`, organized by geometric dimension and suitable for mathematical modeling, algorithmic composition, and **Sonic Pi**.
 
-The sequences are organized following the structure of the *Figurate Numbers* book:
+- **PlaneFigurateNumbers**: 79 sequences (2D)
+- **SpaceFigurateNumbers**: 86 sequences (3D)
+- **MultiDimensionalFigurateNumbers**: 70 sequences (4D and beyond)
+- **Zoo of figurate-related numbers**: 6 additional sequences
+- **ArithTransform**: p-adic transformations and arithmetic operations
 
--  **PlaneFigurateNumbers**: 79 sequences (2D)
--  **SpaceFigurateNumbers**: 86 sequences (3D)
--  **MultiDimensionalFigurateNumbers**: 70 sequences (4D and beyond)
--  **Zoo of figurate-related numbers**: 6 additional sequences *(included in the MultiDimensional module)*
--  **ArithTransform**:  p-adic transformations and other arithmetic operations
-
-> See detailed list of sequences below
+> See the detailed list of sequences below.
 
 ##  How to use in Ruby
-
-### Version 1.6.0
 
 ```rb
 require 'figurate_numbers'
 
 ## Using take(integer)
 FigurateNumbers.pentatope.take(10)
-
 ## Storing and iterating
 f = FigurateNumbers.centered_octagonal_pyramid
 f.next
 f.next
 f.next
 ```
-Starting from version **1.5.0**, `figurate_numbers` not only supports global access via `FigurateNumbers` and the use of specific classes for separate access, but also introduces new p-adic transformations and other mathematical operations that can be applied directly to sequences.
+You can also access the individual modules:
 
 ```rb
 PlaneFigurateNumbers.polygonal(19)
@@ -63,7 +58,7 @@ seq = MultiDimensionalFigurateNumbers.five_dimensional_hypercube.take(15)
 ArithTransform.ring_padic_val(seq, 3)
 ```
 
-##  How to use in Sonic Pi
+##  How to use in Sonic Pi App
 
 Simply copy the entry point path from the `lib/figurate_numbers.rb` file where the *gem* is installed.
 
@@ -82,6 +77,21 @@ amp_seq = SpaceFigurateNumbers.centered_hendecagonal_pyramidal
   sleep 0.25
 end
 ```
+
+## How to use in Sonic Pi Web
+
+Use Figurate Numbers directly in [Sonic Pi Web](https://sonic-pi.net/code.html) without installing the gem or using `require`.
+
+Download a minified bundle:
+
+- [Plane Figurate Numbers](https://raw.githubusercontent.com/edelveart/figurate_numbers/main/dist/sonic_pi_web_min/plane_figurate_numbers.min.rb)
+- [Space Figurate Numbers](https://raw.githubusercontent.com/edelveart/figurate_numbers/main/dist/sonic_pi_web_min/space_figurate_numbers.min.rb)
+- [Multidimensional Figurate Numbers](https://raw.githubusercontent.com/edelveart/figurate_numbers/main/dist/sonic_pi_web_min/multidimensional_figurate_numbers.min.rb)
+- [Arithmetic Transform](https://raw.githubusercontent.com/edelveart/figurate_numbers/main/dist/sonic_pi_web_min/arith_transform.min.rb)
+
+### Loading a bundle
+
+Download a bundle, load the `.rb` file into a free buffer using the **`+`** button, and run it. Then use `FigurateNumbers` from another buffer.
 
 ## List of Sequences and Arithmetic Transformations Methods
 
@@ -346,7 +356,8 @@ end
 6. `apocalyptic`
 </details>
 
-### Arithmetic Transformations
+<details>
+<summary>Arithmetic Transformations</summary>
 
 1. `ArithTransform.figuratenomial(n, k, seq)`
 2. `ArithTransform.padic_val(n, p)`
@@ -357,6 +368,7 @@ end
 7. `ArithTransform.ring_padic_expansion(seq, p, precision = 11, reverse: false)`
 8. `ArithTransform.n_residue(n, pow, mod)`
 9. `ArithTransform.pc_inversion(n, mod)`
+</details>
 
 ## Book Errata
 
