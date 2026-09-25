@@ -1,13 +1,26 @@
-require 'prime'
-
 module FigurateNumbers
   # Module providing p-adic methods for transforming
   # sequences of figurate numbers.
   module PAdicUtils
     extend self
+    def prime?(n)
+      return false if n < 2
+      return true if n == 2
+      return false if n.even?
+
+      divisor = 3
+
+      while divisor * divisor <= n
+        return false if (n % divisor).zero?
+
+        divisor += 2
+      end
+
+      true
+    end
 
     def padic_valuation(base_ten_number, p)
-      raise "#{p} is not a prime number" unless Prime.prime?(p)
+      raise "#{p} is not a prime number" unless prime?(p)
 
       index = 0
       return index if base_ten_number < 1
