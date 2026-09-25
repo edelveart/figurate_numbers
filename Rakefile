@@ -2,7 +2,7 @@
 
 require 'rake/testtask'
 
-GEM_NAME = 'modular_forms'
+GEM_NAME = 'figurate_numbers'
 GEMSPEC = "#{GEM_NAME}.gemspec"
 
 Rake::TestTask.new do |t|
@@ -13,6 +13,10 @@ end
 
 task :build do
   sh "gem build #{GEMSPEC}"
+end
+
+task :sonic_pi_web do
+  sh 'bundle exec ruby tools/build_web.rb'
 end
 
 task :install do
