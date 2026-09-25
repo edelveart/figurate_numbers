@@ -16,6 +16,7 @@ BUNDLES = {
 
   'multidimensional_figurate_numbers' => [
     'utils/utils.rb',
+    'utils/padic_utils.rb',
     'multidimensional_figurate_numbers.rb'
   ],
 
