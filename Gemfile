@@ -10,6 +10,7 @@ group :development do
   gem 'minitest', '~> 5.0'
   gem 'rake', '~> 13.0'
   # Linting
+  gem 'minifyrb'
   gem 'rubocop'
   gem 'ruby-lsp'
 end
