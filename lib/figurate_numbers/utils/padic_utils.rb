@@ -19,6 +19,21 @@ module FigurateNumbers
       true
     end
 
+    def first_n_primes(n)
+      return [] if n <= 0
+      return [2] if n == 1
+
+      primes = [2]
+      candidate = 3
+
+      while primes.length < n
+        primes << candidate if prime?(candidate)
+        candidate += 2
+      end
+
+      primes
+    end
+
     def padic_valuation(base_ten_number, p)
       raise "#{p} is not a prime number" unless prime?(p)
 
