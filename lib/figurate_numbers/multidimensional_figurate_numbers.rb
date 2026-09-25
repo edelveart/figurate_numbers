@@ -1,4 +1,5 @@
 require_relative 'utils/utils'
+require_relative 'utils/padic_utils'
 
 module FigurateNumbers
   # Module containing methods for generating n-dimensional figurate number sequences.
@@ -714,8 +715,7 @@ module FigurateNumbers
       end
     end
 
-    require 'prime'
-
+    # Zoo of figurate-related numbers
     def cuban
       Enumerator.new do |y|
         (1..Float::INFINITY).each do |delta|
@@ -731,7 +731,7 @@ module FigurateNumbers
       (1..delta).each do |x|
         (x + 1..delta).each do |y|
           q = x**4 + y**4
-          seq << q if Prime.prime?(q)
+          seq << q if PAdicUtils.prime?(q)
         end
       end
       seq.sort
@@ -758,14 +758,8 @@ module FigurateNumbers
       end
     end
 
-    def prime_number?(p)
-      (2..Math.sqrt(p)).none? do |delta|
-        p % delta == 0 # rubocop:disable Style/NumericPredicate
-      end
-    end
-
     def helper_carmichael(n)
-      return if Prime.prime?(n)
+      return if PAdicUtils.prime?(n)
 
       is_carmichael = (2..Math.sqrt(n)).none? do |a|
         n.gcd(a) == 1 && a.pow(n - 1, n) != 1
@@ -773,7 +767,6 @@ module FigurateNumbers
       is_carmichael ? n : nil
     end
 
-    private_class_method :prime_number?
     private_class_method :helper_carmichael
 
     def carmichael
@@ -786,7 +779,7 @@ module FigurateNumbers
     end
 
     def helper_stern_prime(delta)
-      prime_list = Prime.first(delta)
+      prime_list = PAdicUtils.first_n_primes(delta)
       q = prime_list[-1]
       b = 1
       while (2 * b**2) < q
